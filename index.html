@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大学生工科竞赛、黑客松、保研夏令营与预推免 DDL 聚合日历，每日自动更新。">
+  <meta name="theme-color" content="#071b16">
+  <title>Contest DDL — 工科生的截止日期雷达</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Contest DDL 首页">
+      <span class="brand-mark">D/</span>
+      <span>Contest DDL</span>
+    </a>
+    <nav class="top-actions" aria-label="快捷链接">
+      <a href="./data/competitions.ics">订阅日历</a>
+      <a href="./data/competitions.json">JSON API</a>
+      <a href="https://github.com/Nemoyuzx/contest-ddl" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span><span id="healthText">正在连接数据源</span></div>
+      <h1>别让好机会，<br><em>死在截止日期。</em></h1>
+      <p>面向电子信息、计算机、通信、网安、自动化、机械、AI 与机器人的竞赛、黑客松、夏令营 DDL 雷达。</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#events">查看最近 DDL <span>↓</span></a>
+        <a class="button button-ghost" href="./data/competitions.ics">＋ 添加到日历</a>
+      </div>
+      <div class="updated" id="updatedAt">数据载入中…</div>
+    </section>
+
+    <section class="metrics" aria-label="数据概览">
+      <article><strong id="totalMetric">—</strong><span>累计收录</span></article>
+      <article><strong id="activeMetric">—</strong><span>当前可关注</span></article>
+      <article><strong id="weekMetric">—</strong><span>7 天内 DDL</span></article>
+      <article><strong id="sourceMetric">—</strong><span>正常数据源</span></article>
+    </section>
+
+    <section class="workspace" id="events">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">01 / DEADLINE RADAR</span>
+          <h2>最近的机会</h2>
+        </div>
+        <p id="resultCount">正在整理日程…</p>
+      </div>
+
+      <div class="controls" role="search">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索赛事、学校、方向…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <label class="select-wrap"><span>类型</span><select id="typeFilter"><option value="all">全部类型</option></select></label>
+        <label class="select-wrap"><span>方向</span><select id="categoryFilter"><option value="all">全部方向</option></select></label>
+        <label class="select-wrap"><span>期限</span><select id="windowFilter"><option value="all">全部时间</option><option value="7">7 天内</option><option value="30">30 天内</option><option value="90">90 天内</option></select></label>
+        <label class="check-wrap"><input id="expiredToggle" type="checkbox"><span>显示已结束</span></label>
+      </div>
+
+      <div class="timeline-head" aria-hidden="true">
+        <span>EVENT / SOURCE</span><span>TRACK</span><span>DEADLINE</span><span>STATUS</span>
+      </div>
+      <div class="event-list" id="eventList" aria-live="polite"></div>
+      <button class="load-more" id="loadMore" type="button" hidden>显示更多</button>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>∅</span><h3>没有符合条件的事件</h3><p>试试放宽期限或换一个关键词。</p>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="section-heading">
+        <div><span class="section-index">02 / DATA TRUST</span><h2>每个日期，都留下来路</h2></div>
+      </div>
+      <div class="trust-grid">
+        <article><span>01</span><h3>发现不等于确认</h3><p>聚合站只用于发现赛事；官方 API 与主办方页面拥有更高字段优先级。</p></article>
+        <article><span>02</span><h3>失败不清空历史</h3><p>某个来源暂时不可用时保留旧记录，7 天标为陈旧，30 天归档但不物理删除。</p></article>
+        <article><span>03</span><h3>冲突公开可查</h3><p>不同来源日期冲突时保留来源证据，并写入机器可读的质量审计报告。</p></article>
+      </div>
+      <div class="data-links">
+        <a href="./data/source-status.json"><span>源健康状态</span><b>source-status.json ↗</b></a>
+        <a href="./data/quality-report.json"><span>冲突与校验</span><b>quality-report.json ↗</b></a>
+        <a href="./docs/data-governance.md"><span>治理规则</span><b>data-governance.md ↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>每天 08:17（Asia/Shanghai）自动刷新。日期可能变化，提交前请回到官方页面复核。</p>
+    <p>Made for students who build things.</p>
+  </footer>
+
+  <template id="eventTemplate">
+    <article class="event-row">
+      <div class="event-main"><div class="event-kicker"></div><h3><a target="_blank" rel="noreferrer"></a></h3><p class="event-meta"></p></div>
+      <div class="event-categories"></div>
+      <div class="deadline"><strong></strong><span></span></div>
+      <div class="event-state"><span class="status-pill"></span><small></small></div>
+    </article>
+  </template>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>

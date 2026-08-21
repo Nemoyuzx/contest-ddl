@@ -1,0 +1,44 @@
+name: 新增赛事 / 夏令营 / 黑客松
+description: 提交一条有官方来源的 DDL
+title: "[新增] "
+labels: [data, needs-verification]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 事件名称
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 类型
+      options: [竞赛, 黑客松, 夏令营, 预推免]
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: 截止日期与时区
+      placeholder: "2026-09-01 23:59 UTC+8"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方通知 URL
+      description: 主办方、学校官网或官方报名系统链接
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 其他时间与说明
+      description: 报名开始、比赛起止、提交截止、校内/全国 DDL 等
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认
+      options:
+        - label: 我已打开来源页面核对，日期不是根据往年规律猜测的。
+          required: true

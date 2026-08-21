@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-22T02:36:55+08:00",
+  "accepted_fresh_records": 334,
+  "conflicts": [],
+  "validation_errors": [],
+  "overrides_applied": [],
+  "rules": {
+    "stale_after_days": 7,
+    "archive_after_days": 30,
+    "physical_deletion": false
+  }
+}

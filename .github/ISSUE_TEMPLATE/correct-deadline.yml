@@ -1,0 +1,33 @@
+name: 更正错误 DDL
+description: 报告过期、错误或互相冲突的日期
+title: "[更正] "
+labels: [data, correction]
+body:
+  - type: input
+    id: event
+    attributes:
+      label: 事件名称或 ID
+    validations:
+      required: true
+  - type: input
+    id: current
+    attributes:
+      label: 当前显示日期
+    validations:
+      required: true
+  - type: input
+    id: corrected
+    attributes:
+      label: 正确日期与时区
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 支持更正的官方 URL
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 说明

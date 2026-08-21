@@ -1,0 +1,2 @@
+# Calendar files require CRLF by RFC 5545; keep Git from treating CR as whitespace.
+*.ics -diff -text
