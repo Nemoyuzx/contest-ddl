@@ -17,11 +17,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T02:38:36+08:00`，共 334 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T09:48:59+08:00`，共 334 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [Haruulzangi CTF 2026 Qualifier](https://2026.haruulzangi.mn/) | competition | 2026-08-22T09:00:00+08:00 | upcoming | CTFtime API |
 | [$N1PH€RS 3.0 CTF](https://ctf.ex0rcists.in/) | competition | 2026-08-22T11:15:00+08:00 | upcoming | CTFtime API |
 | [E0F CTF](https://ctf.e0f.team/) | competition | 2026-08-22T15:00:00+08:00 | upcoming | CTFtime API |
 | [TallDwarf Hosting: Hosting Takeover](https://ctf.talldwarfhosting.com/) | competition | 2026-08-22T16:00:00+08:00 | upcoming | CTFtime API |
@@ -33,6 +32,7 @@
 | [南开大学 · 人工智能学院（推免预报名）](https://ai.nankai.edu.cn/info/1024/6632.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [同济大学 · 计算机科学与技术学院（推免研究生报名）](https://cs.tongji.edu.cn/info/1022/4119.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [哈尔滨工业大学 · 计算学部（推免研究生报名）](https://cs.hit.edu.cn/2026/0726/c11271a398409/page.htm) | summer_camp | 2026-08-25T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [中山大学 · 网络空间安全学院（推免研究生报名）](https://scst.sysu.edu.cn/article/502) | summer_camp | 2026-08-26T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
