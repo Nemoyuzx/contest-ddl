@@ -103,6 +103,32 @@ def compute_status(event, now: datetime | None = None) -> str:
     comp_start = parse_datetime(event.competition_start)
     comp_end = parse_datetime(event.competition_end)
     submit = parse_datetime(event.submission_deadline)
+    schedule = event.schedule if isinstance(getattr(event, "schedule", None), list) else []
+    registration_stages, competition_stages = [], []
+    for stage in schedule:
+        if not isinstance(stage, dict):
+            continue
+        start, end = parse_datetime(stage.get("start")), parse_datetime(stage.get("end"))
+        if not start and not end:
+            continue
+        target = registration_stages if re.search(r"报名|注册|征集", f"{stage.get('name', '')} {stage.get('content', '')}") else competition_stages
+        target.append((start, end))
+    if any(start and current >= start and (not end or current <= end) for start, end in competition_stages):
+        return "ongoing"
+    if any((not start or current >= start) and end and current <= end for start, end in registration_stages):
+        return "registration_open"
+    if any(start and current < start for start, _ in registration_stages):
+        return "registration_upcoming"
+    if reg_start and current < reg_start:
+        return "registration_upcoming"
+    if reg_end and current <= reg_end:
+        return "registration_open"
+    if submit and current <= submit:
+        return "submission_open"
+    if any(start and current < start for start, _ in competition_stages):
+        return "upcoming"
+    if competition_stages and all(end and current > end for _, end in competition_stages):
+        return "ended"
     if comp_end and current > comp_end:
         return "ended"
     if comp_start and current >= comp_start and (not comp_end or current <= comp_end):
@@ -120,8 +146,24 @@ def compute_status(event, now: datetime | None = None) -> str:
     return "unknown"
 
 
-def choose_primary_deadline(event) -> str | None:
-    return event.registration_deadline or event.submission_deadline or event.competition_start or event.competition_end
+def choose_primary_deadline(event, now: datetime | None = None) -> str | None:
+    """Choose the nearest upcoming milestone instead of the first populated field."""
+    current = now or now_china()
+    values = [
+        event.registration_deadline,
+        event.submission_deadline,
+        event.competition_start,
+        event.competition_end,
+    ]
+    for stage in event.schedule if isinstance(getattr(event, "schedule", None), list) else []:
+        if isinstance(stage, dict):
+            values.extend((stage.get("start"), stage.get("end")))
+    parsed = [(value, parse_datetime(value)) for value in values if value]
+    parsed = [(value, date) for value, date in parsed if date]
+    future = [(value, date) for value, date in parsed if date >= current]
+    if future:
+        return min(future, key=lambda item: item[1])[0]
+    return max(parsed, key=lambda item: item[1])[0] if parsed else None
 
 
 def clean_text(value: str) -> str:

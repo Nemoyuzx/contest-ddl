@@ -5,6 +5,10 @@ const statusLabels = {
   registration_open: "报名中", registration_upcoming: "即将报名", registration_closed: "报名已截止",
   submission_open: "提交中", upcoming: "即将开始", ongoing: "进行中", ended: "已结束", unknown: "待核验"
 };
+const timelineLabels = {
+  registration_start: "报名开始", registration_deadline: "报名截止", submission_deadline: "提交截止",
+  competition_start: "比赛开始", competition_end: "比赛结束"
+};
 
 function safeDate(value) {
   if (!value) return null;
@@ -16,23 +20,33 @@ function daysUntil(value) {
   const date = safeDate(value);
   if (!date) return null;
   const diff = date - state.now;
-  return diff < 0 ? -1 : Math.ceil(diff / 86400000);
+  if (diff < 0) return -Math.max(1, Math.ceil(Math.abs(diff) / 86400000));
+  const targetDay = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const currentDay = new Date(state.now.getFullYear(), state.now.getMonth(), state.now.getDate());
+  return Math.round((targetDay - currentDay) / 86400000);
 }
 
-function formatDate(value) {
+function formatDate(value, includeYear = false) {
   const date = safeDate(value);
   if (!date) return "日期待核验";
-  return new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false }).format(date);
+  const options = { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false };
+  if (includeYear) options.year = "numeric";
+  return new Intl.DateTimeFormat("zh-CN", options).format(date);
 }
 
 function relative(value) {
   const days = daysUntil(value);
-  if (days === null) return "请查看官方页";
+  if (days === null) return "请查看来源页";
   if (days < -1) return `已过 ${Math.abs(days)} 天`;
   if (days === -1) return "已截止";
-  if (days === 0) return "今天截止";
-  if (days === 1) return "明天截止";
+  if (days === 0) return "今天";
+  if (days === 1) return "明天";
   return `${days} 天后`;
+}
+
+function sourceNames(item) {
+  const names = [...(item.sources || []).map((source) => source?.name), item.source?.name].filter(Boolean);
+  return [...new Set(names)];
 }
 
 function sourceStatus(item) {
@@ -42,13 +56,96 @@ function sourceStatus(item) {
   return item.source?.name || "来源未知";
 }
 
+function httpUrl(value) {
+  try {
+    const url = new URL(value);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+  } catch { return ""; }
+}
+
+function appendLink(container, label, url) {
+  const safe = httpUrl(url);
+  if (!safe) return;
+  const link = document.createElement("a");
+  link.href = safe; link.target = "_blank"; link.rel = "noreferrer"; link.textContent = `${label} ↗`;
+  container.append(link);
+}
+
+function appendOption(select, value, label) {
+  const option = document.createElement("option"); option.value = value; option.textContent = label; select.append(option);
+}
+
 function renderOptions(items) {
   const types = [...new Set(items.map((item) => item.event_type))].sort();
   const categories = [...new Set(items.flatMap((item) => item.categories || []))].sort((a, b) => a.localeCompare(b, "zh-CN"));
-  types.forEach((type) => $("#typeFilter").insertAdjacentHTML("beforeend", `<option value="${type}">${typeLabels[type] || type}</option>`));
-  categories.forEach((category) => {
-    const option = document.createElement("option"); option.value = category; option.textContent = category; $("#categoryFilter").append(option);
+  const sources = [...new Set(items.flatMap(sourceNames))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+  types.forEach((type) => appendOption($("#typeFilter"), type, typeLabels[type] || type));
+  categories.forEach((category) => appendOption($("#categoryFilter"), category, category));
+  sources.forEach((source) => appendOption($("#sourceFilter"), source, source));
+}
+
+function primaryLabel(item) {
+  for (const [field, label] of Object.entries(timelineLabels)) {
+    if (item[field] && item[field] === item.primary_deadline) return label;
+  }
+  for (const stage of (item.schedule || [])) {
+    if (stage.start === item.primary_deadline) return `${stage.name || "赛程"}开始`;
+    if (stage.end === item.primary_deadline) return `${stage.name || "赛程"}结束`;
+  }
+  return "最近节点";
+}
+
+function renderDetails(node, item) {
+  const details = node.querySelector(".event-details");
+  let hasDetails = false;
+
+  const description = node.querySelector(".description-block");
+  if (item.description) {
+    description.hidden = false; description.querySelector("p").textContent = item.description; hasDetails = true;
+  }
+  const eligibility = node.querySelector(".eligibility-block");
+  if (item.eligibility) {
+    eligibility.hidden = false; eligibility.querySelector("p").textContent = item.eligibility; hasDetails = true;
+  }
+
+  const timeline = node.querySelector(".timeline-block");
+  const timelineList = timeline.querySelector("dl");
+  Object.entries(timelineLabels).forEach(([field, label]) => {
+    if (!item[field]) return;
+    const term = document.createElement("dt"); term.textContent = label;
+    const value = document.createElement("dd"); value.textContent = formatDate(item[field], true);
+    timelineList.append(term, value); hasDetails = true;
   });
+  timeline.hidden = timelineList.children.length === 0;
+
+  const schedule = node.querySelector(".schedule-block");
+  const scheduleList = schedule.querySelector("div");
+  (item.schedule || []).forEach((stage) => {
+    const entry = document.createElement("article");
+    const title = document.createElement("strong"); title.textContent = stage.name || "赛程阶段";
+    const time = document.createElement("span");
+    time.textContent = [stage.start && formatDate(stage.start, true), stage.end && formatDate(stage.end, true)].filter(Boolean).join(" → ");
+    const text = document.createElement("p"); text.textContent = stage.content || "";
+    entry.append(title, time); if (stage.content) entry.append(text); scheduleList.append(entry); hasDetails = true;
+  });
+  schedule.hidden = scheduleList.children.length === 0;
+
+  const attachments = node.querySelector(".attachments-block");
+  const attachmentList = attachments.querySelector("div");
+  (item.attachments || []).forEach((attachment) => appendLink(attachmentList, attachment.name || "赛事附件", attachment.url));
+  attachments.hidden = attachmentList.children.length === 0;
+  if (!attachments.hidden) hasDetails = true;
+
+  const evidence = node.querySelector(".evidence-block");
+  const evidenceLinks = evidence.querySelector("div");
+  const sources = item.sources?.length ? item.sources : (item.source ? [item.source] : []);
+  sources.forEach((source) => appendLink(evidenceLinks, source.name || "来源", source.url));
+  appendLink(evidenceLinks, "活动页面", item.official_url);
+  evidence.querySelector("p").textContent = item.notes || "日期可能变化，提交前请复核来源原文。";
+  evidence.hidden = evidenceLinks.children.length === 0 && !item.notes;
+  if (!evidence.hidden) hasDetails = true;
+
+  details.hidden = !hasDetails;
 }
 
 function filterData(reset = true) {
@@ -56,14 +153,16 @@ function filterData(reset = true) {
   const query = $("#searchInput").value.trim().toLowerCase();
   const type = $("#typeFilter").value;
   const category = $("#categoryFilter").value;
+  const source = $("#sourceFilter").value;
   const windowDays = $("#windowFilter").value;
   const showExpired = $("#expiredToggle").checked;
   state.filtered = state.data.filter((item) => {
-    const haystack = [item.name, item.organizer, item.location, item.notes, ...(item.categories || []), ...(item.tags || [])].join(" ").toLowerCase();
+    const haystack = [item.name, item.organizer, item.location, item.description, item.eligibility, item.notes, ...(item.categories || []), ...(item.tags || []), ...sourceNames(item)].join(" ").toLowerCase();
     const days = daysUntil(item.primary_deadline);
     return (!query || haystack.includes(query))
       && (type === "all" || item.event_type === type)
       && (category === "all" || item.categories?.includes(category))
+      && (source === "all" || sourceNames(item).includes(source))
       && (windowDays === "all" || (days !== null && days >= 0 && days <= Number(windowDays)))
       && (showExpired || (days !== null && days >= 0 && !item.archived));
   }).sort((a, b) => (safeDate(a.primary_deadline)?.getTime() || Infinity) - (safeDate(b.primary_deadline)?.getTime() || Infinity));
@@ -78,7 +177,7 @@ function renderList() {
     const node = template.content.cloneNode(true);
     const row = node.querySelector(".event-row");
     const link = node.querySelector("h3 a");
-    link.textContent = item.name; link.href = item.official_url;
+    link.textContent = item.name; link.href = httpUrl(item.official_url) || "#";
     node.querySelector(".event-kicker").textContent = `${typeLabels[item.event_type] || item.event_type} / ${(item.region || "global").toUpperCase()}`;
     node.querySelector(".event-meta").textContent = [item.organizer, item.location, item.mode].filter(Boolean).join(" · ") || sourceStatus(item);
     const categories = node.querySelector(".event-categories");
@@ -86,13 +185,14 @@ function renderList() {
       const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = category; categories.append(tag);
     });
     node.querySelector(".deadline strong").textContent = formatDate(item.primary_deadline);
-    node.querySelector(".deadline span").textContent = relative(item.primary_deadline);
+    node.querySelector(".deadline span").textContent = `${primaryLabel(item)} · ${relative(item.primary_deadline)}`;
     const pill = node.querySelector(".status-pill");
     const days = daysUntil(item.primary_deadline);
     pill.textContent = statusLabels[item.status] || item.status;
     if (["registration_open", "submission_open", "upcoming", "ongoing"].includes(item.status)) pill.classList.add("open");
     if (days !== null && days >= 0 && days <= 3) pill.classList.add("urgent");
     node.querySelector(".event-state small").textContent = sourceStatus(item);
+    renderDetails(node, item);
     if (item.stale) row.classList.add("stale");
     list.append(node);
   });
@@ -126,7 +226,7 @@ async function init() {
   }
 }
 
-["#searchInput", "#typeFilter", "#categoryFilter", "#windowFilter", "#expiredToggle"].forEach((selector) => {
+["#searchInput", "#typeFilter", "#categoryFilter", "#sourceFilter", "#windowFilter", "#expiredToggle"].forEach((selector) => {
   $(selector).addEventListener(selector === "#searchInput" ? "input" : "change", () => filterData());
 });
 $("#loadMore").addEventListener("click", () => { state.visible += 30; renderList(); });

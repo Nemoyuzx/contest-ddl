@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from contestddl.models import Event, SourceEvidence
-from contestddl.utils import CHINA_TZ, canonical_url, compute_status, normalize_title, parse_datetime, stable_id
+from contestddl.utils import CHINA_TZ, canonical_url, choose_primary_deadline, compute_status, normalize_title, parse_datetime, stable_id
 
 
 def event(**kwargs):
@@ -38,3 +38,38 @@ def test_status_ongoing_has_priority():
     now = datetime(2026, 8, 22, 12, tzinfo=CHINA_TZ)
     item = event(competition_start="2026-08-22T08:00:00+08:00", competition_end="2026-08-23T08:00:00+08:00")
     assert compute_status(item, now) == "ongoing"
+
+
+def test_primary_deadline_keeps_future_competition_visible_after_registration_closes():
+    now = datetime(2026, 8, 22, 12, tzinfo=CHINA_TZ)
+    item = event(
+        registration_deadline="2026-08-20T23:59:59+08:00",
+        competition_start="2026-09-01T08:00:00+08:00",
+        competition_end="2026-09-02T18:00:00+08:00",
+    )
+    assert choose_primary_deadline(item, now) == item.competition_start
+
+
+def test_schedule_status_and_primary_deadline_handle_multiple_rounds():
+    now = datetime(2026, 8, 22, 20, tzinfo=CHINA_TZ)
+    item = event(
+        registration_deadline="2026-08-21T23:59:59+08:00",
+        competition_start="2026-08-22T09:00:00+08:00",
+        competition_end="2026-10-24T18:00:00+08:00",
+        schedule=[
+            {"name": "第一场", "start": "2026-08-22T09:00:00+08:00", "end": "2026-08-22T18:00:00+08:00"},
+            {"name": "第二场报名", "start": "2026-08-23T00:00:00+08:00", "end": "2026-10-23T23:59:59+08:00"},
+            {"name": "第二场", "start": "2026-10-24T09:00:00+08:00", "end": "2026-10-24T18:00:00+08:00"},
+        ],
+    )
+    assert compute_status(item, now) == "registration_upcoming"
+    assert choose_primary_deadline(item, now) == "2026-08-23T00:00:00+08:00"
+
+
+def test_open_registration_precedes_future_schedule_status():
+    now = datetime(2026, 8, 22, 12, tzinfo=CHINA_TZ)
+    item = event(
+        registration_deadline="2026-08-22T23:59:59+08:00",
+        schedule=[{"name": "决赛", "start": "2026-09-01T09:00:00+08:00", "end": "2026-09-01T18:00:00+08:00"}],
+    )
+    assert compute_status(item, now) == "registration_open"

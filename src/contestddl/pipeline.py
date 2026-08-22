@@ -22,7 +22,7 @@ from contestddl.utils import (
     parse_datetime,
 )
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
     "saikr": saikr.collect,
@@ -36,7 +36,8 @@ REMOVED_SOURCE_NAMES = {"CTFtime API", "Hello-CTFtime CN", "Codeforces API"}
 MERGE_FIELDS = (
     "organizer", "level", "region", "location", "mode", "eligibility",
     "registration_start", "registration_deadline", "competition_start",
-    "competition_end", "submission_deadline", "notes",
+    "competition_end", "submission_deadline", "notes", "description",
+    "schedule", "attachments", "image_url",
 )
 DATE_FIELDS = (
     "registration_start", "registration_deadline", "competition_start",
@@ -115,7 +116,7 @@ def _validate(event: Event, errors: list[dict], now) -> bool:
     if reg_start and reg_end and reg_end < reg_start:
         errors.append({"event": event.name, "reason": "registration_end_before_start"})
         event.registration_start = None
-    event.primary_deadline = choose_primary_deadline(event)
+    event.primary_deadline = choose_primary_deadline(event, now)
     event.status = compute_status(event, now)
     event.confidence = "high" if event.source.authority >= 5 else ("medium" if event.source.authority >= 3 else "low")
     if event.verification_status == "cross_source":
@@ -162,6 +163,7 @@ def _load_previous(path: Path) -> dict[str, Event]:
 
 def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Event]:
     current_ids = set()
+    current_keys = {_dedup_key(event) for event in current}
     for event in current:
         current_ids.add(event.id)
         old = previous.get(event.id)
@@ -170,7 +172,9 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Ev
         event.stale = False
         event.archived = False
     for event_id, old in previous.items():
-        if event_id in current_ids:
+        # Adapter upgrades can improve the stable ID. Do not preserve the old
+        # copy when the same title/year/type is present under its new ID.
+        if event_id in current_ids or _dedup_key(old) in current_keys:
             continue
         last_seen = parse_datetime(old.last_seen_at or old.first_seen_at) or now
         age = now - last_seen

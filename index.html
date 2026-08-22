@@ -60,6 +60,7 @@
         </label>
         <label class="select-wrap"><span>类型</span><select id="typeFilter"><option value="all">全部类型</option></select></label>
         <label class="select-wrap"><span>方向</span><select id="categoryFilter"><option value="all">全部方向</option></select></label>
+        <label class="select-wrap"><span>来源</span><select id="sourceFilter"><option value="all">全部来源</option></select></label>
         <label class="select-wrap"><span>期限</span><select id="windowFilter"><option value="all">全部时间</option><option value="7">7 天内</option><option value="30">30 天内</option><option value="90">90 天内</option></select></label>
         <label class="check-wrap"><input id="expiredToggle" type="checkbox"><span>显示已结束</span></label>
       </div>
@@ -102,6 +103,17 @@
       <div class="event-categories"></div>
       <div class="deadline"><strong></strong><span></span></div>
       <div class="event-state"><span class="status-pill"></span><small></small></div>
+      <details class="event-details" hidden>
+        <summary>查看具体信息 <span>＋</span></summary>
+        <div class="detail-grid">
+          <section class="description-block" hidden><h4>赛事介绍</h4><p></p></section>
+          <section class="eligibility-block" hidden><h4>参赛对象</h4><p></p></section>
+          <section class="timeline-block" hidden><h4>关键时间</h4><dl></dl></section>
+          <section class="schedule-block" hidden><h4>分阶段赛程</h4><div></div></section>
+          <section class="attachments-block" hidden><h4>附件</h4><div></div></section>
+          <section class="evidence-block" hidden><h4>数据来源</h4><div></div><p></p></section>
+        </div>
+      </details>
     </article>
   </template>
   <script src="./assets/app.js" defer></script>

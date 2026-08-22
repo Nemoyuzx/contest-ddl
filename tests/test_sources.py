@@ -10,10 +10,10 @@ class FakeFetcher:
         self.payload = payload
         self.html = html
 
-    def json(self, url):
+    def json(self, url, **kwargs):
         return self.payload
 
-    def text(self, url):
+    def text(self, url, **kwargs):
         return self.html
 
 
@@ -25,10 +25,30 @@ def test_saikr_promotion_filter():
     assert not saikr._is_promotion("全国大学生智能车竞赛")
 
 
-def test_saikr_contextual_timeline():
-    result = saikr._extract_timeline("报名截止：2026年9月1日 比赛时间：2026年9月12日 08:00")
-    assert result["registration_deadline"].startswith("2026-09-01T23:59:59")
-    assert result["competition_start"].startswith("2026-09-12T08:00:00")
+def test_saikr_api_detail_becomes_rich_event():
+    row = {
+        "contest_id": 59224, "contest_name": "2026高校大学生人工智能大赛", "contest_url": "vse/HZRGZN",
+        "regist_start_time": 1782867600, "regist_end_time": 1789912800,
+        "contest_start_time": 1789866000, "contest_end_time": 1789916400,
+        "level_name": "全国性", "contest_class_second_id": 1006, "contest_class_second": "ai",
+    }
+    detail = {
+        "contest_name": row["contest_name"], "organiser": ["主办单位甲", "主办单位乙"],
+        "regist_start_time": "2026/07/01 09:00:00", "regist_end_time": "2026/09/20 22:00:00",
+        "contest_start_time": "2026/09/20 09:00:00", "contest_end_time": "2026/09/20 23:00:00",
+        "participation_detail": {"detail": "全国高校学生"},
+        "content": "<p>面向高校的人工智能实践赛事。</p><script>bad()</script>",
+        "contest_stage": {"list": [{"name": "决赛", "start_time": "2026.09.20 09:00:00", "end_time": "2026.09.20 23:00:00"}]},
+        "attachment": {"通知.pdf": "https://files.example/notice.pdf"},
+    }
+    event = saikr._event_from_api(row, detail, NOW)
+    assert event.source.name == "赛氪公开前端 API"
+    assert event.organizer == "主办单位甲、主办单位乙"
+    assert event.registration_deadline.startswith("2026-09-20T22:00:00")
+    assert event.description == "面向高校的人工智能实践赛事。"
+    assert event.schedule[0]["name"] == "决赛"
+    assert event.competition_end.startswith("2026-09-20T23:00:00")
+    assert event.attachments[0]["url"] == "https://files.example/notice.pdf"
 
 
 def test_summer_camp_filters_non_engineering():
@@ -69,6 +89,14 @@ def test_official_site_extracts_only_labeled_timeline():
     assert timeline["competition_start"].startswith("2026-09-20T08:30:00")
     assert timeline["competition_end"].startswith("2026-09-22T18:00:00")
     assert "2026-08-18" not in " ".join(timeline.values())
+
+
+def test_official_site_extracts_notice_text_without_scripts():
+    html = "<nav>菜单</nav><article><h1>大赛通知</h1><p>这是赛事的具体介绍和参赛说明，内容足够长以供页面展示，报名同学请认真阅读官网原文和比赛章程。</p></article><script>bad()</script>"
+    description = official_sites._extract_description(html)
+    assert "大赛通知" in description
+    assert "菜单" not in description
+    assert "bad()" not in description
 
 
 def test_official_site_ignores_news_dates_and_generic_edit_window():

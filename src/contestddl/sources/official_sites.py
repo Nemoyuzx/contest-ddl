@@ -175,6 +175,34 @@ def _visible_nodes(html: str) -> tuple[BeautifulSoup, list[str]]:
     return soup, [clean_text(value) for value in soup.stripped_strings if clean_text(value)]
 
 
+def _extract_description(html: str, limit: int = 2400) -> str:
+    """Extract a safe text excerpt from an official notice page."""
+    soup = BeautifulSoup(html, "html.parser")
+    for node in soup([
+        "script", "style", "noscript", "template", "svg", "nav", "header", "footer",
+        "form", "button", "aside",
+    ]):
+        node.decompose()
+    selectors = (
+        "article", ".article-content", ".article_content", ".news-content", ".news_content",
+        ".detail-content", ".detail_content", ".content-body", ".wp_articlecontent",
+        "main", "[role=main]",
+    )
+    candidates = []
+    for selector in selectors:
+        for node in soup.select(selector):
+            text = clean_text(node.get_text(" ", strip=True))
+            if len(text) >= 80:
+                candidates.append(text)
+        if candidates:
+            break
+    if not candidates:
+        candidates = [clean_text((soup.body or soup).get_text(" ", strip=True))]
+    # A notice's main content is generally the longest match within the first
+    # specific selector that succeeds. Store text only; never expose page HTML.
+    return max(candidates, key=len, default="")[:limit]
+
+
 def _extract_timeline(html: str, now: datetime) -> dict[str, str]:
     _, nodes = _visible_nodes(html)
     candidates: dict[str, list[tuple[int, datetime]]] = {
@@ -297,8 +325,10 @@ def _crawl_one(row: dict, shared_fetcher, now: datetime) -> tuple[Event | None, 
             continue
 
     extracted: dict[str, tuple[int, str, str]] = {}
+    descriptions: dict[str, str] = {}
     for link_score, url, html in pages:
         timeline = _extract_timeline(html, now)
+        descriptions[url] = _extract_description(html)
         page_score = link_score + len(timeline) * 10
         for field, value in timeline.items():
             if field not in extracted or page_score > extracted[field][0]:
@@ -326,6 +356,7 @@ def _crawl_one(row: dict, shared_fetcher, now: datetime) -> tuple[Event | None, 
         eligibility="college students", registration_start=timeline.get("registration_start"),
         registration_deadline=timeline.get("registration_deadline"), competition_start=timeline.get("competition_start"),
         competition_end=timeline.get("competition_end"), submission_deadline=timeline.get("submission_deadline"),
+        description=descriptions.get(best_url, ""),
         tags=[*map(str, row.get("tags", [])), "official_site"],
         notes=(str(row.get("description", "")).strip() + "；日期由官网公开页面自动提取，提交前请复核原文。").strip("；"),
         confidence="high", verification_status="official_site", sources=evidences,

@@ -49,6 +49,14 @@ def test_lifecycle_preserves_unseen_old_record():
     assert items[0].stale and items[0].archived
 
 
+def test_lifecycle_does_not_duplicate_same_event_after_id_migration():
+    current = make_event(name="2026全国大学生机器人大赛")
+    old = make_event(name=current.name)
+    old.id = "legacy-adapter-id"
+    items = _lifecycle([current], {old.id: old}, NOW)
+    assert [item.id for item in items] == [current.id]
+
+
 def test_ics_contains_deadline_and_url():
     item = make_event(registration_deadline="2026-08-30T23:59:59+08:00")
     item.last_seen_at = iso(NOW)

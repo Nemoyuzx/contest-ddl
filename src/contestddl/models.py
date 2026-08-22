@@ -39,6 +39,10 @@ class Event:
     verification_status: str = "single_source"
     tags: list[str] = field(default_factory=list)
     notes: str = ""
+    description: str = ""
+    schedule: list[dict[str, str]] = field(default_factory=list)
+    attachments: list[dict[str, str]] = field(default_factory=list)
+    image_url: str = ""
     first_seen_at: str = ""
     last_seen_at: str = ""
     stale: bool = False

@@ -17,22 +17,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T10:13:56+08:00`，共 283 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T13:04:46+08:00`，共 352 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
+| [2026年第三届大学生高新技术竞赛—数据库实操竞赛](https://new.saikr.com/vse/sjk26) | competition | 2026-08-22T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
+| [【今日考试+开学领取证书】2026大学生“麟创杯”创新数学竞赛](https://new.saikr.com/vse/LCBCXSX) | competition | 2026-08-22T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [2026年大学生“麟创杯”数学建模竞赛](https://new.saikr.com/vse/LCBSM) | competition | 2026-08-22T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [中国药科大学 · 人工智能学院（推免预报名）](https://lxy.cpu.edu.cn/b3/7a/c56a242554/page.htm) | summer_camp | 2026-08-22T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [同济大学 · 上海自主智能无人系统科学中心（推免研究生报名）](https://srias.tongji.edu.cn/cb/69/c17827a379753/page.htm) | summer_camp | 2026-08-23T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [2026年第三届大学生高新技术竞赛——嵌入式创新挑战赛](https://new.saikr.com/vse/Embedded2026) | competition | 2026-08-23T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [2026年第六届天府杯全国大学生数学建模竞赛](https://new.saikr.com/vse/TFB2026) | competition | 2026-08-23T22:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [中山大学 · 集成电路学院（推免研究生报名）](https://sic.sysu.edu.cn/rc/rc05/1421838.htm) | summer_camp | 2026-08-23T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [2026年第四届大学生信息系统创新大赛--JAVA编程巅峰赛](https://new.saikr.com/vse/Java202601) | competition | 2026-08-23T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [2026年第四届大学生信息系统创新大赛--WEB前端微信小程序开发巅峰赛](https://new.saikr.com/vse/WEB202601) | competition | 2026-08-23T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [2026第19届全国三维数字化创新设计大赛](https://new.saikr.com/vse/58026) | competition | 2026-08-23T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [吉林大学 · 通信工程学院（校园学术活动开放日）](https://dce.jlu.edu.cn/info/1032/11402.htm) | summer_camp | 2026-08-24T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [南开大学 · 人工智能学院（推免预报名）](https://ai.nankai.edu.cn/info/1024/6632.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [同济大学 · 计算机科学与技术学院（推免研究生报名）](https://cs.tongji.edu.cn/info/1022/4119.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [哈尔滨工业大学 · 计算学部（推免研究生报名）](https://cs.hit.edu.cn/2026/0726/c11271a398409/page.htm) | summer_camp | 2026-08-25T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [中山大学 · 网络空间安全学院（推免研究生报名）](https://scst.sysu.edu.cn/article/502) | summer_camp | 2026-08-26T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [Midnight Virtual Hackathon [August]](https://events.mlh.com/events/14510-midnight-hackathon-august) | hackathon | 2026-08-28T09:11:11+08:00 | upcoming | Major League Hacking |
-| [PEC HACKS 4.0](https://pechacks.org/) | hackathon | 2026-08-29T18:30:00+08:00 | upcoming | Major League Hacking |
-| [南方科技大学 · 深港微电子学院（推免预报名）](https://mp.weixin.qq.com/s/p9QdSnhvbnqEKeDBs7MN7w) | summer_camp | 2026-08-31T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [中国科学院大学 · 电子电气与通信工程学院（推免研究生接收）](https://eece.ucas.ac.cn/index.php/zh-cn/2014-06-13-06-51-06/2715-2027) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
@@ -40,12 +40,12 @@
 | 来源 | 用途 | 权威等级 | 采集方式 |
 | --- | --- | --- | --- |
 | 维护者核验 `data/manual.yml` | 主流全国赛与官方通知 | 高 | 带来源的人工录入 |
-| 赛氪公开赛事页 | 国内工科竞赛发现 | 较低 | 公开 HTML，限速抓取、关键词过滤 |
-| 赛事官网目录 | 国内主流工科赛事官网 | 高 | 每日抓取官网及少量通知页，只接受明确时间标签 |
+| 赛氪公开前端 API | 国内工科竞赛发现 | 较低 | 新版赛事页公开调用的列表/详情 JSON；采集正文、赛程与附件 |
+| 赛事官网目录 | 国内主流工科赛事官网 | 高 | 每日抓取官网及少量通知页，提取明确时间标签与正文摘要 |
 | Major League Hacking | 国际高校黑客松 | 高 | 官方活动页结构化数据 |
 | CS-BAOYAN BoardCaster | 工科夏令营 / 预推免 | 较高 | 社区维护 JSON，按工科院系过滤 |
 
-完整说明见 [数据源文档](docs/sources.md)。本项目不调用赛氪内部接口，不绕过登录、验证码或访问控制，只读取浏览器可正常访问的公开页面。
+完整说明见 [数据源文档](docs/sources.md)。本项目只调用赛氪新版公开赛事页自身使用的只读前端接口，不调用管理接口，也不绕过登录、验证码或访问控制。
 
 ## 每日自动化
 
@@ -85,6 +85,7 @@ python -m contestddl update --source saikr --source mlh
 - `competition_start` / `competition_end`：比赛起止
 - `submission_deadline`：作品或材料提交截止
 - `primary_deadline`：网站排序使用的最近关键日期
+- `description` / `schedule` / `attachments`：来源提供的具体介绍、分阶段赛程和公开附件
 - `source` / `sources`：当前字段来源和全部证据
 - `stale` / `archived`：数据生命周期标记
 
