@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 from contestddl.models import Event, SourceEvidence
 from contestddl.output import build_ics
-from contestddl.pipeline import _lifecycle, _merge_events, _validate
+from contestddl.pipeline import _is_removed_event, _lifecycle, _merge_events, _validate
 from contestddl.utils import CHINA_TZ, iso
 
 
@@ -49,3 +49,12 @@ def test_ics_contains_deadline_and_url():
     assert "BEGIN:VCALENDAR" in text
     assert "[报名截止] Test Hack 2026" in text
     assert "https://event.example" in text
+
+
+def test_ctf_and_codeforces_records_are_removed():
+    ctf = make_event(name="Student CTF 2026", categories=["网络安全", "CTF"])
+    codeforces = make_event(source_name="Codeforces API")
+    normal = make_event(name="Student AI Hackathon", categories=["黑客松"])
+    assert _is_removed_event(ctf)
+    assert _is_removed_event(codeforces)
+    assert not _is_removed_event(normal)

@@ -24,8 +24,6 @@
 
 使用 CS-BAOYAN 社区维护的 BoardCaster `data.json`，读取当前年与下一年夏令营、当前年预推免；再按计算机、电子、通信、网安、自动化、机械、AI、机器人等院系/描述关键词过滤。每条记录保留原学校通知 URL。
 
-## 官方 API 与社区源
+## 已停用来源
 
-- CTFtime：未来 180 天官方 REST API。
-- Codeforces：未来 180 天公开正式赛，Gym 排除；这些赛事并非只面向大学生，记录会提示 `open`。
-- Hello-CTFtime CN：国内 CTF 社区 JSON，用于补充国内赛事。
+CTFtime、Hello-CTFtime 与 Codeforces API 已从采集器中移除。管线同时过滤历史缓存和其他来源发现的 CTF 事件，确保它们不会通过生命周期保留机制重新进入 JSON、ICS 或网站。

@@ -1,12 +1,18 @@
 {
-  "generated_at": "2026-08-22T09:48:59+08:00",
-  "accepted_fresh_records": 334,
+  "generated_at": "2026-08-22T09:55:41+08:00",
+  "accepted_fresh_records": 281,
   "conflicts": [],
   "validation_errors": [],
   "overrides_applied": [],
   "rules": {
     "stale_after_days": 7,
     "archive_after_days": 30,
-    "physical_deletion": false
+    "physical_deletion": false,
+    "excluded": [
+      "CTF events",
+      "CTFtime API",
+      "Hello-CTFtime CN",
+      "Codeforces API"
+    ]
   }
 }

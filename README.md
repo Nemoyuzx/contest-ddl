@@ -17,15 +17,11 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T09:48:59+08:00`，共 334 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T09:55:41+08:00`，共 281 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [$N1PH€RS 3.0 CTF](https://ctf.ex0rcists.in/) | competition | 2026-08-22T11:15:00+08:00 | upcoming | CTFtime API |
-| [E0F CTF](https://ctf.e0f.team/) | competition | 2026-08-22T15:00:00+08:00 | upcoming | CTFtime API |
-| [TallDwarf Hosting: Hosting Takeover](https://ctf.talldwarfhosting.com/) | competition | 2026-08-22T16:00:00+08:00 | upcoming | CTFtime API |
 | [中国药科大学 · 人工智能学院（推免预报名）](https://lxy.cpu.edu.cn/b3/7a/c56a242554/page.htm) | summer_camp | 2026-08-22T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [PECAN+ CTF 2026](https://pecanplus.org/) | competition | 2026-08-23T09:00:00+08:00 | upcoming | CTFtime API |
 | [同济大学 · 上海自主智能无人系统科学中心（推免研究生报名）](https://srias.tongji.edu.cn/cb/69/c17827a379753/page.htm) | summer_camp | 2026-08-23T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [中山大学 · 集成电路学院（推免研究生报名）](https://sic.sysu.edu.cn/rc/rc05/1421838.htm) | summer_camp | 2026-08-23T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [吉林大学 · 通信工程学院（校园学术活动开放日）](https://dce.jlu.edu.cn/info/1032/11402.htm) | summer_camp | 2026-08-24T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
@@ -33,6 +29,10 @@
 | [同济大学 · 计算机科学与技术学院（推免研究生报名）](https://cs.tongji.edu.cn/info/1022/4119.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [哈尔滨工业大学 · 计算学部（推免研究生报名）](https://cs.hit.edu.cn/2026/0726/c11271a398409/page.htm) | summer_camp | 2026-08-25T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [中山大学 · 网络空间安全学院（推免研究生报名）](https://scst.sysu.edu.cn/article/502) | summer_camp | 2026-08-26T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [Midnight Virtual Hackathon [August]](https://events.mlh.com/events/14510-midnight-hackathon-august) | hackathon | 2026-08-28T09:11:11+08:00 | upcoming | Major League Hacking |
+| [PEC HACKS 4.0](https://pechacks.org/) | hackathon | 2026-08-29T18:30:00+08:00 | upcoming | Major League Hacking |
+| [南方科技大学 · 深港微电子学院（推免预报名）](https://mp.weixin.qq.com/s/p9QdSnhvbnqEKeDBs7MN7w) | summer_camp | 2026-08-31T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [中国科学院大学 · 电子电气与通信工程学院（推免研究生接收）](https://eece.ucas.ac.cn/index.php/zh-cn/2014-06-13-06-51-06/2715-2027) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
@@ -41,9 +41,6 @@
 | --- | --- | --- | --- |
 | 维护者核验 `data/manual.yml` | 主流全国赛与官方通知 | 高 | 带来源的人工录入 |
 | 赛氪公开赛事页 | 国内工科竞赛发现 | 较低 | 公开 HTML，限速抓取、关键词过滤 |
-| CTFtime API | 全球网络安全 / CTF | 高 | 官方 REST API |
-| Hello-CTFtime CN | 国内网络安全 / CTF | 较高 | 社区维护 JSON |
-| Codeforces API | 算法与程序设计 | 高 | 官方 REST API |
 | Major League Hacking | 国际高校黑客松 | 高 | 官方活动页结构化数据 |
 | CS-BAOYAN BoardCaster | 工科夏令营 / 预推免 | 较高 | 社区维护 JSON，按工科院系过滤 |
 
@@ -76,7 +73,7 @@ python -m http.server 8000
 打开 <http://localhost:8000>。只运行部分来源：
 
 ```bash
-python -m contestddl update --source ctftime --source mlh
+python -m contestddl update --source saikr --source mlh
 ```
 
 ## 数据 API
@@ -102,7 +99,7 @@ python -m contestddl update --source ctftime --source mlh
 
 ## 致谢
 
-数据治理和采集规则参考了 [kelin-gpu/campus-competition-agent](https://github.com/kelin-gpu/campus-competition-agent)；夏令营数据来自 [CS-BAOYAN/BoardCaster](https://github.com/CS-BAOYAN/BoardCaster)；国内 CTF 数据来自 [Hello-CTFtime](https://github.com/ProbiusOfficial/Hello-CTFtime)。各来源数据版权与使用条款归原作者或平台所有。
+数据治理和采集规则参考了 [kelin-gpu/campus-competition-agent](https://github.com/kelin-gpu/campus-competition-agent)；夏令营数据来自 [CS-BAOYAN/BoardCaster](https://github.com/CS-BAOYAN/BoardCaster)。各来源数据版权与使用条款归原作者或平台所有。
 
 ## License
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import fields
 from datetime import timedelta
 from pathlib import Path
@@ -10,7 +11,7 @@ import yaml
 
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence, SourceResult
-from contestddl.sources import codeforces, ctftime, hello_ctftime, manual, mlh, saikr, summer_camps
+from contestddl.sources import manual, mlh, saikr, summer_camps
 from contestddl.utils import (
     canonical_url,
     choose_primary_deadline,
@@ -25,12 +26,11 @@ SCHEMA_VERSION = "1.0"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
     "saikr": saikr.collect,
-    "ctftime": ctftime.collect,
-    "hello_ctftime_cn": hello_ctftime.collect,
-    "codeforces": codeforces.collect,
     "mlh": mlh.collect,
     "cs_baoyan": summer_camps.collect,
 }
+
+REMOVED_SOURCE_NAMES = {"CTFtime API", "Hello-CTFtime CN", "Codeforces API"}
 
 MERGE_FIELDS = (
     "organizer", "level", "region", "location", "mode", "eligibility",
@@ -50,6 +50,17 @@ def _dedup_key(event: Event) -> str:
     if title:
         return f"title:{title}:{year}:{event.event_type}"
     return f"url:{canonical_url(event.official_url)}:{event.event_type}"
+
+
+def _is_removed_event(event: Event) -> bool:
+    """Keep retired feeds and all CTF events out of fresh and historical output."""
+    source_names = {event.source.name, *(source.name for source in event.sources)}
+    labels = {str(value).strip().lower() for value in [*event.categories, *event.tags]}
+    return bool(
+        source_names & REMOVED_SOURCE_NAMES
+        or "ctf" in labels
+        or re.search(r"\bctf\b", event.name, flags=re.I)
+    )
 
 
 def _merge_events(events: list[Event], conflicts: list[dict]) -> list[Event]:
@@ -139,7 +150,8 @@ def _load_previous(path: Path) -> dict[str, Event]:
         return {}
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
-        return {row["id"]: Event.from_dict(row) for row in payload.get("items", [])}
+        events = [Event.from_dict(row) for row in payload.get("items", [])]
+        return {event.id: event for event in events if not _is_removed_event(event)}
     except (OSError, ValueError, TypeError, KeyError):
         return {}
 
@@ -185,7 +197,10 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
 
     conflicts: list[dict] = []
     validation_errors: list[dict] = []
-    fresh = _merge_events([event for result in results for event in result.events], conflicts)
+    fresh = _merge_events(
+        [event for result in results for event in result.events if not _is_removed_event(event)],
+        conflicts,
+    )
     override_log = _apply_overrides(fresh, root / "data/overrides.yml", now)
     fresh = [event for event in fresh if _validate(event, validation_errors, now)]
     previous = _load_previous(root / "data/competitions.json")
@@ -219,6 +234,11 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
         "generated_at": iso(now), "accepted_fresh_records": len(fresh),
         "conflicts": conflicts, "validation_errors": validation_errors,
         "overrides_applied": override_log,
-        "rules": {"stale_after_days": 7, "archive_after_days": 30, "physical_deletion": False},
+        "rules": {
+            "stale_after_days": 7,
+            "archive_after_days": 30,
+            "physical_deletion": False,
+            "excluded": ["CTF events", "CTFtime API", "Hello-CTFtime CN", "Codeforces API"],
+        },
     }
     return {"data": payload, "source_status": source_status, "quality": quality, "results": results}
