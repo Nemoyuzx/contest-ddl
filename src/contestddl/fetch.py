@@ -41,4 +41,7 @@ class Fetcher:
         return self.get(url, **kwargs).json()
 
     def text(self, url: str, **kwargs) -> str:
-        return self.get(url, **kwargs).text
+        response = self.get(url, **kwargs)
+        if not response.encoding or response.encoding.lower() in {"iso-8859-1", "latin-1"}:
+            response.encoding = response.apparent_encoding
+        return response.text

@@ -17,7 +17,7 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T09:56:26+08:00`，共 281 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T10:12:40+08:00`，共 283 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@
 | --- | --- | --- | --- |
 | 维护者核验 `data/manual.yml` | 主流全国赛与官方通知 | 高 | 带来源的人工录入 |
 | 赛氪公开赛事页 | 国内工科竞赛发现 | 较低 | 公开 HTML，限速抓取、关键词过滤 |
+| 赛事官网目录 | 国内主流工科赛事官网 | 高 | 每日抓取官网及少量通知页，只接受明确时间标签 |
 | Major League Hacking | 国际高校黑客松 | 高 | 官方活动页结构化数据 |
 | CS-BAOYAN BoardCaster | 工科夏令营 / 预推免 | 较高 | 社区维护 JSON，按工科院系过滤 |
 
@@ -99,7 +100,7 @@ python -m contestddl update --source saikr --source mlh
 
 ## 致谢
 
-数据治理和采集规则参考了 [kelin-gpu/campus-competition-agent](https://github.com/kelin-gpu/campus-competition-agent)；夏令营数据来自 [CS-BAOYAN/BoardCaster](https://github.com/CS-BAOYAN/BoardCaster)。各来源数据版权与使用条款归原作者或平台所有。
+数据治理和采集规则参考了 [kelin-gpu/campus-competition-agent](https://github.com/kelin-gpu/campus-competition-agent)；赛事官网目录参考 [xcg1125/college-competition-ddl](https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json)；夏令营数据来自 [CS-BAOYAN/BoardCaster](https://github.com/CS-BAOYAN/BoardCaster)。各来源数据版权与使用条款归原作者或平台所有。
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T09:56:26+08:00",
+  "generated_at": "2026-08-22T10:12:40+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,8 +7,9 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-22T09:56:26+08:00",
-      "duration_ms": 0
+      "fetched_at": "2026-08-22T10:12:40+08:00",
+      "duration_ms": 0,
+      "details": {}
     },
     {
       "name": "saikr",
@@ -16,8 +17,130 @@
       "records": 1,
       "url": "https://www.saikr.com/index/hot/contest",
       "error": "",
-      "fetched_at": "2026-08-22T09:56:35+08:00",
-      "duration_ms": 9136
+      "fetched_at": "2026-08-22T10:12:43+08:00",
+      "duration_ms": 2633,
+      "details": {}
+    },
+    {
+      "name": "official_sites",
+      "ok": true,
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
+      "error": "",
+      "fetched_at": "2026-08-22T10:12:52+08:00",
+      "duration_ms": 8930,
+      "details": {
+        "catalog_records": 84,
+        "engineering_sites_selected": 33,
+        "accepted": 2,
+        "outcomes": {
+          "accepted": 2,
+          "fetch_failed": 7,
+          "no_labeled_current_timeline": 24
+        },
+        "accepted_sites": [
+          {
+            "title": "CUMCM",
+            "reason": "accepted",
+            "url": "http://www.mcm.edu.cn/",
+            "fields": [
+              "competition_start"
+            ],
+            "field_urls": {
+              "http://www.mcm.edu.cn/": [
+                "competition_start"
+              ]
+            }
+          },
+          {
+            "title": "中国软件杯",
+            "reason": "accepted",
+            "url": "https://www.cnsoftbei.com/content-1-1349-1.html",
+            "fields": [
+              "competition_start",
+              "registration_deadline",
+              "submission_deadline"
+            ],
+            "field_urls": {
+              "https://www.cnsoftbei.com/content-1-1349-1.html": [
+                "registration_deadline",
+                "submission_deadline"
+              ],
+              "https://www.cnsoftbei.com/content-1-1357-1.html": [
+                "competition_start"
+              ]
+            }
+          }
+        ],
+        "failure_samples": [
+          {
+            "title": "中国国际大学生创新大赛",
+            "reason": "no_labeled_current_timeline",
+            "url": "https://cy.ncss.cn/"
+          },
+          {
+            "title": "ACM-ICPC",
+            "reason": "no_labeled_current_timeline",
+            "url": "https://icpc.global/"
+          },
+          {
+            "title": "NUEDC",
+            "reason": "fetch_failed",
+            "url": "http://www.nuedcchina.com/",
+            "error": "HTTPError: 502 Server Error: Bad Gateway for url: http://www.nuedcchina.com/"
+          },
+          {
+            "title": "CMIDC",
+            "reason": "fetch_failed",
+            "url": "http://umic.ckcest.cn/",
+            "error": "HTTPError: 502 Server Error: Bad Gateway for url: http://umic.ckcest.cn/"
+          },
+          {
+            "title": "智能车竞赛",
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.eepw.com.cn/event/action/freescale_car2012/"
+          },
+          {
+            "title": "工程实践与创新",
+            "reason": "fetch_failed",
+            "url": "http://www.gcxl.edu.cn/new/index.html",
+            "error": "SSLError: HTTPSConnectionPool(host='www.gcxl.edu.cn', port=443): Max retries exceeded with url: /new/index.html (Caused by SSLErro"
+          },
+          {
+            "title": "RoboMaster",
+            "reason": "fetch_failed",
+            "url": "https://www.cnrobocon.net/",
+            "error": "SSLError: HTTPSConnectionPool(host='www.cnrobocon.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVer"
+          },
+          {
+            "title": "先进成图大赛",
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.chengtudasai.com/"
+          },
+          {
+            "title": "西门子杯",
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.siemenscup-cimc.org.cn/"
+          },
+          {
+            "title": "服务外包大赛",
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.fwwb.org.cn/"
+          },
+          {
+            "title": "CCCCC",
+            "reason": "no_labeled_current_timeline",
+            "url": "http://jsjds.blcu.edu.cn/"
+          },
+          {
+            "title": "中国高校计算机大赛",
+            "reason": "fetch_failed",
+            "url": "https://www.c4best.cn/",
+            "error": "SSLError: HTTPSConnectionPool(host='www.c4best.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerific"
+          }
+        ],
+        "catalog_deadlines_used": false
+      }
     },
     {
       "name": "mlh",
@@ -25,8 +148,9 @@
       "records": 65,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-22T09:56:38+08:00",
-      "duration_ms": 3185
+      "fetched_at": "2026-08-22T10:12:57+08:00",
+      "duration_ms": 5364,
+      "details": {}
     },
     {
       "name": "cs_baoyan",
@@ -34,8 +158,9 @@
       "records": 216,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-22T09:56:38+08:00",
-      "duration_ms": 178
+      "fetched_at": "2026-08-22T10:12:57+08:00",
+      "duration_ms": 215,
+      "details": {}
     }
   ]
 }

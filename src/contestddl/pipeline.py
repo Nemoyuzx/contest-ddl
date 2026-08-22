@@ -11,7 +11,7 @@ import yaml
 
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence, SourceResult
-from contestddl.sources import manual, mlh, saikr, summer_camps
+from contestddl.sources import manual, mlh, official_sites, saikr, summer_camps
 from contestddl.utils import (
     canonical_url,
     choose_primary_deadline,
@@ -26,6 +26,7 @@ SCHEMA_VERSION = "1.0"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
     "saikr": saikr.collect,
+    "official_sites": official_sites.collect,
     "mlh": mlh.collect,
     "cs_baoyan": summer_camps.collect,
 }
@@ -68,15 +69,18 @@ def _merge_events(events: list[Event], conflicts: list[dict]) -> list[Event]:
     for event in sorted(events, key=lambda item: item.source.authority, reverse=True):
         key = _dedup_key(event)
         if key not in grouped:
-            event.sources = [event.source]
+            event.sources = event.sources or [event.source]
             grouped[key] = event
             continue
         target = grouped[key]
         target.categories = list(dict.fromkeys([*target.categories, *event.categories]))
         target.tags = list(dict.fromkeys(filter(None, [*target.tags, *event.tags])))
         known_sources = {(item.name, canonical_url(item.url)) for item in target.sources}
-        if (event.source.name, canonical_url(event.source.url)) not in known_sources:
-            target.sources.append(event.source)
+        for evidence in event.sources or [event.source]:
+            evidence_key = (evidence.name, canonical_url(evidence.url))
+            if evidence_key not in known_sources:
+                target.sources.append(evidence)
+                known_sources.add(evidence_key)
         for field_name in MERGE_FIELDS:
             existing = getattr(target, field_name)
             incoming = getattr(event, field_name)
@@ -228,6 +232,7 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
         "sources": [{
             "name": result.name, "ok": result.ok, "records": len(result.events), "url": result.url,
             "error": result.error, "fetched_at": result.fetched_at, "duration_ms": result.duration_ms,
+            "details": result.details,
         } for result in results],
     }
     quality = {

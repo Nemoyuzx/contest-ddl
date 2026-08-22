@@ -26,6 +26,14 @@ def test_merge_prefers_high_authority_and_fills_empty_fields():
     assert conflicts and conflicts[0]["field"] == "competition_start"
 
 
+def test_merge_preserves_multiple_field_evidence_pages():
+    item = make_event(5)
+    second = SourceEvidence("source", "https://example.com/schedule", "test", 5, iso(NOW), ["competition_start"])
+    item.sources = [item.source, second]
+    merged = _merge_events([item], [])[0]
+    assert [source.url for source in merged.sources] == ["https://example.com", "https://example.com/schedule"]
+
+
 def test_validation_rejects_event_without_any_date():
     item = make_event(competition_start=None)
     errors = []

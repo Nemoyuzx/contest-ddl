@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-from contestddl.sources import mlh, saikr, summer_camps
+from contestddl.sources import mlh, official_sites, saikr, summer_camps
 from contestddl.utils import CHINA_TZ
 
 
@@ -53,3 +53,67 @@ def test_mlh_embedded_json_parser():
     assert result.ok
     assert len(result.events) == 1
     assert result.events[0].mode == "online"
+
+
+def test_official_site_extracts_only_labeled_timeline():
+    html = """
+    <main>
+      <p>报名时间：2026年8月1日至2026年9月5日 17:00</p>
+      <p>全国决赛时间：2026年9月20日 08:30至2026年9月22日 18:00</p>
+      <p>发布日期：2026年8月18日</p>
+    </main>
+    """
+    timeline = official_sites._extract_timeline(html, NOW)
+    assert timeline["registration_start"].startswith("2026-08-01T00:00:00")
+    assert timeline["registration_deadline"].startswith("2026-09-05T17:00:00")
+    assert timeline["competition_start"].startswith("2026-09-20T08:30:00")
+    assert timeline["competition_end"].startswith("2026-09-22T18:00:00")
+    assert "2026-08-18" not in " ".join(timeline.values())
+
+
+def test_official_site_ignores_news_dates_and_generic_edit_window():
+    html = """
+    <div>2026-07-31</div><a>全国赛决赛报到须知</a>
+    <p>发布者： 时间：2026-06-24 浏览：</p>
+    <p>更新时间不能超过前述截止时间（即2026年6月30日08:00）</p>
+    """
+    assert official_sites._extract_timeline(html, NOW) == {}
+
+
+def test_official_site_accepts_short_split_table_label():
+    html = "<table><tr><td>报名截止：</td><td>2026年9月5日 17:00</td></tr></table>"
+    timeline = official_sites._extract_timeline(html, NOW)
+    assert timeline["registration_deadline"].startswith("2026-09-05T17:00:00")
+
+
+def test_official_site_does_not_treat_submission_opening_as_deadline():
+    html = """
+    <p>作品提交通道开通时间：2026年8月23日 15:00</p>
+    <p>报名系统将延迟至2026年9月5日（周六）17:00关闭</p>
+    """
+    timeline = official_sites._extract_timeline(html, NOW)
+    assert timeline["registration_deadline"].startswith("2026-09-05T17:00:00")
+    assert "submission_deadline" not in timeline
+
+
+def test_official_catalog_rejects_ctf_and_ambiguous_challenge_cup():
+    ctf = {"title": "信息安全竞赛", "name": "全国大学生信息安全竞赛", "category": "信息安全", "tags": ["CTF"]}
+    challenge = {"title": "挑战杯(科技)", "name": "挑战杯", "category": "创新创业", "tags": []}
+    robot = {"title": "机器人竞赛", "name": "大学生机器人竞赛", "category": "机器人", "tags": []}
+    assert not official_sites._catalog_selected(ctf)
+    assert not official_sites._catalog_selected(challenge)
+    assert official_sites._catalog_selected(robot)
+
+
+def test_official_link_discovery_prefers_current_labeled_notice():
+    html = '<a href="/news/2026-register">2026年大赛报名通知</a><a href="/about">大赛简介</a>'
+    row = {"title": "机器人大赛", "name": "全国大学生机器人大赛"}
+    links = official_sites._candidate_links(html, "https://contest.example/", row, NOW)
+    assert links == [(12, "https://contest.example/news/2026-register")]
+
+
+def test_official_link_discovery_preserves_www_hostname():
+    html = '<a href="https://www.contest.example/deadline">报名截止时间通知</a>'
+    row = {"title": "机器人大赛", "name": "全国大学生机器人大赛"}
+    links = official_sites._candidate_links(html, "http://www.contest.example/", row, NOW)
+    assert links[0][1] == "https://www.contest.example/deadline"

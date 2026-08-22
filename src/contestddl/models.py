@@ -69,3 +69,4 @@ class SourceResult:
     fetched_at: str = ""
     url: str = ""
     duration_ms: int = 0
+    details: dict[str, Any] = field(default_factory=dict)
