@@ -51,6 +51,15 @@ def test_saikr_api_detail_becomes_rich_event():
     assert event.attachments[0]["url"] == "https://files.example/notice.pdf"
 
 
+def test_saikr_event_removes_marketing_title_prefix():
+    row = {
+        "contest_id": 1, "contest_name": "【9月开学领证书】2026年大学生网络信息技术大赛",
+        "contest_url": "vse/example", "regist_end_time": 1789912800, "contest_class_second_id": 6,
+    }
+    event = saikr._event_from_api(row, {}, NOW)
+    assert event.name == "2026年大学生网络信息技术大赛"
+
+
 def test_summer_camp_filters_non_engineering():
     payload = {"camp2026": [
         {"name": "甲大学", "institute": "计算机学院", "description": "", "deadline": "2026-09-01", "website": "https://a.edu.cn", "tags": []},

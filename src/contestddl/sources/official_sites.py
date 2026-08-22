@@ -386,6 +386,10 @@ def collect(fetcher, now=None):
             "accepted_sites": [outcome for outcome in outcomes if outcome["reason"] == "accepted"],
             "failure_samples": [outcome for outcome in outcomes if outcome["reason"] != "accepted"][:12],
             "catalog_deadlines_used": False,
+            "_catalog_entries": [
+                {"id": row.get("id"), "title": row.get("title", ""), "name": row.get("name", "")}
+                for row in catalog
+            ],
         }
         return events, details
 

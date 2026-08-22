@@ -140,6 +140,7 @@ function renderDetails(node, item) {
   const evidenceLinks = evidence.querySelector("div");
   const sources = item.sources?.length ? item.sources : (item.source ? [item.source] : []);
   sources.forEach((source) => appendLink(evidenceLinks, source.name || "来源", source.url));
+  if (item.catalog_listed) appendLink(evidenceLinks, `赛事目录：${item.catalog_name || "已收录"}`, item.catalog_reference_url);
   appendLink(evidenceLinks, "活动页面", item.official_url);
   evidence.querySelector("p").textContent = item.notes || "日期可能变化，提交前请复核来源原文。";
   evidence.hidden = evidenceLinks.children.length === 0 && !item.notes;
@@ -178,6 +179,13 @@ function renderList() {
     const row = node.querySelector(".event-row");
     const link = node.querySelector("h3 a");
     link.textContent = item.name; link.href = httpUrl(item.official_url) || "#";
+    if (item.catalog_listed) {
+      const star = document.createElement("span");
+      star.className = "catalog-star"; star.textContent = "★";
+      star.title = `已收录于指定赛事目录：${item.catalog_name || item.name}`;
+      star.setAttribute("aria-label", "已收录于指定赛事目录");
+      link.append(document.createTextNode(" "), star);
+    }
     node.querySelector(".event-kicker").textContent = `${typeLabels[item.event_type] || item.event_type} / ${(item.region || "global").toUpperCase()}`;
     node.querySelector(".event-meta").textContent = [item.organizer, item.location, item.mode].filter(Boolean).join(" · ") || sourceStatus(item);
     const categories = node.querySelector(".event-categories");

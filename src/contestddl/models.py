@@ -43,6 +43,9 @@ class Event:
     schedule: list[dict[str, str]] = field(default_factory=list)
     attachments: list[dict[str, str]] = field(default_factory=list)
     image_url: str = ""
+    catalog_listed: bool = False
+    catalog_name: str = ""
+    catalog_reference_url: str = ""
     first_seen_at: str = ""
     last_seen_at: str = ""
     stale: bool = False

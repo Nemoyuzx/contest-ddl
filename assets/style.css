@@ -75,6 +75,10 @@ kbd { padding: 3px 7px; color: var(--dim); background: rgba(255,255,255,.035); b
 .select-wrap::after { content: "⌄"; position: absolute; right: 12px; color: var(--mint); pointer-events: none; }
 .check-wrap { display: flex; align-items: center; gap: 9px; padding: 0 14px; color: var(--muted); white-space: nowrap; font-size: 12px; cursor: pointer; }
 .check-wrap input { accent-color: var(--acid); }
+.catalog-legend { margin: -14px 0 26px; color: var(--dim); font: 10px/1.6 var(--font-mono); }
+.catalog-legend span, .catalog-star { color: var(--acid); text-shadow: 0 0 12px rgba(201,255,91,.38); }
+.catalog-legend a { color: var(--mint); border-bottom: 1px dotted rgba(84,230,163,.45); }
+.catalog-star { display: inline-block; margin-left: 2px; font-size: .8em; vertical-align: .08em; }
 .timeline-head, .event-row { display: grid; grid-template-columns: minmax(300px, 2.3fr) minmax(140px, .9fr) minmax(170px, .9fr) minmax(120px, .65fr); gap: 22px; align-items: center; }
 .timeline-head { padding: 0 20px 12px; color: var(--dim); font: 9px var(--font-mono); letter-spacing: .1em; }
 .event-row { min-height: 128px; padding: 24px 20px; border-top: 1px solid var(--line); position: relative; transition: background .2s ease, transform .2s ease; }

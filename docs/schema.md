@@ -4,7 +4,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| `schema_version` | string | 当前为 `1.1` |
+| `schema_version` | string | 当前为 `1.2` |
 | `generated_at` | ISO 8601 | 本轮生成时间，Asia/Shanghai |
 | `source_health` | enum | `healthy` / `degraded` / `failed` |
 | `stats` | object | 总量、活跃量、生命周期和类型统计 |
@@ -28,6 +28,9 @@
 | `schedule` | object[] | 分阶段赛程，含名称、说明和起止时间（来源提供时） |
 | `attachments` | object[] | 赛事通知、章程等公开附件的名称与 URL |
 | `image_url` | URL/string | 来源提供的赛事封面 URL，可为空 |
+| `catalog_listed` | boolean | 名称是否匹配指定的 `college-competition-ddl/competitions.json` 目录 |
+| `catalog_name` | string | 命中的目录规范赛事名称；未命中时为空 |
+| `catalog_reference_url` | URL/string | 标星所依据的目录文件 URL |
 | `status` | enum | `registration_upcoming/open/closed`、`submission_open`、`upcoming`、`ongoing`、`ended`、`unknown` |
 | `confidence` | enum | `high` / `medium` / `low` |
 | `verification_status` | enum | `single_source`、`cross_source`、`maintainer_reviewed` |

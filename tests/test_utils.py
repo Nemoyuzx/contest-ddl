@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from contestddl.models import Event, SourceEvidence
-from contestddl.utils import CHINA_TZ, canonical_url, choose_primary_deadline, compute_status, normalize_title, parse_datetime, stable_id
+from contestddl.utils import CHINA_TZ, canonical_url, choose_primary_deadline, clean_event_title, compute_status, normalize_title, parse_datetime, stable_id
 
 
 def event(**kwargs):
@@ -17,6 +17,11 @@ def test_canonical_url_drops_tracking_and_mobile_alias():
 
 def test_normalize_title_drops_punctuation_and_saikr_suffix():
     assert normalize_title("2026 AI 大赛-大学生竞赛-赛氪竞赛网") == "2026ai大赛"
+
+
+def test_clean_event_title_removes_marketing_badge_only():
+    assert clean_event_title("【今日考试+开学领取证书】2026大学生创新数学竞赛") == "2026大学生创新数学竞赛"
+    assert clean_event_title("【MathorCup】高校数学建模挑战赛") == "【MathorCup】高校数学建模挑战赛"
 
 
 def test_stable_id_is_deterministic():

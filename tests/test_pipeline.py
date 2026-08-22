@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 from contestddl.models import Event, SourceEvidence
 from contestddl.output import build_ics
-from contestddl.pipeline import _is_removed_event, _lifecycle, _merge_events, _validate
+from contestddl.pipeline import _is_removed_event, _lifecycle, _mark_catalog_matches, _merge_events, _validate
 from contestddl.utils import CHINA_TZ, iso
 
 
@@ -55,6 +55,28 @@ def test_lifecycle_does_not_duplicate_same_event_after_id_migration():
     old.id = "legacy-adapter-id"
     items = _lifecycle([current], {old.id: old}, NOW)
     assert [item.id for item in items] == [current.id]
+
+
+def test_lifecycle_does_not_keep_pre_cleanup_title_with_same_url():
+    current = make_event(name="2026大学生数学竞赛")
+    old = make_event(name="【今日考试】2026大学生数学竞赛")
+    old.id = "marketing-title-id"
+    items = _lifecycle([current], {old.id: old}, NOW)
+    assert [item.name for item in items] == [current.name]
+
+
+def test_catalog_star_uses_only_the_named_repository_entries():
+    official = make_event(name="全国大学生数学建模竞赛", event_type="competition")
+    track = make_event(name="全国大学生集成电路创新创业大赛职业技能赛项", event_type="competition")
+    branded_other = make_event(name="天府杯全国大学生数学建模竞赛", event_type="competition")
+    entries = [
+        {"id": 5, "title": "CUMCM", "name": "全国大学生数学建模竞赛"},
+        {"id": 31, "title": "集成电路大赛", "name": "全国大学生集成电路创新创业大赛"},
+    ]
+    _mark_catalog_matches([official, track, branded_other], entries)
+    assert official.catalog_listed and official.catalog_name == "全国大学生数学建模竞赛"
+    assert track.catalog_listed
+    assert not branded_other.catalog_listed
 
 
 def test_ics_contains_deadline_and_url():

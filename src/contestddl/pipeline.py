@@ -22,7 +22,8 @@ from contestddl.utils import (
     parse_datetime,
 )
 
-SCHEMA_VERSION = "1.1"
+SCHEMA_VERSION = "1.2"
+CATALOG_REFERENCE_URL = "https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
     "saikr": saikr.collect,
@@ -43,6 +44,38 @@ DATE_FIELDS = (
     "registration_start", "registration_deadline", "competition_start",
     "competition_end", "submission_deadline",
 )
+
+
+def _catalog_key(value: str) -> str:
+    text = re.sub(r"(?:19|20)\d{2}年?", "", value or "")
+    text = re.sub(r"第[0-9零〇一二三四五六七八九十百两]+届", "", text)
+    text = text.replace("智能汽车", "智能车").replace("挑战赛", "竞赛").replace("大赛", "竞赛")
+    return normalize_title(text)
+
+
+def _mark_catalog_matches(events: list[Event], entries: list[dict]) -> None:
+    aliases = []
+    for entry in entries:
+        for field_name in ("name", "title"):
+            key = _catalog_key(str(entry.get(field_name, "")))
+            if len(key) >= 5:
+                aliases.append((len(key), key, entry))
+    aliases.sort(key=lambda item: item[0], reverse=True)
+    for event in events:
+        if event.event_type != "competition":
+            continue
+        event_key = _catalog_key(event.name)
+        match = next(
+            (entry for _, alias, entry in aliases if event_key == alias or event_key.startswith(alias)),
+            None,
+        )
+        if not match:
+            continue
+        event.catalog_listed = True
+        event.catalog_name = str(match.get("name") or match.get("title") or "")
+        event.catalog_reference_url = CATALOG_REFERENCE_URL
+        if "catalog_listed" not in event.tags:
+            event.tags.append("catalog_listed")
 
 
 def _dedup_key(event: Event) -> str:
@@ -164,6 +197,7 @@ def _load_previous(path: Path) -> dict[str, Event]:
 def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Event]:
     current_ids = set()
     current_keys = {_dedup_key(event) for event in current}
+    current_urls = {canonical_url(event.official_url) for event in current if event.official_url}
     for event in current:
         current_ids.add(event.id)
         old = previous.get(event.id)
@@ -174,7 +208,7 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Ev
     for event_id, old in previous.items():
         # Adapter upgrades can improve the stable ID. Do not preserve the old
         # copy when the same title/year/type is present under its new ID.
-        if event_id in current_ids or _dedup_key(old) in current_keys:
+        if event_id in current_ids or _dedup_key(old) in current_keys or canonical_url(old.official_url) in current_urls:
             continue
         last_seen = parse_datetime(old.last_seen_at or old.first_seen_at) or now
         age = now - last_seen
@@ -203,10 +237,16 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
             result = collector(fetcher, now)
         results.append(result)
 
+    catalog_entries = []
+    for result in results:
+        catalog_entries.extend(result.details.pop("_catalog_entries", []))
+    fresh_events = [event for result in results for event in result.events if not _is_removed_event(event)]
+    _mark_catalog_matches(fresh_events, catalog_entries)
+
     conflicts: list[dict] = []
     validation_errors: list[dict] = []
     fresh = _merge_events(
-        [event for result in results for event in result.events if not _is_removed_event(event)],
+        fresh_events,
         conflicts,
     )
     override_log = _apply_overrides(fresh, root / "data/overrides.yml", now)

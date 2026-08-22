@@ -18,6 +18,12 @@ ENGINEERING_KEYWORDS = (
 )
 
 TRACKING_KEYS = {"from", "spm", "source", "ref", "referrer", "utm_campaign", "utm_content", "utm_medium", "utm_source", "utm_term"}
+MARKETING_TITLE_KEYWORDS = (
+    "今日", "明日", "最后", "倒计时", "截止", "即将", "报名", "考试", "开学",
+    "证书", "领证", "领取", "热门", "福利", "免费", "奖金", "奖品", "收藏",
+    "加分", "获奖", "题目", "题库", "仅剩", "速来", "速报",
+)
+LEADING_BRACKET = re.compile(r"^\s*[【\[](?P<label>[^】\]]{1,50})[】\]]\s*")
 
 
 def now_china() -> datetime:
@@ -78,6 +84,16 @@ def normalize_title(title: str) -> str:
     text = re.sub(r"[-_]?赛氪竞赛网.*$", "", text)
     text = re.sub(r"\b(official|官网|报名入口)\b", "", text)
     return re.sub(r"[\s（）()【】\[\]《》<>「」“”'\"·—_\-，,。.!！:：;；/\\]", "", text)
+
+
+def clean_event_title(title: str) -> str:
+    """Remove leading promotional badges while preserving official bracketed names."""
+    text = clean_text(title)
+    while match := LEADING_BRACKET.match(text):
+        if not any(keyword in match.group("label") for keyword in MARKETING_TITLE_KEYWORDS):
+            break
+        text = text[match.end():].lstrip(" -—_:：")
+    return clean_text(text)
 
 
 def stable_id(name: str, event_type: str, start: str | None = None, source_hint: str = "") -> str:

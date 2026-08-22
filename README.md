@@ -6,6 +6,8 @@
 
 每天自动聚合大学生工科竞赛、黑客松、保研夏令营与预推免截止日期，输出可搜索的静态网站、JSON 和 ICS 日历。重点覆盖电子信息、计算机、通信、网络安全、自动化、机械、人工智能和机器人方向。
 
+网站中的 `★` 表示赛事名称已匹配到指定的 [`college-competition-ddl/competitions.json`](https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json) 条目，仅代表目录收录，不代表官方认证或赛事评级。
+
 - 网站：<https://nemoyuzx.github.io/contest-ddl/>
 - JSON：<https://nemoyuzx.github.io/contest-ddl/data/competitions.json>
 - ICS：<https://nemoyuzx.github.io/contest-ddl/data/competitions.ics>
@@ -17,12 +19,12 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T13:05:52+08:00`，共 352 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T13:14:45+08:00`，共 352 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
 | [2026年第三届大学生高新技术竞赛—数据库实操竞赛](https://new.saikr.com/vse/sjk26) | competition | 2026-08-22T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [【今日考试+开学领取证书】2026大学生“麟创杯”创新数学竞赛](https://new.saikr.com/vse/LCBCXSX) | competition | 2026-08-22T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [2026大学生“麟创杯”创新数学竞赛](https://new.saikr.com/vse/LCBCXSX) | competition | 2026-08-22T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年大学生“麟创杯”数学建模竞赛](https://new.saikr.com/vse/LCBSM) | competition | 2026-08-22T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [中国药科大学 · 人工智能学院（推免预报名）](https://lxy.cpu.edu.cn/b3/7a/c56a242554/page.htm) | summer_camp | 2026-08-22T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [同济大学 · 上海自主智能无人系统科学中心（推免研究生报名）](https://srias.tongji.edu.cn/cb/69/c17827a379753/page.htm) | summer_camp | 2026-08-23T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |

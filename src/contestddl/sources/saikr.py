@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence
 from contestddl.sources.common import guarded
-from contestddl.utils import CHINA_TZ, clean_text, iso, iso_or_none, now_china, parse_datetime, stable_id
+from contestddl.utils import CHINA_TZ, clean_event_title, clean_text, iso, iso_or_none, now_china, parse_datetime, stable_id
 
 API_BASE = "https://apiv4buffer.saikr.com/api/pc/contest"
 LIST_URL = f"{API_BASE}/lists"
@@ -186,7 +186,7 @@ def _is_in_window(row: dict, current: datetime) -> bool:
 
 
 def _selected(row: dict, current: datetime) -> bool:
-    title = clean_text(str(row.get("contest_name") or ""))
+    title = clean_event_title(str(row.get("contest_name") or ""))
     searchable = f"{title} {row.get('organiser') or ''} {row.get('contest_class_second') or ''}"
     return bool(
         title and not _is_promotion(title) and not _is_ctf(title)
@@ -195,7 +195,7 @@ def _selected(row: dict, current: datetime) -> bool:
 
 
 def _event_from_api(row: dict, detail: dict, current: datetime) -> Event:
-    title = clean_text(str(detail.get("contest_name") or row.get("contest_name") or "赛氪赛事"))
+    title = clean_event_title(str(detail.get("contest_name") or row.get("contest_name") or "赛氪赛事"))
     slug = str(row.get("contest_url") or detail.get("old_url") or "").strip("/")
     official_url = f"{PUBLIC_BASE}/{slug}" if slug else f"{PUBLIC_BASE}/contests"
 
