@@ -4,7 +4,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| `schema_version` | string | 当前为 `1.2` |
+| `schema_version` | string | 当前为 `1.3` |
 | `generated_at` | ISO 8601 | 本轮生成时间，Asia/Shanghai |
 | `source_health` | enum | `healthy` / `degraded` / `failed` |
 | `stats` | object | 总量、活跃量、生命周期和类型统计 |
@@ -17,6 +17,7 @@
 | `id` | string | 由规范标题、类型、年份和来源身份生成的稳定 ID |
 | `event_type` | enum | `competition`、`hackathon`、`summer_camp`、`pre_admission` |
 | `categories` | string[] | 学科或活动方向，可多选 |
+| `university_tiers` | string[] | 推免院校标签，按 `985`、`211`、`双一流` 顺序，可同时包含多个 |
 | `official_url` | URL | 首选官方活动页；聚合站记录会带核验提示 |
 | `registration_start` | ISO 8601/null | 报名开始 |
 | `registration_deadline` | ISO 8601/null | 报名截止 |

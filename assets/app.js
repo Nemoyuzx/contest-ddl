@@ -158,7 +158,7 @@ function filterData(reset = true) {
   const windowDays = $("#windowFilter").value;
   const showExpired = $("#expiredToggle").checked;
   state.filtered = state.data.filter((item) => {
-    const haystack = [item.name, item.organizer, item.location, item.description, item.eligibility, item.notes, ...(item.categories || []), ...(item.tags || []), ...sourceNames(item)].join(" ").toLowerCase();
+    const haystack = [item.name, item.organizer, item.location, item.description, item.eligibility, item.notes, ...(item.categories || []), ...(item.tags || []), ...(item.university_tiers || []), ...sourceNames(item)].join(" ").toLowerCase();
     const days = daysUntil(item.primary_deadline);
     return (!query || haystack.includes(query))
       && (type === "all" || item.event_type === type)
@@ -191,6 +191,11 @@ function renderList() {
     const categories = node.querySelector(".event-categories");
     (item.categories || []).slice(0, 3).forEach((category) => {
       const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = category; categories.append(tag);
+    });
+    (item.university_tiers || []).forEach((tier) => {
+      const tag = document.createElement("span");
+      tag.className = `tag tier-tag tier-${tier === "双一流" ? "double-first" : tier}`;
+      tag.textContent = tier; tag.title = `院校标签：${tier}`; categories.append(tag);
     });
     node.querySelector(".deadline strong").textContent = formatDate(item.primary_deadline);
     node.querySelector(".deadline span").textContent = `${primaryLabel(item)} · ${relative(item.primary_deadline)}`;

@@ -22,7 +22,7 @@ from contestddl.utils import (
     parse_datetime,
 )
 
-SCHEMA_VERSION = "1.2"
+SCHEMA_VERSION = "1.3"
 CATALOG_REFERENCE_URL = "https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
@@ -109,6 +109,7 @@ def _merge_events(events: list[Event], conflicts: list[dict]) -> list[Event]:
         target = grouped[key]
         target.categories = list(dict.fromkeys([*target.categories, *event.categories]))
         target.tags = list(dict.fromkeys(filter(None, [*target.tags, *event.tags])))
+        target.university_tiers = list(dict.fromkeys([*target.university_tiers, *event.university_tiers]))
         known_sources = {(item.name, canonical_url(item.url)) for item in target.sources}
         for evidence in event.sources or [event.source]:
             evidence_key = (evidence.name, canonical_url(evidence.url))

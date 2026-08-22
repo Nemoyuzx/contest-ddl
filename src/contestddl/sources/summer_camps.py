@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from contestddl.models import Event, SourceEvidence
 from contestddl.sources.common import guarded
+from contestddl.university_tiers import university_tiers
 from contestddl.utils import engineering_relevant, iso, iso_or_none, now_china, stable_id
 
 URL = "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json"
@@ -26,13 +27,15 @@ def collect(fetcher, now=None):
                 if not deadline:
                     continue
                 title = f"{name} · {institute}"
+                tiers = university_tiers(name)
+                tags = list(dict.fromkeys([*[str(tag) for tag in row.get("tags", [])], *tiers]))
                 source = SourceEvidence("CS-BAOYAN BoardCaster", URL, "trusted_community", 4, iso(current), ["name", "registration_deadline", "official_url"])
                 event = Event(
                     id=stable_id(title, event_type, deadline, key), name=title, event_type=event_type,
                     categories=["保研夏令营" if event_type == "summer_camp" else "预推免"],
                     official_url=row.get("website") or URL, source=source, organizer=name,
                     level="university", region="china", eligibility="undergraduate students",
-                    registration_deadline=deadline, tags=[str(tag) for tag in row.get("tags", [])],
+                    registration_deadline=deadline, tags=tags, university_tiers=tiers,
                     notes="" if description in {"_No response_", "No response"} else description[:500],
                 )
                 events.append(event)

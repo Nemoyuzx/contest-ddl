@@ -62,12 +62,14 @@ def test_saikr_event_removes_marketing_title_prefix():
 
 def test_summer_camp_filters_non_engineering():
     payload = {"camp2026": [
-        {"name": "甲大学", "institute": "计算机学院", "description": "", "deadline": "2026-09-01", "website": "https://a.edu.cn", "tags": []},
+        {"name": "清华大学", "institute": "计算机学院", "description": "", "deadline": "2026-09-01", "website": "https://a.edu.cn", "tags": []},
         {"name": "乙大学", "institute": "历史学院", "description": "古代史", "deadline": "2026-09-02", "website": "https://b.edu.cn", "tags": []},
     ]}
     result = summer_camps.collect(FakeFetcher(payload), NOW)
     assert result.ok
-    assert [item.name for item in result.events] == ["甲大学 · 计算机学院"]
+    assert [item.name for item in result.events] == ["清华大学 · 计算机学院"]
+    assert result.events[0].university_tiers == ["985", "211", "双一流"]
+    assert result.events[0].tags == ["985", "211", "双一流"]
 
 
 def test_mlh_embedded_json_parser():

@@ -8,6 +8,8 @@
 
 网站中的 `★` 表示赛事名称已匹配到指定的 [`college-competition-ddl/competitions.json`](https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json) 条目，仅代表目录收录，不代表官方认证或赛事评级。
 
+推免记录会显示结构化的 `985`、`211`、`双一流` 院校标签；同一学校可同时显示多个标签，名单来源和校区别名规则见[数据源文档](docs/sources.md)。
+
 - 网站：<https://nemoyuzx.github.io/contest-ddl/>
 - JSON：<https://nemoyuzx.github.io/contest-ddl/data/competitions.json>
 - ICS：<https://nemoyuzx.github.io/contest-ddl/data/competitions.ics>
@@ -19,7 +21,7 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T13:16:54+08:00`，共 352 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-22T14:06:53+08:00`，共 352 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
@@ -88,6 +90,7 @@ python -m contestddl update --source saikr --source mlh
 - `submission_deadline`：作品或材料提交截止
 - `primary_deadline`：网站排序使用的最近关键日期
 - `description` / `schedule` / `attachments`：来源提供的具体介绍、分阶段赛程和公开附件
+- `university_tiers`：推免院校的 `985` / `211` / `双一流` 标签，可多选
 - `source` / `sources`：当前字段来源和全部证据
 - `stale` / `archived`：数据生命周期标记
 

@@ -38,6 +38,7 @@ class Event:
     confidence: str = "medium"
     verification_status: str = "single_source"
     tags: list[str] = field(default_factory=list)
+    university_tiers: list[str] = field(default_factory=list)
     notes: str = ""
     description: str = ""
     schedule: list[dict[str, str]] = field(default_factory=list)
