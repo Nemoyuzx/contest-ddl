@@ -21,14 +21,11 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-22T14:11:43+08:00`，共 352 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-23T09:58:33+08:00`，共 352 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年第三届大学生高新技术竞赛—数据库实操竞赛](https://new.saikr.com/vse/sjk26) | competition | 2026-08-22T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [2026大学生“麟创杯”创新数学竞赛](https://new.saikr.com/vse/LCBCXSX) | competition | 2026-08-22T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [2026年大学生“麟创杯”数学建模竞赛](https://new.saikr.com/vse/LCBSM) | competition | 2026-08-22T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [中国药科大学 · 人工智能学院（推免预报名）](https://lxy.cpu.edu.cn/b3/7a/c56a242554/page.htm) | summer_camp | 2026-08-22T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [2026年大学生“麟创杯”数学建模竞赛](https://new.saikr.com/vse/LCBSM) | competition | 2026-08-23T17:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [同济大学 · 上海自主智能无人系统科学中心（推免研究生报名）](https://srias.tongji.edu.cn/cb/69/c17827a379753/page.htm) | summer_camp | 2026-08-23T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [2026年第三届大学生高新技术竞赛——嵌入式创新挑战赛](https://new.saikr.com/vse/Embedded2026) | competition | 2026-08-23T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年第六届天府杯全国大学生数学建模竞赛](https://new.saikr.com/vse/TFB2026) | competition | 2026-08-23T22:00:00+08:00 | ongoing | 赛氪公开前端 API |
@@ -37,6 +34,9 @@
 | [2026年第四届大学生信息系统创新大赛--WEB前端微信小程序开发巅峰赛](https://new.saikr.com/vse/WEB202601) | competition | 2026-08-23T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 | [2026第19届全国三维数字化创新设计大赛](https://new.saikr.com/vse/58026) | competition | 2026-08-23T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [吉林大学 · 通信工程学院（校园学术活动开放日）](https://dce.jlu.edu.cn/info/1032/11402.htm) | summer_camp | 2026-08-24T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛](https://new.saikr.com/vse/Combined202601) | competition | 2026-08-25T00:00:00+08:00 | upcoming | 赛氪公开前端 API |
+| [南开大学 · 人工智能学院（推免预报名）](https://ai.nankai.edu.cn/info/1024/6632.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [同济大学 · 计算机科学与技术学院（推免研究生报名）](https://cs.tongji.edu.cn/info/1022/4119.htm) | summer_camp | 2026-08-25T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
