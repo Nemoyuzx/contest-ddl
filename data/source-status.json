@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T09:58:33+08:00",
+  "generated_at": "2026-08-24T09:56:36+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,18 +7,18 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-23T09:58:33+08:00",
+      "fetched_at": "2026-08-24T09:56:36+08:00",
       "duration_ms": 0,
       "details": {}
     },
     {
       "name": "saikr",
       "ok": true,
-      "records": 70,
+      "records": 69,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-23T09:58:52+08:00",
-      "duration_ms": 19420,
+      "fetched_at": "2026-08-24T09:56:52+08:00",
+      "duration_ms": 15836,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -35,8 +35,8 @@
           "人工智能": 52
         },
         "unique_list_records": 427,
-        "engineering_current_selected": 70,
-        "detail_success": 65,
+        "engineering_current_selected": 69,
+        "detail_success": 64,
         "detail_failures": [
           {
             "contest": "第十届全国大学生集成电路创新创业大赛（集创赛-芯创成果方向）",
@@ -68,8 +68,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-23T09:59:13+08:00",
-      "duration_ms": 20189,
+      "fetched_at": "2026-08-24T09:57:18+08:00",
+      "duration_ms": 26529,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -170,8 +170,8 @@
       "records": 65,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-23T09:59:16+08:00",
-      "duration_ms": 3455,
+      "fetched_at": "2026-08-24T09:57:23+08:00",
+      "duration_ms": 4296,
       "details": {}
     },
     {
@@ -180,8 +180,8 @@
       "records": 216,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-23T09:59:16+08:00",
-      "duration_ms": 35,
+      "fetched_at": "2026-08-24T09:57:23+08:00",
+      "duration_ms": 187,
       "details": {}
     }
   ]
