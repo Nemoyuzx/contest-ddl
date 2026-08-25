@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T09:56:36+08:00",
+  "generated_at": "2026-08-25T09:50:59+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,18 +7,18 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-24T09:56:36+08:00",
+      "fetched_at": "2026-08-25T09:50:59+08:00",
       "duration_ms": 0,
       "details": {}
     },
     {
       "name": "saikr",
       "ok": true,
-      "records": 69,
+      "records": 72,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-24T09:56:52+08:00",
-      "duration_ms": 15836,
+      "fetched_at": "2026-08-25T09:51:19+08:00",
+      "duration_ms": 19820,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -32,11 +32,11 @@
           "计算机与信息技术": 100,
           "机械工程": 100,
           "大数据": 100,
-          "人工智能": 52
+          "人工智能": 53
         },
-        "unique_list_records": 427,
-        "engineering_current_selected": 69,
-        "detail_success": 64,
+        "unique_list_records": 425,
+        "engineering_current_selected": 72,
+        "detail_success": 67,
         "detail_failures": [
           {
             "contest": "第十届全国大学生集成电路创新创业大赛（集创赛-芯创成果方向）",
@@ -51,11 +51,11 @@
             "error": "ValueError: unexpected Saikr API response"
           },
           {
-            "contest": "2026年第五届“华秦杯”网络安全创新大赛",
+            "contest": "2026年全国大学生统计科学与算法编程挑战赛——数据统计赛项",
             "error": "ValueError: unexpected Saikr API response"
           },
           {
-            "contest": "2026年全国大学生统计科学与算法编程挑战赛——数据统计赛项",
+            "contest": "2026年第五届“华秦杯”网络安全创新大赛",
             "error": "ValueError: unexpected Saikr API response"
           }
         ],
@@ -68,8 +68,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-24T09:57:18+08:00",
-      "duration_ms": 26529,
+      "fetched_at": "2026-08-25T09:51:45+08:00",
+      "duration_ms": 26107,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -170,18 +170,18 @@
       "records": 65,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-24T09:57:23+08:00",
-      "duration_ms": 4296,
+      "fetched_at": "2026-08-25T09:51:53+08:00",
+      "duration_ms": 7922,
       "details": {}
     },
     {
       "name": "cs_baoyan",
       "ok": true,
-      "records": 216,
+      "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-24T09:57:23+08:00",
-      "duration_ms": 187,
+      "fetched_at": "2026-08-25T09:51:53+08:00",
+      "duration_ms": 119,
       "details": {}
     }
   ]
