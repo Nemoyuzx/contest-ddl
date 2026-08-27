@@ -21,12 +21,12 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-26T09:57:11+08:00`，共 381 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-27T17:43:21+08:00`，共 385 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [中山大学 · 网络空间安全学院（推免研究生报名）](https://scst.sysu.edu.cn/article/502) | summer_camp | 2026-08-26T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [Midnight Virtual Hackathon [August]](https://events.mlh.com/events/14510-midnight-hackathon-august) | hackathon | 2026-08-28T09:11:11+08:00 | upcoming | Major League Hacking |
+| [2024年CRH青少年信息学等级考试](https://new.saikr.com/vse/CRH2024) | competition | 2026-08-28T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [中国科学院 · 自动化研究所（第二批推免面试）](http://www.ia.cas.cn/yjsjy/zs/sszs/202608/t20260820_8262847.html) | summer_camp | 2026-08-28T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [2026年第二届大学生网络信息技术大赛](https://new.saikr.com/vse/NEAI202602) | competition | 2026-08-29T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [PEC HACKS 4.0](https://pechacks.org/) | hackathon | 2026-08-29T18:30:00+08:00 | upcoming | Major League Hacking |
