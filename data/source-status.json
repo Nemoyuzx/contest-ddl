@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T17:43:21+08:00",
+  "generated_at": "2026-08-28T19:20:10+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-27T17:43:21+08:00",
+      "fetched_at": "2026-08-28T19:20:10+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 72,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-27T17:43:41+08:00",
-      "duration_ms": 19753,
+      "fetched_at": "2026-08-28T19:20:30+08:00",
+      "duration_ms": 20406,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -34,7 +34,7 @@
           "大数据": 100,
           "人工智能": 56
         },
-        "unique_list_records": 424,
+        "unique_list_records": 425,
         "engineering_current_selected": 72,
         "detail_success": 67,
         "detail_failures": [
@@ -51,7 +51,7 @@
             "error": "ValueError: unexpected Saikr API response"
           },
           {
-            "contest": "2026年全国大学生统计科学与算法编程挑战赛——数据统计赛项",
+            "contest": "2026年大学生统计科学与算法编程挑战赛——数据统计赛项",
             "error": "ValueError: unexpected Saikr API response"
           },
           {
@@ -68,16 +68,16 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-27T17:45:43+08:00",
-      "duration_ms": 122303,
+      "fetched_at": "2026-08-28T19:21:01+08:00",
+      "duration_ms": 30685,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
         "accepted": 1,
         "outcomes": {
           "accepted": 1,
-          "fetch_failed": 8,
-          "no_labeled_current_timeline": 24
+          "fetch_failed": 7,
+          "no_labeled_current_timeline": 25
         },
         "accepted_sites": [
           {
@@ -107,9 +107,8 @@
           },
           {
             "title": "NUEDC",
-            "reason": "fetch_failed",
-            "url": "http://www.nuedcchina.com/",
-            "error": "HTTPError: 502 Server Error: Bad Gateway for url: http://www.nuedcchina.com/"
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.nuedcchina.com/"
           },
           {
             "title": "CMIDC",
@@ -167,11 +166,11 @@
     {
       "name": "mlh",
       "ok": true,
-      "records": 65,
+      "records": 66,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-27T17:45:46+08:00",
-      "duration_ms": 2928,
+      "fetched_at": "2026-08-28T19:21:04+08:00",
+      "duration_ms": 2504,
       "details": {}
     },
     {
@@ -180,8 +179,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-27T17:45:46+08:00",
-      "duration_ms": 29,
+      "fetched_at": "2026-08-28T19:21:04+08:00",
+      "duration_ms": 151,
       "details": {}
     }
   ]
