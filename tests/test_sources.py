@@ -1,7 +1,9 @@
 import json
 from datetime import datetime
 
-from contestddl.sources import mlh, official_sites, saikr, summer_camps
+import yaml
+
+from contestddl.sources import ccfddl, mlh, official_sites, saikr, summer_camps
 from contestddl.utils import CHINA_TZ
 
 
@@ -86,6 +88,139 @@ def test_mlh_embedded_json_parser():
     assert result.events[0].mode == "online"
 
 
+def test_ccfddl_collects_conference_deadlines_and_skips_bad_edition():
+    payload = [{
+        "title": "ICLR",
+        "description": "International Conference on Learning Representations",
+        "sub": "AI",
+        "rank": {"ccf": "A", "core": "A*", "thcpl": "A"},
+        "dblp": "iclr",
+        "confs": [
+            {
+                "year": 2027,
+                "id": "iclr27",
+                "link": "https://iclr.cc/Conferences/2027",
+                "timeline": [{
+                    "abstract_deadline": "2026-08-30 23:59:59",
+                    "deadline": "2026-09-01 23:59:59",
+                }],
+                "timezone": "AoE",
+                "date": "April 2027",
+                "place": "Vienna, Austria",
+            },
+            {
+                "year": 2028,
+                "id": "iclr28",
+                "link": "https://iclr.cc/Conferences/2028",
+                "timeline": [{"deadline": "2027-09-01 23:59:59"}],
+                "timezone": "Mars/Colony",
+                "date": "TBD",
+                "place": "TBD",
+            },
+        ],
+    }]
+    result = ccfddl.collect(FakeFetcher(html=yaml.safe_dump(payload)), NOW)
+    assert result.ok
+    assert len(result.events) == 1
+    event = result.events[0]
+    assert event.name == "ICLR 2027"
+    assert event.event_type == "conference"
+    assert event.abstract_deadline == "2026-08-31T19:59:59+08:00"
+    assert event.submission_deadline == "2026-09-02T19:59:59+08:00"
+    assert event.categories == ["人工智能"]
+    assert event.level == "CCF A / CORE A* / TH-CPL A"
+    assert event.source.authority == 4
+    assert [stage["name"] for stage in event.schedule] == ["摘要截止", "论文截止"]
+    assert result.details["invalid_entries"] == 1
+
+
+def test_ccfddl_pt_deadline_uses_daylight_saving_time():
+    parsed = ccfddl._parse_deadline("2026-10-02 17:00:00", "PT")
+    assert parsed.isoformat() == "2026-10-03T08:00:00+08:00"
+
+
+def test_ccfddl_keeps_abstract_and_paper_deadline_in_the_same_round():
+    series = {
+        "title": "VLDB", "description": "Very Large Data Bases", "sub": "DB",
+        "rank": {"ccf": "A"},
+    }
+    edition = {
+        "year": 2027,
+        "id": "vldb27",
+        "link": "https://www.vldb.org/2027/",
+        "timeline": [
+            {"abstract_deadline": "2026-08-20 17:00:00", "deadline": "2026-08-23 17:00:00"},
+            {"abstract_deadline": "2026-09-20 17:00:00", "deadline": "2026-09-23 17:00:00"},
+        ],
+        "timezone": "PT",
+        "date": "August 2027",
+        "place": "Athens, Greece",
+    }
+    event = ccfddl._event_from_entry(series, edition, NOW)
+    assert event.abstract_deadline == "2026-08-21T08:00:00+08:00"
+    assert event.submission_deadline == "2026-08-24T08:00:00+08:00"
+
+
+def test_ccfddl_keeps_tracks_that_share_a_deadline():
+    series = {
+        "title": "ADMA", "description": "Advanced Data Mining", "sub": "DB",
+        "rank": {"ccf": "C"},
+    }
+    edition = {
+        "year": 2026,
+        "id": "adma26",
+        "link": "https://adma2026.github.io/",
+        "timeline": [
+            {"deadline": "2026-09-12 23:59:59", "comment": "Poster Paper"},
+            {"deadline": "2026-09-12 23:59:59", "comment": "Encore Paper"},
+        ],
+        "timezone": "AoE",
+        "date": "October 2026",
+        "place": "Hong Kong, China",
+    }
+    event = ccfddl._event_from_entry(series, edition, NOW)
+    assert [stage["name"] for stage in event.schedule] == [
+        "Poster Paper · 论文截止", "Encore Paper · 论文截止",
+    ]
+    assert [stage["id"] for stage in event.schedule] == [
+        "round-1-deadline", "round-2-deadline",
+    ]
+
+
+def test_ccfddl_disambiguates_colliding_acronyms_and_upstream_ids():
+    shared_edition = {
+        "year": 2027,
+        "id": "fse27",
+        "timeline": [{"deadline": "2026-09-12 23:59:59"}],
+        "timezone": "AoE",
+        "date": "2027",
+        "place": "TBD",
+    }
+    payload = [
+        {
+            "title": "FSE", "description": "Fast Software Encryption", "sub": "SC",
+            "rank": {"ccf": "B"}, "dblp": "fse",
+            "confs": [{**shared_edition, "link": "https://fse.iacr.org/2027/"}],
+        },
+        {
+            "title": "FSE", "description": "Foundations of Software Engineering", "sub": "SE",
+            "rank": {"ccf": "A"}, "dblp": "sigsoft",
+            "confs": [{**shared_edition, "link": "https://conf.researchr.org/home/fse-2027"}],
+        },
+    ]
+    result = ccfddl.collect(FakeFetcher(html=yaml.safe_dump(payload)), NOW)
+    assert result.ok
+    assert [event.name for event in result.events] == [
+        "FSE 2027 · Fast Software Encryption",
+        "FSE 2027 · Foundations of Software Engineering",
+    ]
+    assert len({event.id for event in result.events}) == 2
+    original_id = result.events[0].id
+    payload[0]["description"] = "Fast Software Encryption Conference"
+    changed = ccfddl.collect(FakeFetcher(html=yaml.safe_dump(payload)), NOW)
+    assert changed.events[0].id == original_id
+
+
 def test_official_site_extracts_only_labeled_timeline():
     html = """
     <main>
@@ -156,3 +291,16 @@ def test_official_link_discovery_preserves_www_hostname():
     row = {"title": "机器人大赛", "name": "全国大学生机器人大赛"}
     links = official_sites._candidate_links(html, "http://www.contest.example/", row, NOW)
     assert links[0][1] == "https://www.contest.example/deadline"
+
+
+def test_official_host_resolution_accepts_codex_ipv4_and_ipv6_proxy(monkeypatch):
+    addresses = [
+        (None, None, None, None, ("198.18.1.79", 443)),
+        (None, None, None, None, ("fdfe:dcba:9876::14f", 443, 0, 0)),
+    ]
+    monkeypatch.setattr(official_sites.socket, "getaddrinfo", lambda *args, **kwargs: addresses)
+    official_sites._host_resolves_public.cache_clear()
+    assert official_sites._host_resolves_public("conference.example", 443)
+    assert not official_sites._safe_public_url("http://198.18.1.79/")
+    assert not official_sites._safe_public_url("http://[fdfe:dcba:9876::14f]/")
+    official_sites._host_resolves_public.cache_clear()

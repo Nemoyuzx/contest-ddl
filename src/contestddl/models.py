@@ -32,6 +32,7 @@ class Event:
     registration_deadline: str | None = None
     competition_start: str | None = None
     competition_end: str | None = None
+    abstract_deadline: str | None = None
     submission_deadline: str | None = None
     primary_deadline: str | None = None
     status: str = "unknown"

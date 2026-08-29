@@ -1,12 +1,13 @@
 const state = { data: [], filtered: [], visible: 30, now: new Date() };
 const $ = (selector) => document.querySelector(selector);
-const typeLabels = { competition: "竞赛", hackathon: "黑客松", summer_camp: "夏令营", pre_admission: "预推免" };
+const typeLabels = { competition: "竞赛", conference: "论文会议", journal_special_issue: "期刊专题", hackathon: "黑客松", summer_camp: "夏令营", pre_admission: "预推免" };
 const statusLabels = {
   registration_open: "报名中", registration_upcoming: "即将报名", registration_closed: "报名已截止",
-  submission_open: "提交中", upcoming: "即将开始", ongoing: "进行中", ended: "已结束", unknown: "待核验"
+  submission_upcoming: "即将投稿/提交", submission_open: "投稿/提交中", submission_closed: "投稿/提交已截止",
+  upcoming: "即将开始", ongoing: "进行中", ended: "已结束", unknown: "待核验"
 };
 const timelineLabels = {
-  registration_start: "报名开始", registration_deadline: "报名截止", submission_deadline: "提交截止",
+  registration_start: "报名开始", registration_deadline: "报名截止", abstract_deadline: "摘要截止", submission_deadline: "提交截止",
   competition_start: "比赛开始", competition_end: "比赛结束"
 };
 
@@ -90,7 +91,7 @@ function primaryLabel(item) {
   }
   for (const stage of (item.schedule || [])) {
     if (stage.start === item.primary_deadline) return `${stage.name || "赛程"}开始`;
-    if (stage.end === item.primary_deadline) return `${stage.name || "赛程"}结束`;
+    if (stage.end === item.primary_deadline) return /截止/.test(stage.name || "") ? stage.name : `${stage.name || "赛程"}结束`;
   }
   return "最近节点";
 }
@@ -132,7 +133,7 @@ function renderDetails(node, item) {
 
   const attachments = node.querySelector(".attachments-block");
   const attachmentList = attachments.querySelector("div");
-  (item.attachments || []).forEach((attachment) => appendLink(attachmentList, attachment.name || "赛事附件", attachment.url));
+  (item.attachments || []).forEach((attachment) => appendLink(attachmentList, attachment.name || "活动附件", attachment.url));
   attachments.hidden = attachmentList.children.length === 0;
   if (!attachments.hidden) hasDetails = true;
 
@@ -158,7 +159,7 @@ function filterData(reset = true) {
   const windowDays = $("#windowFilter").value;
   const showExpired = $("#expiredToggle").checked;
   state.filtered = state.data.filter((item) => {
-    const haystack = [item.name, item.organizer, item.location, item.description, item.eligibility, item.notes, ...(item.categories || []), ...(item.tags || []), ...(item.university_tiers || []), ...sourceNames(item)].join(" ").toLowerCase();
+    const haystack = [item.name, item.organizer, item.level, item.location, item.description, item.eligibility, item.notes, ...(item.categories || []), ...(item.tags || []), ...(item.university_tiers || []), ...sourceNames(item)].join(" ").toLowerCase();
     const days = daysUntil(item.primary_deadline);
     return (!query || haystack.includes(query))
       && (type === "all" || item.event_type === type)
@@ -187,7 +188,7 @@ function renderList() {
       link.append(document.createTextNode(" "), star);
     }
     node.querySelector(".event-kicker").textContent = `${typeLabels[item.event_type] || item.event_type} / ${(item.region || "global").toUpperCase()}`;
-    node.querySelector(".event-meta").textContent = [item.organizer, item.location, item.mode].filter(Boolean).join(" · ") || sourceStatus(item);
+    node.querySelector(".event-meta").textContent = [item.organizer, item.level, item.location, item.mode].filter(Boolean).join(" · ") || sourceStatus(item);
     const categories = node.querySelector(".event-categories");
     (item.categories || []).slice(0, 3).forEach((category) => {
       const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = category; categories.append(tag);
@@ -202,7 +203,7 @@ function renderList() {
     const pill = node.querySelector(".status-pill");
     const days = daysUntil(item.primary_deadline);
     pill.textContent = statusLabels[item.status] || item.status;
-    if (["registration_open", "submission_open", "upcoming", "ongoing"].includes(item.status)) pill.classList.add("open");
+    if (["registration_open", "submission_upcoming", "submission_open", "upcoming", "ongoing"].includes(item.status)) pill.classList.add("open");
     if (days !== null && days >= 0 && days <= 3) pill.classList.add("urgent");
     node.querySelector(".event-state small").textContent = sourceStatus(item);
     renderDetails(node, item);

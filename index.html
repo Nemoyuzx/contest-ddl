@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="大学生工科竞赛、黑客松、保研夏令营与预推免 DDL 聚合日历，每日自动更新。">
+  <meta name="description" content="工科竞赛、论文会议、黑客松、保研夏令营与预推免 DDL 聚合日历，每日自动更新。">
   <meta name="theme-color" content="#071b16">
   <title>Contest DDL — 工科生的截止日期雷达</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
@@ -28,7 +28,7 @@
     <section class="hero">
       <div class="eyebrow"><span class="live-dot"></span><span id="healthText">正在连接数据源</span></div>
       <h1>别让好机会，<br><em>死在截止日期。</em></h1>
-      <p>面向电子信息、计算机、通信、网安、自动化、机械、AI 与机器人的竞赛、黑客松、夏令营 DDL 雷达。</p>
+      <p>面向电子信息、计算机、通信、网安、自动化、机械、AI 与机器人的竞赛、论文会议、黑客松与升学 DDL 雷达。</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#events">查看最近 DDL <span>↓</span></a>
         <a class="button button-ghost" href="./data/competitions.ics">＋ 添加到日历</a>
@@ -55,7 +55,7 @@
       <div class="controls" role="search">
         <label class="search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" placeholder="搜索赛事、学校、方向…" autocomplete="off">
+          <input id="searchInput" type="search" placeholder="搜索赛事、会议、学校、方向…" autocomplete="off">
           <kbd>/</kbd>
         </label>
         <label class="select-wrap"><span>类型</span><select id="typeFilter"><option value="all">全部类型</option></select></label>
@@ -64,7 +64,7 @@
         <label class="select-wrap"><span>期限</span><select id="windowFilter"><option value="all">全部时间</option><option value="7">7 天内</option><option value="30">30 天内</option><option value="90">90 天内</option></select></label>
         <label class="check-wrap"><input id="expiredToggle" type="checkbox"><span>显示已结束</span></label>
       </div>
-      <p class="catalog-legend"><span>★</span> 表示赛事名称已匹配到 <a href="https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json" target="_blank" rel="noreferrer">college-competition-ddl 目录</a>，仅代表目录收录。推免院校的 985 / 211 / 双一流标签可叠加显示。</p>
+      <p class="catalog-legend"><span>★</span> 表示赛事名称已匹配到 <a href="https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json" target="_blank" rel="noreferrer">college-competition-ddl 目录</a>，仅代表目录收录。论文会议保留 CCF / CORE / TH-CPL 标签；推免院校的 985 / 211 / 双一流标签可叠加显示。</p>
 
       <div class="timeline-head" aria-hidden="true">
         <span>EVENT / SOURCE</span><span>TRACK</span><span>DEADLINE</span><span>STATUS</span>
@@ -81,7 +81,7 @@
         <div><span class="section-index">02 / DATA TRUST</span><h2>每个日期，都留下来路</h2></div>
       </div>
       <div class="trust-grid">
-        <article><span>01</span><h3>发现不等于确认</h3><p>聚合站只用于发现赛事；官方 API 与主办方页面拥有更高字段优先级。</p></article>
+        <article><span>01</span><h3>发现不等于确认</h3><p>社区或聚合数据用于发现机会；官方 API、会议官网与主办方页面拥有更高字段优先级。</p></article>
         <article><span>02</span><h3>失败不清空历史</h3><p>某个来源暂时不可用时保留旧记录，7 天标为陈旧，30 天归档但不物理删除。</p></article>
         <article><span>03</span><h3>冲突公开可查</h3><p>不同来源日期冲突时保留来源证据，并写入机器可读的质量审计报告。</p></article>
       </div>
@@ -107,10 +107,10 @@
       <details class="event-details" hidden>
         <summary>查看具体信息 <span>＋</span></summary>
         <div class="detail-grid">
-          <section class="description-block" hidden><h4>赛事介绍</h4><p></p></section>
-          <section class="eligibility-block" hidden><h4>参赛对象</h4><p></p></section>
+          <section class="description-block" hidden><h4>活动介绍</h4><p></p></section>
+          <section class="eligibility-block" hidden><h4>适用对象</h4><p></p></section>
           <section class="timeline-block" hidden><h4>关键时间</h4><dl></dl></section>
-          <section class="schedule-block" hidden><h4>分阶段赛程</h4><div></div></section>
+          <section class="schedule-block" hidden><h4>关键阶段</h4><div></div></section>
           <section class="attachments-block" hidden><h4>附件</h4><div></div></section>
           <section class="evidence-block" hidden><h4>数据来源</h4><div></div><p></p></section>
         </div>

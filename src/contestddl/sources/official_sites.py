@@ -35,7 +35,10 @@ DATE_TOKEN = re.compile(
     r"(?:\s*[（(][^）)]{1,8}[）)])?"
     r"(?:\s*(?:上午|下午|晚上|中午)?\s*\d{1,2}\s*(?:[:：时点])\s*\d{0,2}\s*分?)?"
 )
-TRANSPARENT_PROXY_NET = ipaddress.ip_network("198.18.0.0/15")
+TRANSPARENT_PROXY_NETS = (
+    ipaddress.ip_network("198.18.0.0/15"),
+    ipaddress.ip_network("fdfe:dcba:9876::/48"),
+)
 PUBLICATION_LABEL = re.compile(r"发布者|发布时间|发布日期|更新日期|更新时间|浏览量")
 REGISTRATION_LABEL = re.compile(
     r"(?:报名|注册|申报|参赛申请).{0,12}(?:开始|起止|截止|截至|时间|日期|开放|结束|延迟|延长|关闭)"
@@ -86,11 +89,12 @@ def _safe_public_url(url: str) -> bool:
 def _host_resolves_public(host: str, port: int) -> bool:
     try:
         addresses = {item[4][0] for item in socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)}
-        # Codex desktop routes external DNS through RFC 2544 benchmark addresses.
-        # Literal 198.18/15 URLs remain blocked by _safe_public_url; only resolved
-        # hostnames may use this transparent-proxy range during local verification.
+        # Codex desktop routes external DNS through transparent IPv4/IPv6 proxy
+        # ranges. Literal proxy URLs remain blocked by _safe_public_url; only
+        # resolved hostnames may use these ranges during local verification.
         return bool(addresses) and all(
-            (parsed := ipaddress.ip_address(address)).is_global or parsed in TRANSPARENT_PROXY_NET
+            (parsed := ipaddress.ip_address(address)).is_global
+            or any(parsed in network for network in TRANSPARENT_PROXY_NETS)
             for address in addresses
         )
     except (OSError, ValueError):

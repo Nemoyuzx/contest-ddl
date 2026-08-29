@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T15:01:33+08:00",
+  "generated_at": "2026-08-29T20:12:55+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-29T15:01:33+08:00",
+      "fetched_at": "2026-08-29T20:12:55+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 72,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-29T15:01:51+08:00",
-      "duration_ms": 18325,
+      "fetched_at": "2026-08-29T20:13:01+08:00",
+      "duration_ms": 6076,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -65,18 +65,18 @@
     {
       "name": "official_sites",
       "ok": true,
-      "records": 1,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-29T15:02:14+08:00",
-      "duration_ms": 22245,
+      "fetched_at": "2026-08-29T20:13:12+08:00",
+      "duration_ms": 10938,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
-        "accepted": 1,
+        "accepted": 2,
         "outcomes": {
-          "accepted": 1,
-          "fetch_failed": 7,
+          "accepted": 2,
+          "fetch_failed": 6,
           "no_labeled_current_timeline": 25
         },
         "accepted_sites": [
@@ -89,6 +89,19 @@
             ],
             "field_urls": {
               "http://www.mcm.edu.cn/": [
+                "competition_start"
+              ]
+            }
+          },
+          {
+            "title": "中国软件杯",
+            "reason": "accepted",
+            "url": "https://www.cnsoftbei.com/content-1-1357-1.html",
+            "fields": [
+              "competition_start"
+            ],
+            "field_urls": {
+              "https://www.cnsoftbei.com/content-1-1357-1.html": [
                 "competition_start"
               ]
             }
@@ -114,7 +127,7 @@
             "title": "CMIDC",
             "reason": "fetch_failed",
             "url": "http://umic.ckcest.cn/",
-            "error": "ValueError: unsafe or unresolvable URL: http://umic.ckcest.cn/"
+            "error": "HTTPError: 502 Server Error: Bad Gateway for url: http://umic.ckcest.cn/"
           },
           {
             "title": "智能车竞赛",
@@ -169,8 +182,8 @@
       "records": 66,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-29T15:02:17+08:00",
-      "duration_ms": 3180,
+      "fetched_at": "2026-08-29T20:13:17+08:00",
+      "duration_ms": 4874,
       "details": {}
     },
     {
@@ -179,9 +192,29 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-29T15:02:17+08:00",
-      "duration_ms": 202,
+      "fetched_at": "2026-08-29T20:13:17+08:00",
+      "duration_ms": 398,
       "details": {}
+    },
+    {
+      "name": "ccfddl",
+      "ok": true,
+      "records": 66,
+      "url": "https://ccfddl.com/conference/allconf.yml",
+      "error": "",
+      "fetched_at": "2026-08-29T20:13:19+08:00",
+      "duration_ms": 1274,
+      "details": {
+        "project": "https://github.com/ccfddl/ccf-deadlines",
+        "dataset_series": 353,
+        "dataset_editions": 1165,
+        "recent_or_upcoming_editions": 66,
+        "invalid_entries": 0,
+        "window": {
+          "recent_grace_days": 7,
+          "lookahead_days": 500
+        }
+      }
     }
   ]
 }

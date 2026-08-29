@@ -55,6 +55,27 @@ def test_primary_deadline_keeps_future_competition_visible_after_registration_cl
     assert choose_primary_deadline(item, now) == item.competition_start
 
 
+def test_primary_deadline_prefers_conference_abstract_before_paper():
+    now = datetime(2026, 8, 22, 12, tzinfo=CHINA_TZ)
+    item = event(
+        event_type="conference",
+        abstract_deadline="2026-08-31T19:59:59+08:00",
+        submission_deadline="2026-09-02T19:59:59+08:00",
+    )
+    assert choose_primary_deadline(item, now) == item.abstract_deadline
+    assert compute_status(item, now) == "submission_open"
+
+
+def test_future_submission_stage_is_upcoming_not_open():
+    now = datetime(2026, 8, 22, 12, tzinfo=CHINA_TZ)
+    item = event(schedule=[{
+        "name": "作品提交",
+        "start": "2026-09-10T00:00:00+08:00",
+        "end": "2026-09-20T23:59:59+08:00",
+    }])
+    assert compute_status(item, now) == "submission_upcoming"
+
+
 def test_schedule_status_and_primary_deadline_handle_multiple_rounds():
     now = datetime(2026, 8, 22, 20, tzinfo=CHINA_TZ)
     item = event(

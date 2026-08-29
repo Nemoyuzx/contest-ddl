@@ -1,5 +1,21 @@
 # 数据源与采集边界
 
+## 计算机学术会议：CCFDDL Open Deadlines
+
+读取 [CCFDDL Open Deadlines](https://github.com/ccfddl/ccf-deadlines) 构建后公开的单文件 [`allconf.yml`](https://ccfddl.com/conference/allconf.yml)。上游项目使用 MIT 许可并通过社区 PR 维护；每条会议届次提供会议官网、学科、CCF / CORE / TH-CPL 标签、原始时区以及一轮或多轮摘要和论文截止日期。
+
+适配器明确处理 `AoE`、固定 `UTC±N` 和会随夏令时变化的 `PT`，统一输出带时区的北京时间，同时在备注中保留原始时区。`TBD`、未知时区、无会议官网或格式无效的记录不会发布；只采集过去 7 天到未来 500 天内至少存在一个明确截稿节点的届次。CCFDDL 属于高质量社区数据而非会议官方源，因此来源权威值为 4，`official_url` 指向会议官网，投稿前仍必须回官网复核。
+
+该来源覆盖计算机领域会议，不代表全部学科，也不把 CCF / CORE / TH-CPL 等级解释为本站认证。多轮投稿节点保留在 `schedule`，当前或下一轮的摘要截止和全文截止配对进入 `abstract_deadline` 与 `submission_deadline`。
+
+## 学术期刊与专题征稿
+
+普通期刊通常全年滚动投稿，没有统一的“期刊截稿日”。有明确截止日期的通常是 Special Issue、专题或专栏征稿，但这些信息分散在各出版社和期刊官网，目前没有找到同时满足本项目工科范围、精确时区、官方证据 URL、结构化和清晰再利用许可的统一开放源。因此项目暂不批量抓取期刊聚合页，也不会把滚动投稿伪造成 DDL。
+
+已评估的候选包括 [Conference Partner](https://www.myhuiban.com/developers) 的公开 API / 每日 special-issue 快照，以及 [OpenEdition Calenda](https://www.openedition.org/10913?lang=en) 的开放 CFP API。前者的匿名列表只有日期精度，且主办方/出版社原始 URL 需要另行申请；后者以人文社科、多语种征稿为主，并混合会议、书章和期刊专题，不能仅靠标题关键词可靠分类。它们可作为后续发现层，但当前不进入正式倒计时数据。
+
+已有官方 CFP 的专题可通过 `data/manual.yml` 以 `journal_special_issue` 类型录入，`official_url` 和 `source_url` 必须指向期刊或出版社官方征稿页。后续若接入出版社级来源，也只采集明确的专题投稿截止，并继续遵循“一条日期一个可追溯证据”的规则。
+
 ## 国内竞赛：赛氪
 
 读取赛氪新版公开赛事页自身调用、无需登录的只读前端 JSON 接口，不调用管理接口，不绕过验证码，不抓取用户数据。每日只请求指定工科分类，并对详情请求限量、限速。处理顺序：

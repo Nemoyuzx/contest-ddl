@@ -3,2758 +3,4579 @@ VERSION:2.0
 PRODID:-//Contest DDL//CN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:大学生竞赛 DDL
+X-WR-CALNAME:Contest DDL 截止日期
 X-WR-TIMEZONE:Asia/Shanghai
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 BEGIN:VEVENT
-UID:pec-hacks-4-0-f1d2ae10f6-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
-DTSTART:20260829T103000Z
-DTEND:20260829T110000Z
-SUMMARY:[比赛开始] PEC HACKS 4.0
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
-URL:https://pechacks.org/
-CATEGORIES:黑客松
-END:VEVENT
-BEGIN:VEVENT
-UID:pec-hacks-4-0-f1d2ae10f6-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
-DTSTART:20260830T235959Z
-DTEND:20260831T002959Z
-SUMMARY:[比赛结束] PEC HACKS 4.0
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
-URL:https://pechacks.org/
-CATEGORIES:黑客松
-END:VEVENT
-BEGIN:VEVENT
 UID:summer_camp-dd09dcb56b-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260829T155959Z
 DTEND:20260829T162959Z
-SUMMARY:[报名截止] 哈尔滨工业大学（深圳） · 信息学部计算机科学与技术学院（推免预报名）
-DESCRIPTION:哈尔滨工业大学（深圳）信息学部计算机科学与技术学院2027年接收推荐免试研究生报名，招生专业包括计算机科学与技术和电子信息（计算机技术）；申请人除完成学校系统报名外，还须按要求向学院邮箱提交合并PDF材料。
+SUMMARY:[报名截止] 哈尔滨工业大学（深圳） · 信息学部计
+ 算机科学与技术学院（推免预报名）
+DESCRIPTION:哈尔滨工业大学（深圳）信息学部计算机科学与
+ 技术学院2027年接收推荐免试研究生报名，招生专业包括
+ 计算机科学与技术和电子信息（计算机技术）；申请人
+ 除完成学校系统报名外，还须按要求向学院邮箱提交合
+ 并PDF材料。
 URL:http://cist.hitsz.edu.cn/info/1038/2789.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-6d2fec49cc-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260829T155959Z
 DTEND:20260829T162959Z
-SUMMARY:[报名截止] 苏州大学 · 计算机科学与技术学院（软件学院）（推免预报名）
-DESCRIPTION:苏州大学计算机科学与技术学院（软件学院）2027级推荐免试研究生（含直博生）预报名，学院拟于9月组织线下机试和面试，机试暂定9月4日，内容包括基础程序设计、数据结构和算法，支持C++或Python。
+SUMMARY:[报名截止] 苏州大学 · 计算机科学与技术学院（软
+ 件学院）（推免预报名）
+DESCRIPTION:苏州大学计算机科学与技术学院（软件学院）202
+ 7级推荐免试研究生（含直博生）预报名，学院拟于9月组
+ 织线下机试和面试，机试暂定9月4日，内容包括基础程序
+ 设计、数据结构和算法，支持C++或Python。
 URL:https://scst.suda.edu.cn/da/c4/c29555a711364/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-124f0f1898-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260830T140000Z
 DTEND:20260830T143000Z
 SUMMARY:[报名截止] 2026年第二届大学生网络信息技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/NEAI202602
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-124f0f1898-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260829T020000Z
 DTEND:20260829T023000Z
 SUMMARY:[比赛开始] 2026年第二届大学生网络信息技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/NEAI202602
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-124f0f1898-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260830T150000Z
 DTEND:20260830T153000Z
 SUMMARY:[比赛结束] 2026年第二届大学生网络信息技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/NEAI202602
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-bd007bd7e9-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260830T155900Z
 DTEND:20260830T162900Z
-SUMMARY:[报名截止] 北京科技大学 · 计算机与通信工程学院（推免预报名）
-DESCRIPTION:北京科技大学计算机与通信工程学院2027年接收推荐免试硕士研究生（含直博生）预报名，招生专业包括计算机科学与技术、计算机技术、信息与通信工程和通信工程，学院拟于9月组织复试。
+SUMMARY:[报名截止] 北京科技大学 · 计算机与通信工程学院
+ （推免预报名）
+DESCRIPTION:北京科技大学计算机与通信工程学院2027年接收
+ 推荐免试硕士研究生（含直博生）预报名，招生专业包
+ 括计算机科学与技术、计算机技术、信息与通信工程和
+ 通信工程，学院拟于9月组织复试。
 URL:https://scce.ustb.edu.cn/info/1111/3831.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
-UID:midnight-virtual-hackathon-august-420959dae8-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+UID:midnight-virtual-hackathon-august-420959dae8-competition_start@contest-
+ ddl
+DTSTAMP:20260829T121255Z
 DTSTART:20260828T011111Z
 DTEND:20260828T014111Z
 SUMMARY:[比赛开始] Midnight Virtual Hackathon [August]
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://events.mlh.com/events/14510-midnight-hackathon-august
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
-UID:midnight-virtual-hackathon-august-420959dae8-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+UID:midnight-virtual-hackathon-august-420959dae8-competition_end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
 DTSTART:20260830T235959Z
 DTEND:20260831T002959Z
 SUMMARY:[比赛结束] Midnight Virtual Hackathon [August]
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://events.mlh.com/events/14510-midnight-hackathon-august
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
+UID:pec-hacks-4-0-f1d2ae10f6-competition_start@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260829T103000Z
+DTEND:20260829T110000Z
+SUMMARY:[比赛开始] PEC HACKS 4.0
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
+URL:https://pechacks.org/
+CATEGORIES:黑客松
+END:VEVENT
+BEGIN:VEVENT
+UID:pec-hacks-4-0-f1d2ae10f6-competition_end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260830T235959Z
+DTEND:20260831T002959Z
+SUMMARY:[比赛结束] PEC HACKS 4.0
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
+URL:https://pechacks.org/
+CATEGORIES:黑客松
+END:VEVENT
+BEGIN:VEVENT
+UID:msn-2026-nw-msn-845eae1c99-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260831T115959Z
+DTEND:20260831T122959Z
+SUMMARY:[论文截止] MSN 2026
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：December 18-20\, 2026；日期可能调整，
+ 投稿前请回会议官网复核。
+URL:https://ieee-msn.org/2026
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-41ec0f127f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260831T155900Z
 DTEND:20260831T162900Z
-SUMMARY:[报名截止] 南方科技大学 · 深港微电子学院（推免预报名）
-DESCRIPTION:南方科技大学深港微电子学院2027级推荐免试研究生（含直博生）预报名，招生专业包括集成电路科学与工程、集成电路工程，申请人须同时在学校研究生招生服务系统报名并向学院邮箱提交材料。
+SUMMARY:[报名截止] 南方科技大学 · 深港微电子学院（推免
+ 预报名）
+DESCRIPTION:南方科技大学深港微电子学院2027级推荐免试研
+ 究生（含直博生）预报名，招生专业包括集成电路科学
+ 与工程、集成电路工程，申请人须同时在学校研究生招
+ 生服务系统报名并向学院邮箱提交材料。
 URL:https://mp.weixin.qq.com/s/p9QdSnhvbnqEKeDBs7MN7w
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-99556002e7-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260831T155900Z
 DTEND:20260831T162900Z
-SUMMARY:[报名截止] 香港大学 · 计算与数据科学学院（2027研究型硕博早招第二轮）
-DESCRIPTION:香港大学计算与数据科学学院2027年研究型硕博早期招生第二轮，覆盖计算机与数据科学相关研究方向，学院计划于2026年9月组织面试。
+SUMMARY:[报名截止] 香港大学 · 计算与数据科学学院（2027
+ 研究型硕博早招第二轮）
+DESCRIPTION:香港大学计算与数据科学学院2027年研究型硕博
+ 早期招生第二轮，覆盖计算机与数据科学相关研究方向
+ ，学院计划于2026年9月组织面试。
 URL:https://www.cs.hku.hk/programmes/research-based/mphil-phd-admission
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-4ad5b8359e-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260731T155959Z
 DTEND:20260731T162959Z
-SUMMARY:[报名截止] 2026年“数据要素×”大赛北京分赛暨北京数智创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年“数据要素×”大赛北京分赛暨北
+ 京数智创新大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59501
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子信息\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子
+ 信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-4ad5b8359e-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260630T160000Z
 DTEND:20260630T163000Z
-SUMMARY:[比赛开始] 2026年“数据要素×”大赛北京分赛暨北京数智创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年“数据要素×”大赛北京分赛暨北
+ 京数智创新大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59501
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子信息\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子
+ 信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-4ad5b8359e-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20291001T155959Z
 DTEND:20291001T162959Z
-SUMMARY:[比赛结束] 2026年“数据要素×”大赛北京分赛暨北京数智创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年“数据要素×”大赛北京分赛暨北
+ 京数智创新大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59501
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子信息\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子
+ 信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026ccf-837d2f765e-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260716T155900Z
 DTEND:20260716T162900Z
-SUMMARY:[报名截止] 2026年度CCF量子计算编程挑战赛-量旋杯-量子国际象棋赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年度CCF量子计算编程挑战赛-量旋杯-
+ 量子国际象棋赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/lzxq2026
 CATEGORIES:工科竞赛\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026ccf-837d2f765e-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260630T160000Z
 DTEND:20260630T163000Z
-SUMMARY:[比赛开始] 2026年度CCF量子计算编程挑战赛-量旋杯-量子国际象棋赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年度CCF量子计算编程挑战赛-量旋杯-
+ 量子国际象棋赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/lzxq2026
 CATEGORIES:工科竞赛\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026ccf-837d2f765e-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260831T155959Z
 DTEND:20260831T162959Z
-SUMMARY:[比赛结束] 2026年度CCF量子计算编程挑战赛-量旋杯-量子国际象棋赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年度CCF量子计算编程挑战赛-量旋杯-
+ 量子国际象棋赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/lzxq2026
 CATEGORIES:工科竞赛\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-c998bd77c4-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260831T155959Z
 DTEND:20260831T162959Z
 SUMMARY:[报名截止] 南方科技大学 · 计算机科学与工程系
-DESCRIPTION:南方科技大学计算机科学与工程系2027年计划招收全日制硕士研究生、直接攻读博士研究生，接受校内外推免生预报名。招生专业包括0812计算机科学与技术（学硕/直博）和0854电子信息（专硕/直博）。报名时间为2026年7月15日至8月31日；资格审核通过者预计于9月5日前收到邮件通知，考核形式为到校现场面试，预计时间为9月12日下午。\n\n面向已获得或即将获得推免资格的2027届本科生，计算机大类及电子科学与技术、信息与通信工程、自动化、数学、数据科学、信息科学等相关专业均可申请。\n\n申请直博者还须按学院要求提交两封专家推荐信。
+DESCRIPTION:南方科技大学计算机科学与工程系2027年计划招
+ 收全日制硕士研究生、直接攻读博士研究生，接受校内
+ 外推免生预报名。招生专业包括0812计算机科学与技术（
+ 学硕/直博）和0854电子信息（专硕/直博）。报名时间为20
+ 26年7月15日至8月31日；资格审核通过者预计于9月5日前收
+ 到邮件通知，考核形式为到校现场面试，预计时间为9月1
+ 2日下午。\n\n面向已获得或即将获得推免资格的2027届本
+ 科生，计算机大类及电子科学与技术、信息与通信工程
+ 、自动化、数学、数据科学、信息科学等相关专业均可
+ 申请。\n\n申请直博者还须按学院要求提交两封专家推荐
+ 信。
 URL:https://cse.sustech.edu.cn/notices/3775.html
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-4aab359098-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260831T155959Z
 DTEND:20260831T162959Z
-SUMMARY:[报名截止] 广西大学 · 计算机与电子信息学院（推免预报名）
-DESCRIPTION:广西大学计算机与电子信息学院2027年接收推荐免试研究生预报名，申请人须在规定时间内完成网上预报名，后续考核方式和具体安排由学院另行通知。
+SUMMARY:[报名截止] 广西大学 · 计算机与电子信息学院（推
+ 免预报名）
+DESCRIPTION:广西大学计算机与电子信息学院2027年接收推荐
+ 免试研究生预报名，申请人须在规定时间内完成网上预
+ 报名，后续考核方式和具体安排由学院另行通知。
 URL:https://yjsc.gxu.edu.cn/info/1021/4680.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:ieee-vr-2027-cg-vr-386a29aabc-schedule-round-1-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260825T115959Z
+DTEND:20260825T122959Z
+SUMMARY:[摘要截止] IEEE VR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：February 27 - March 3\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://ieeevr.org/2027/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-vr-2027-cg-vr-386a29aabc-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260901T115959Z
+DTEND:20260901T122959Z
+SUMMARY:[论文截止] IEEE VR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：February 27 - March 3\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://ieeevr.org/2027/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-2027-sc-pet-a75637f2a6-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260901T115959Z
+DTEND:20260901T122959Z
+SUMMARY:[第 2 轮 · 论文截止] PETS 2027
+DESCRIPTION:Issue 2 Paper Submission Deadline
+URL:https://petsymposium.org/cfp27.php
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-2027-sc-pet-a75637f2a6-schedule-round-3-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261201T115959Z
+DTEND:20261201T122959Z
+SUMMARY:[第 3 轮 · 论文截止] PETS 2027
+DESCRIPTION:Issue 3 Paper Submission Deadline
+URL:https://petsymposium.org/cfp27.php
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-2027-sc-pet-a75637f2a6-schedule-round-4-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270301T115959Z
+DTEND:20270301T122959Z
+SUMMARY:[第 4 轮 · 论文截止] PETS 2027
+DESCRIPTION:Issue 4 Paper Submission Deadline
+URL:https://petsymposium.org/cfp27.php
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-0be42f3059-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260901T155959Z
 DTEND:20260901T162959Z
-SUMMARY:[报名截止] 中国科学院大学 · 电子电气与通信工程学院（推免研究生接收）
-DESCRIPTION:中国科学院大学电子电气与通信工程学院接收2027级推荐免试研究生，招生专业包括通信与信息系统、信号与信息处理、微电子学与固体电子学和电子信息，申请材料需于2026年8月31日前发送至学院邮箱。
+SUMMARY:[报名截止] 中国科学院大学 · 电子电气与通信工程
+ 学院（推免研究生接收）
+DESCRIPTION:中国科学院大学电子电气与通信工程学院接收202
+ 7级推荐免试研究生，招生专业包括通信与信息系统、信
+ 号与信息处理、微电子学与固体电子学和电子信息，申
+ 请材料需于2026年8月31日前发送至学院邮箱。
 URL:https://eece.ucas.ac.cn/index.php/zh-cn/2014-06-13-06-51-06/2715-2027
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-8610675a9c-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260901T155959Z
 DTEND:20260901T162959Z
-SUMMARY:[报名截止] 南方科技大学 · 计算机科学与工程系（国优计划）
-DESCRIPTION:南方科技大学计算机科学与工程系2027年国优计划研究生招生预报名，面向已获得或即将获得推免资格、愿意从事中小学教育工作的2027届计算机类及相关专业本科生，拟招收计算机科学与技术学术型硕士8人，并配套教育硕士培养，预计于9月12日线下面试。
+SUMMARY:[报名截止] 南方科技大学 · 计算机科学与工程系（
+ 国优计划）
+DESCRIPTION:南方科技大学计算机科学与工程系2027年国优计
+ 划研究生招生预报名，面向已获得或即将获得推免资格
+ 、愿意从事中小学教育工作的2027届计算机类及相关专业
+ 本科生，拟招收计算机科学与技术学术型硕士8人，并配
+ 套教育硕士培养，预计于9月12日线下面试。
 URL:https://cse.sustech.edu.cn/notices/3776.html
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-35f8cc67b9-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260901T155959Z
 DTEND:20260901T162959Z
-SUMMARY:[报名截止] 西南财经大学 · 计算机与人工智能学院（推免研究生报名）
-DESCRIPTION:西南财经大学计算机与人工智能学院2027年接收推荐免试研究生报名，招生专业包括计算机科学与技术和电子信息，学院预计于2026年9月15日前后组织网络远程面试。
+SUMMARY:[报名截止] 西南财经大学 · 计算机与人工智能学院
+ （推免研究生报名）
+DESCRIPTION:西南财经大学计算机与人工智能学院2027年接收
+ 推荐免试研究生报名，招生专业包括计算机科学与技术
+ 和电子信息，学院预计于2026年9月15日前后组织网络远程
+ 面试。
 URL:https://it.swufe.edu.cn/info/1166/22608.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-6-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260826T000000Z
+DTEND:20260826T003000Z
+SUMMARY:[第 6 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-6-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260902T000000Z
+DTEND:20260902T003000Z
+SUMMARY:[第 6 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-7-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260926T000000Z
+DTEND:20260926T003000Z
+SUMMARY:[第 7 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-7-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261002T000000Z
+DTEND:20261002T003000Z
+SUMMARY:[第 7 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-8-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261026T000000Z
+DTEND:20261026T003000Z
+SUMMARY:[第 8 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-8-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261102T010000Z
+DTEND:20261102T013000Z
+SUMMARY:[第 8 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-9-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261126T010000Z
+DTEND:20261126T013000Z
+SUMMARY:[第 9 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-9-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261202T010000Z
+DTEND:20261202T013000Z
+SUMMARY:[第 9 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-10-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261226T010000Z
+DTEND:20261226T013000Z
+SUMMARY:[第 10 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-10-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270102T010000Z
+DTEND:20270102T013000Z
+SUMMARY:[第 10 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-11-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270126T010000Z
+DTEND:20270126T013000Z
+SUMMARY:[第 11 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-11-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270202T010000Z
+DTEND:20270202T013000Z
+SUMMARY:[第 11 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-12-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270226T010000Z
+DTEND:20270226T013000Z
+SUMMARY:[第 12 轮 · 摘要截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-2027-db-vldb-4a37e79dfd-schedule-round-12-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270302T010000Z
+DTEND:20270302T013000Z
+SUMMARY:[第 12 轮 · 论文截止] VLDB 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：August 23 - August 27\, 2027；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://www.vldb.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:mmasia-2026-cg-mmasia-114f0c6643-schedule-round-3-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260902T115959Z
+DTEND:20260902T122959Z
+SUMMARY:[Demo / Industry Submission · 论文截止] MMAsia 2026
+DESCRIPTION:Demo / Industry Submission
+URL:https://www.mmasia2026.org/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-dd19da3abc-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260902T155959Z
 DTEND:20260902T162959Z
-SUMMARY:[报名截止] 中国科学院 · 计算机网络信息中心（推免生接收）
-DESCRIPTION:中国科学院计算机网络信息中心2027年接收推荐免试研究生（含直博生），依托计算机科学与技术、网络空间安全和电子信息等培养方向，申请人须通过中国科学院大学推荐免试生申请系统报名。
+SUMMARY:[报名截止] 中国科学院 · 计算机网络信息中心（推
+ 免生接收）
+DESCRIPTION:中国科学院计算机网络信息中心2027年接收推荐
+ 免试研究生（含直博生），依托计算机科学与技术、网
+ 络空间安全和电子信息等培养方向，申请人须通过中国
+ 科学院大学推荐免试生申请系统报名。
 URL:https://cnic.cas.cn/yjsjy/zsxx/tjms/202608/t20260804_8259075.html
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-42ad2b7136-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260902T155959Z
 DTEND:20260902T162959Z
-SUMMARY:[报名截止] 南京理工大学 · 智能科学与技术学院（推免预报名）
-DESCRIPTION:南京理工大学智能科学与技术学院2027年研究生推免预报名，接收全日制智能科学与技术专业推荐免试研究生，学院将于报名结束后分批审核申请并联系考生参加面试。
+SUMMARY:[报名截止] 南京理工大学 · 智能科学与技术学院（
+ 推免预报名）
+DESCRIPTION:南京理工大学智能科学与技术学院2027年研究生
+ 推免预报名，接收全日制智能科学与技术专业推荐免试
+ 研究生，学院将于报名结束后分批审核申请并联系考生
+ 参加面试。
 URL:https://sim.njust.edu.cn/67/10/c15653a354064/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-2b9e96f960-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260902T155959Z
 DTEND:20260902T162959Z
-SUMMARY:[报名截止] 厦门大学 · 人工智能研究院（推免预报名）
-DESCRIPTION:厦门大学人工智能研究院2027年接收推荐免试研究生预报名，招收人工智能专业全日制专业学位硕士研究生，面向有望取得推免资格、英语水平良好且具有科研潜质的优秀应届本科生。
+SUMMARY:[报名截止] 厦门大学 · 人工智能研究院（推免预报
+ 名）
+DESCRIPTION:厦门大学人工智能研究院2027年接收推荐免试研
+ 究生预报名，招收人工智能专业全日制专业学位硕士研
+ 究生，面向有望取得推免资格、英语水平良好且具有科
+ 研潜质的优秀应届本科生。
 URL:https://iai.xmu.edu.cn/info/1120/6145.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:mobicom-2027-nw-mobicom-b61652fdbe-schedule-round-1-abstract_deadline-e
+ nd@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260827T115959Z
+DTEND:20260827T122959Z
+SUMMARY:[Summer Deadlines · 摘要截止] MobiCom 2027
+DESCRIPTION:Summer Deadlines
+URL:https://www.sigmobile.org/mobicom/2027/
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:mobicom-2027-nw-mobicom-b61652fdbe-schedule-round-1-deadline-end@contes
+ t-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260903T115959Z
+DTEND:20260903T122959Z
+SUMMARY:[Summer Deadlines · 论文截止] MobiCom 2027
+DESCRIPTION:Summer Deadlines
+URL:https://www.sigmobile.org/mobicom/2027/
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-29b415a656-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260903T155900Z
 DTEND:20260903T162900Z
-SUMMARY:[报名截止] 北京科技大学 · 人工智能学院（推免预报名）
-DESCRIPTION:北京科技大学人工智能学院2027年接收推荐免试硕士研究生（含直博生）预报名，面向人工智能、自动化、计算机、通信、软件、物联网、机械和数学等相关专业学生，学院拟于9月中旬组织复试。
+SUMMARY:[报名截止] 北京科技大学 · 人工智能学院（推免预
+ 报名）
+DESCRIPTION:北京科技大学人工智能学院2027年接收推荐免试
+ 硕士研究生（含直博生）预报名，面向人工智能、自动
+ 化、计算机、通信、软件、物联网、机械和数学等相关
+ 专业学生，学院拟于9月中旬组织复试。
 URL:https://ai.ustb.edu.cn/xwgg/tzgg/e41a2652d8ca473d85966eb9142585e6.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-25c85feb68-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260903T155900Z
 DTEND:20260903T162900Z
 SUMMARY:[报名截止] 南开大学 · 软件学院（推免预报名）
-DESCRIPTION:南开大学软件学院2027年接收推荐免试研究生预报名，学校系统报名截至9月1日，合并PDF材料须于9月3日23:59前上传，申请材料包括两封专家亲笔签名推荐函。
+DESCRIPTION:南开大学软件学院2027年接收推荐免试研究生预
+ 报名，学校系统报名截至9月1日，合并PDF材料须于9月3日2
+ 3:59前上传，申请材料包括两封专家亲笔签名推荐函。
 URL:https://cs.nankai.edu.cn/info/1076/3673.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-67586faffb-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260903T155959Z
 DTEND:20260903T162959Z
-SUMMARY:[报名截止] 南开大学 · 卓越工程师学院（计算机相关工程硕博士专项）
-DESCRIPTION:南开大学卓越工程师学院2027年工程硕博士培养改革专项预报名，其中计算机相关方向包括图像增强、多模态基础模型、智能人机交互、高性能计算软件、数智技术、基础软件与高算力系统及人工智能；接收专业学位硕士和直博申请。
+SUMMARY:[报名截止] 南开大学 · 卓越工程师学院（计算机相
+ 关工程硕博士专项）
+DESCRIPTION:南开大学卓越工程师学院2027年工程硕博士培养
+ 改革专项预报名，其中计算机相关方向包括图像增强、
+ 多模态基础模型、智能人机交互、高性能计算软件、数
+ 智技术、基础软件与高算力系统及人工智能；接收专业
+ 学位硕士和直博申请。
 URL:https://cee.nankai.edu.cn/2026/0821/c37052a601337/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-4745094569-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260904T040000Z
 DTEND:20260904T043000Z
-SUMMARY:[报名截止] 中山大学 · 人工智能学院（推免研究生报名）
-DESCRIPTION:中山大学人工智能学院2027年接收推荐免试研究生报名，招生专业包括计算机科学与技术学术型硕博和人工智能专业型硕博；申请人须同时提交报名问卷并将完整申请材料发送至学院邮箱。
+SUMMARY:[报名截止] 中山大学 · 人工智能学院（推免研究生
+ 报名）
+DESCRIPTION:中山大学人工智能学院2027年接收推荐免试研究
+ 生报名，招生专业包括计算机科学与技术学术型硕博和
+ 人工智能专业型硕博；申请人须同时提交报名问卷并将
+ 完整申请材料发送至学院邮箱。
 URL:https://sai.sysu.edu.cn/article/747
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:icdt-2027-db-icdt-b9ab4726ea-schedule-round-2-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260904T115959Z
+DTEND:20260904T122959Z
+SUMMARY:[第 2 轮 · 摘要截止] ICDT 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 6-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://edbticdt2027.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:icdt-2027-db-icdt-b9ab4726ea-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260911T115959Z
+DTEND:20260911T122959Z
+SUMMARY:[第 2 轮 · 论文截止] ICDT 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 6-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://edbticdt2027.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
 UID:2026ai-94edbe57fa-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260904T155959Z
 DTEND:20260904T162959Z
-SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——AI机器人素养赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——
+ AI机器人素养赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HQBRGZN2603
 CATEGORIES:工科竞赛\,人工智能\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-33396ec4bf-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260905T150000Z
 DTEND:20260905T153000Z
-SUMMARY:[报名截止] 华东师范大学 · 计算机科学与技术学院（推免预报名）
-DESCRIPTION:华东师范大学计算机科学与技术学院2027年接收推荐免试研究生（含直接攻博）预报名，面向预计获得推免资格、具有计算机及相关专业背景的优秀本科生，申请人须在学校推免预报名系统提交信息和材料。
+SUMMARY:[报名截止] 华东师范大学 · 计算机科学与技术学院
+ （推免预报名）
+DESCRIPTION:华东师范大学计算机科学与技术学院2027年接收
+ 推荐免试研究生（含直接攻博）预报名，面向预计获得
+ 推免资格、具有计算机及相关专业背景的优秀本科生，
+ 申请人须在学校推免预报名系统提交信息和材料。
 URL:http://www.cs.ecnu.edu.cn/c3/c2/c19867a771010/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026193d-bf67289fb4-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260905T155959Z
 DTEND:20260905T162959Z
-SUMMARY:[报名截止] 2026第19届全国3D大赛-具身智能机器人技术与工程应用场景大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026第19届全国3D大赛-具身智能机器人技
+ 术与工程应用场景大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59323
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f1b1a9e4be-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260906T155959Z
 DTEND:20260906T162959Z
-SUMMARY:[报名截止] 2026年高校大学生“工创杯”人工智能知识大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年高校大学生“工创杯”人工智能知
+ 识大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026RGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f1b1a9e4be-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260906T010000Z
 DTEND:20260906T013000Z
-SUMMARY:[比赛开始] 2026年高校大学生“工创杯”人工智能知识大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年高校大学生“工创杯”人工智能知
+ 识大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026RGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f1b1a9e4be-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261220T150000Z
 DTEND:20261220T153000Z
-SUMMARY:[比赛结束] 2026年高校大学生“工创杯”人工智能知识大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年高校大学生“工创杯”人工智能知
+ 识大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026RGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-fc9260f21f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260906T040000Z
 DTEND:20260906T043000Z
 SUMMARY:[报名截止] 东北大学 · 软件学院（推免预报名）
-DESCRIPTION:东北大学软件学院2027年接收推荐免试研究生预报名，面向计算机类相关专业、英语水平良好且预计可获得推免资格的2027届本科生，学院将组织现场复试考核。
-URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784188103574001298&b=1784085098695001298
+DESCRIPTION:东北大学软件学院2027年接收推荐免试研究生预
+ 报名，面向计算机类相关专业、英语水平良好且预计可
+ 获得推免资格的2027届本科生，学院将组织现场复试考核
+ 。
+URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemp
+ tionEntranceDetail?a=1784188103574001298&b=1784085098695001298
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-1fd103c795-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260906T140000Z
 DTEND:20260906T143000Z
-SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——算法技能竞答赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——
+ 算法技能竞答赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HQBRGZN2602
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-bd6d5573b8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260906T155959Z
 DTEND:20260906T162959Z
-SUMMARY:[报名截止] 哈尔滨工业大学 · 电子与信息工程学院（推免预报名）
-DESCRIPTION:哈尔滨工业大学电子与信息工程学院2027年接收推荐免试研究生预报名，面向预计取得推免资格、对电子信息学科相关方向有浓厚兴趣的优秀本科生，申请人须通过学校预报名系统提交信息和材料。
+SUMMARY:[报名截止] 哈尔滨工业大学 · 电子与信息工程学院
+ （推免预报名）
+DESCRIPTION:哈尔滨工业大学电子与信息工程学院2027年接收
+ 推荐免试研究生预报名，面向预计取得推免资格、对电
+ 子信息学科相关方向有浓厚兴趣的优秀本科生，申请人
+ 须通过学校预报名系统提交信息和材料。
 URL:https://seie.hit.edu.cn/2026/0722/c17148a398083/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-586519eb3a-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260907T010000Z
 DTEND:20260907T013000Z
-SUMMARY:[报名截止] 大连理工大学 · 计算机科学与技术学院（推免预报名）
-DESCRIPTION:大连理工大学计算机科学与技术学院2027级推荐免试研究生预报名，申请人须登录学校推免预报名系统并按系统申请须知提交材料。
+SUMMARY:[报名截止] 大连理工大学 · 计算机科学与技术学院
+ （推免预报名）
+DESCRIPTION:大连理工大学计算机科学与技术学院2027级推荐
+ 免试研究生预报名，申请人须登录学校推免预报名系统
+ 并按系统申请须知提交材料。
 URL:https://gs.dlut.edu.cn/info/1173/51492.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-9dea90a948-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260907T040000Z
 DTEND:20260907T043000Z
-SUMMARY:[报名截止] 华东师范大学 · 软件工程学院（滴水湖国际软件学院）（推免预报名）
-DESCRIPTION:华东师范大学软件工程学院（滴水湖国际软件学院）2027年接收推荐免试研究生（含本科直博）预报名，硕士申请方向包括软件科学与技术、嵌入式软件与智能系统、安全可信理论与技术和工业软件，申请人须在学校研究生报考服务系统提交材料。
+SUMMARY:[报名截止] 华东师范大学 · 软件工程学院（滴水湖
+ 国际软件学院）（推免预报名）
+DESCRIPTION:华东师范大学软件工程学院（滴水湖国际软件学
+ 院）2027年接收推荐免试研究生（含本科直博）预报名，
+ 硕士申请方向包括软件科学与技术、嵌入式软件与智能
+ 系统、安全可信理论与技术和工业软件，申请人须在学
+ 校研究生报考服务系统提交材料。
 URL:https://sei.ecnu.edu.cn/c4/0d/c33171a771085/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-72dce8a165-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260907T040000Z
 DTEND:20260907T043000Z
 SUMMARY:[报名截止] 浙江大学 · 数学科学学院
-DESCRIPTION:浙江大学数学科学学院“数据科学与工程”专业硕士项目（招生专业：085411大数据技术与工程）现正式启动2027年推荐免试研究生招生工作。请于2026年8月10日10:00至9月7日12:00，登录“浙江大学研究生招生服务系统-推免生申请系统”填写有关栏目并提交申请。\n备注：本项目为2027年首次招生，培养模式类似工程师学院（数据科学与工程项目），导师来源为数学科学学院、数据科学研究中心、计算机科学与技术学院、控制科学与工程学院；导师名单将稍后公布。
+DESCRIPTION:浙江大学数学科学学院“数据科学与工程”专业
+ 硕士项目（招生专业：085411大数据技术与工程）现正式
+ 启动2027年推荐免试研究生招生工作。请于2026年8月10日10:
+ 00至9月7日12:00，登录“浙江大学研究生招生服务系统-推
+ 免生申请系统”填写有关栏目并提交申请。\n备注：本项
+ 目为2027年首次招生，培养模式类似工程师学院（数据科
+ 学与工程项目），导师来源为数学科学学院、数据科学
+ 研究中心、计算机科学与技术学院、控制科学与工程学
+ 院；导师名单将稍后公布。
 URL:http://www.math.zju.edu.cn/2026/0806/c38123a3193823/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-8b40fd58ea-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260907T155959Z
 DTEND:20260907T162959Z
-SUMMARY:[报名截止] 南开大学 · 前沿交叉学科研究院（计算机相关直博预报名）
-DESCRIPTION:南开大学前沿交叉学科研究院2027年接收推荐免试直博生预报名，其中计算机相关招生专业包括计算机科学与技术、软件工程和网络空间安全，研究方向覆盖人工智能协同、认知安全、数智治理和具身智能等；申请人须提交两封专家推荐信。
+SUMMARY:[报名截止] 南开大学 · 前沿交叉学科研究院（计算
+ 机相关直博预报名）
+DESCRIPTION:南开大学前沿交叉学科研究院2027年接收推荐免
+ 试直博生预报名，其中计算机相关招生专业包括计算机
+ 科学与技术、软件工程和网络空间安全，研究方向覆盖
+ 人工智能协同、认知安全、数智治理和具身智能等；申
+ 请人须提交两封专家推荐信。
 URL:https://aais.nankai.edu.cn/2026/0821/c37162a601333/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-d4bc7cbead-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260908T000000Z
 DTEND:20260908T003000Z
-SUMMARY:[报名截止] 大连理工大学 · 软件学院（推免预报名）
-DESCRIPTION:大连理工大学软件学院2027年接收推荐免试研究生预报名，招生专业包括软件工程学术学位和软件工程专业学位，学院预计于9月中下旬组织面试。
+SUMMARY:[报名截止] 大连理工大学 · 软件学院（推免预报名
+ ）
+DESCRIPTION:大连理工大学软件学院2027年接收推荐免试研究
+ 生预报名，招生专业包括软件工程学术学位和软件工程
+ 专业学位，学院预计于9月中下旬组织面试。
 URL:https://ss.dlut.edu.cn/info/1321/34052.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-95795eb569-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260908T040000Z
 DTEND:20260908T043000Z
-SUMMARY:[报名截止] 华东师范大学 · 数据科学与工程学院（推免预报名）
-DESCRIPTION:华东师范大学数据科学与工程学院2027年接收推荐免试研究生预报名，申请人须通过学校研究生报考服务系统提交申请，复试时间和具体安排由学院另行通知。
-URL:https://dase.ecnu.edu.cn/_upload/article/files/ef/b7/8ce4634b46aeb6697638fa0718f7/901c46e7-91ce-4622-9a48-2c7293196931.pdf
+SUMMARY:[报名截止] 华东师范大学 · 数据科学与工程学院（
+ 推免预报名）
+DESCRIPTION:华东师范大学数据科学与工程学院2027年接收推
+ 荐免试研究生预报名，申请人须通过学校研究生报考服
+ 务系统提交申请，复试时间和具体安排由学院另行通知
+ 。
+URL:https://dase.ecnu.edu.cn/_upload/article/files/ef/b7/8ce4634b46aeb66976
+ 38fa0718f7/901c46e7-91ce-4622-9a48-2c7293196931.pdf
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-283d4ae8cd-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260909T155900Z
 DTEND:20260909T162900Z
-SUMMARY:[报名截止] 东北大学 · 机器人科学与工程学院（推免预报名）
-DESCRIPTION:东北大学机器人科学与工程学院2027年接收推荐免试研究生预报名，面向机器人、自动化、人工智能、控制、机械、计算机等相关专业且预计可获得推免资格的2027届本科生。
-URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784277365465001298&b=1784085098695001298
+SUMMARY:[报名截止] 东北大学 · 机器人科学与工程学院（推
+ 免预报名）
+DESCRIPTION:东北大学机器人科学与工程学院2027年接收推荐
+ 免试研究生预报名，面向机器人、自动化、人工智能、
+ 控制、机械、计算机等相关专业且预计可获得推免资格
+ 的2027届本科生。
+URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemp
+ tionEntranceDetail?a=1784277365465001298&b=1784085098695001298
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-a8e4718ba8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T020000Z
 DTEND:20260910T023000Z
-SUMMARY:[报名截止] 华东师范大学 · 空间人工智能学院（推免预报名）
-DESCRIPTION:华东师范大学空间人工智能学院2027年接收推荐免试研究生（含直接攻博）预报名，面向预计获得推免资格、具有相关专业背景和科研兴趣的优秀本科生，申请人须在学校推免预报名系统提交信息和材料。
+SUMMARY:[报名截止] 华东师范大学 · 空间人工智能学院（推
+ 免预报名）
+DESCRIPTION:华东师范大学空间人工智能学院2027年接收推荐
+ 免试研究生（含直接攻博）预报名，面向预计获得推免
+ 资格、具有相关专业背景和科研兴趣的优秀本科生，申
+ 请人须在学校推免预报名系统提交信息和材料。
 URL:https://geoai.ecnu.edu.cn/c3/bc/c48289a771004/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-2145dc8778-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 人工智能学院（推免预报名）
-DESCRIPTION:北京邮电大学人工智能学院2027年接收推荐免试研究生预报名，申请人须通过北京邮电大学研究生招生信息管理系统填报信息并按学院要求提交材料。
+SUMMARY:[报名截止] 北京邮电大学 · 人工智能学院（推免预
+ 报名）
+DESCRIPTION:北京邮电大学人工智能学院2027年接收推荐免试
+ 研究生预报名，申请人须通过北京邮电大学研究生招生
+ 信息管理系统填报信息并按学院要求提交材料。
 URL:https://ai.bupt.edu.cn/info/1065/4793.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-bcd2435cef-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 卓越工程师学院（低空技术专项推免预报名）
-DESCRIPTION:北京邮电大学卓越工程师学院2027年低空技术相关交叉项目推荐免试研究生预报名，申请人须通过北京邮电大学研究生招生信息管理系统填报信息并按学院要求提交材料。
+SUMMARY:[报名截止] 北京邮电大学 · 卓越工程师学院（低空
+ 技术专项推免预报名）
+DESCRIPTION:北京邮电大学卓越工程师学院2027年低空技术相
+ 关交叉项目推荐免试研究生预报名，申请人须通过北京
+ 邮电大学研究生招生信息管理系统填报信息并按学院要
+ 求提交材料。
 URL:https://gce.bupt.edu.cn/info/1020/1783.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-58d3ba5b8c-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 智能工程与自动化学院（推免研究生报名）
-DESCRIPTION:北京邮电大学智能工程与自动化学院2027年接收推荐免试研究生报名，面向本科专业与报考专业相同或相近且具有推免资格的优秀应届本科生，学院将组织现场面试。
+SUMMARY:[报名截止] 北京邮电大学 · 智能工程与自动化学院
+ （推免研究生报名）
+DESCRIPTION:北京邮电大学智能工程与自动化学院2027年接收
+ 推荐免试研究生报名，面向本科专业与报考专业相同或
+ 相近且具有推免资格的优秀应届本科生，学院将组织现
+ 场面试。
 URL:https://iea.bupt.edu.cn/info/1058/1740.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-aadb4017bd-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 电子工程学院（推免预报名）
-DESCRIPTION:北京邮电大学电子工程学院2027年接收推荐免试研究生预报名，申请人须通过北京邮电大学研究生招生信息管理系统填报信息并按学院要求提交材料。
+SUMMARY:[报名截止] 北京邮电大学 · 电子工程学院（推免预
+ 报名）
+DESCRIPTION:北京邮电大学电子工程学院2027年接收推荐免试
+ 研究生预报名，申请人须通过北京邮电大学研究生招生
+ 信息管理系统填报信息并按学院要求提交材料。
 URL:https://see.bupt.edu.cn/info/1047/3435.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-7cbf6481a1-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 网络空间安全学院（推免预报名）
-DESCRIPTION:北京邮电大学网络空间安全学院2027年接收推荐免试研究生预报名，申请人须通过北京邮电大学研究生招生信息管理系统填报信息并按学院要求提交材料。
+SUMMARY:[报名截止] 北京邮电大学 · 网络空间安全学院（推
+ 免预报名）
+DESCRIPTION:北京邮电大学网络空间安全学院2027年接收推荐
+ 免试研究生预报名，申请人须通过北京邮电大学研究生
+ 招生信息管理系统填报信息并按学院要求提交材料。
 URL:https://scss.bupt.edu.cn/info/1110/6306.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-489cd3f92f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 计算机学院（国家示范性软件学院）（推免研究生报名）
-DESCRIPTION:北京邮电大学计算机学院（国家示范性软件学院）2027年接收推荐免试研究生报名，申请人须通过学校推免生招生系统提交材料，学院将依据材料评审确定面试名单并组织考核。
+SUMMARY:[报名截止] 北京邮电大学 · 计算机学院（国家示范
+ 性软件学院）（推免研究生报名）
+DESCRIPTION:北京邮电大学计算机学院（国家示范性软件学院
+ ）2027年接收推荐免试研究生报名，申请人须通过学校推
+ 免生招生系统提交材料，学院将依据材料评审确定面试
+ 名单并组织考核。
 URL:https://scs.bupt.edu.cn/info/1050/4416.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-d93c1d99cc-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 北京邮电大学 · 集成电路学院（推免预报名）
-DESCRIPTION:北京邮电大学集成电路学院2027年接收推荐免试研究生预报名，申请人须通过北京邮电大学研究生招生信息管理系统填报信息并按学院要求提交材料。
+SUMMARY:[报名截止] 北京邮电大学 · 集成电路学院（推免预
+ 报名）
+DESCRIPTION:北京邮电大学集成电路学院2027年接收推荐免试
+ 研究生预报名，申请人须通过北京邮电大学研究生招生
+ 信息管理系统填报信息并按学院要求提交材料。
 URL:https://ic.bupt.edu.cn/info/1024/1724.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-37fadaa788-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T090000Z
 DTEND:20260910T093000Z
-SUMMARY:[报名截止] 西安电子科技大学 · 计算机科学与技术学院（推免预报名）
-DESCRIPTION:西安电子科技大学计算机科学与技术学院2027年推荐免试研究生预报名，招生专业包括计算机科学与技术、软件工程、计算机技术和软件工程专业学位，申请人须在学校研究生招生服务平台完成报名。
+SUMMARY:[报名截止] 西安电子科技大学 · 计算机科学与技术
+ 学院（推免预报名）
+DESCRIPTION:西安电子科技大学计算机科学与技术学院2027年
+ 推荐免试研究生预报名，招生专业包括计算机科学与技
+ 术、软件工程、计算机技术和软件工程专业学位，申请
+ 人须在学校研究生招生服务平台完成报名。
 URL:https://cs.xidian.edu.cn/info/1003/25704.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-e2c1eaec89-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260713T155959Z
 DTEND:20260713T162959Z
-SUMMARY:[报名截止] 中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 中南大学学生参加2026年湖南省及全国大
+ 学生数学建模竞赛预报名
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/csumcmnational2026
 CATEGORIES:工科竞赛\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-e2c1eaec89-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T100000Z
 DTEND:20260910T103000Z
-SUMMARY:[比赛开始] 中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 中南大学学生参加2026年湖南省及全国大
+ 学生数学建模竞赛预报名
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/csumcmnational2026
 CATEGORIES:工科竞赛\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-e2c1eaec89-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T120000Z
 DTEND:20260913T123000Z
-SUMMARY:[比赛结束] 中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 中南大学学生参加2026年湖南省及全国大
+ 学生数学建模竞赛预报名
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/csumcmnational2026
 CATEGORIES:工科竞赛\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-5db4944129-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260910T100000Z
 DTEND:20260910T103000Z
 SUMMARY:[比赛开始] 全国大学生数学建模竞赛
-DESCRIPTION:全国规模最大的基础性学科竞赛；日期由官网公开页面自动提取，提交前请复核原文。
+DESCRIPTION:全国规模最大的基础性学科竞赛；日期由官网公
+ 开页面自动提取，提交前请复核原文。
 URL:http://www.mcm.edu.cn/
 CATEGORIES:数学建模
 END:VEVENT
 BEGIN:VEVENT
+UID:asplos-2027-ds-asplos-30af7b249c-schedule-round-2-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260910T115959Z
+DTEND:20260910T122959Z
+SUMMARY:[第 2 轮 · 论文截止] ASPLOS 2027
+DESCRIPTION:September Cycle Submission Deadline
+URL:https://www.asplos-conference.org/asplos2027/cfp/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:nsdi-2027-nw-nsdi-caf71a2be9-schedule-round-2-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260911T035959Z
+DTEND:20260911T042959Z
+SUMMARY:[第 2 轮 · 摘要截止] NSDI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-4；会议时间：May 11-13\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://www.usenix.org/conference/nsdi27
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:nsdi-2027-nw-nsdi-caf71a2be9-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260918T035959Z
+DTEND:20260918T042959Z
+SUMMARY:[第 2 轮 · 论文截止] NSDI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-4；会议时间：May 11-13\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://www.usenix.org/conference/nsdi27
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-hi-chi-36a1275a3f-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260911T115959Z
+DTEND:20260911T122959Z
+SUMMARY:[论文截止] CHI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：May 10 - 14\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://chi2027.acm.org/
+CATEGORIES:人机交互与普适计算
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-acm-cgo-2027-ds-cgo-160d9fdf72-schedule-round-2-deadline-end@conte
+ st-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260911T115959Z
+DTEND:20260911T122959Z
+SUMMARY:[Second Submission · 论文截止] IEEE/ACM CGO 2027
+DESCRIPTION:Second Submission
+URL:https://conf.researchr.org/home/cgo-2027
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:mmsys-2027-nw-mmsys-7d46de7ea3-schedule-round-1-abstract_deadline-end@c
+ ontest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260911T115959Z
+DTEND:20260911T122959Z
+SUMMARY:[摘要截止] MMSys 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：March 30 - April 2\, 2027；日期可能调整，
+ 投稿前请回会议官网复核。
+URL:https://2027.acmmmsys.org
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:mmsys-2027-nw-mmsys-7d46de7ea3-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20260918T115959Z
+DTEND:20260918T122959Z
+SUMMARY:[论文截止] MMSys 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：March 30 - April 2\, 2027；日期可能调整，
+ 投稿前请回会议官网复核。
+URL:https://2027.acmmmsys.org
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-ae46d3f8de-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 2026大学生“麟创杯”人工智能知识竞赛（秋季赛）
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026大学生“麟创杯”人工智能知识竞赛
+ （秋季赛）
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/LCBRGZN02
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-5015152113-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛—数据分析竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛—数据
+ 分析竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/SJFX2026
 CATEGORIES:工科竞赛\,电子信息\,大数据\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-5015152113-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260613T010000Z
 DTEND:20260613T013000Z
-SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛—数据分析竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛—数据
+ 分析竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/SJFX2026
 CATEGORIES:工科竞赛\,电子信息\,大数据\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-5015152113-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260912T100000Z
 DTEND:20260912T103000Z
-SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛—数据分析竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛—数据
+ 分析竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/SJFX2026
 CATEGORIES:工科竞赛\,电子信息\,大数据\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-cad0fbd60d-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 哈尔滨工业大学（深圳） · 智能学部智能科学与工程学院（推免预报名）
-DESCRIPTION:哈尔滨工业大学（深圳）智能学部智能科学与工程学院2027年接收推荐免试研究生报名，招生方向包括智能科学与技术、人工智能、控制科学与工程和控制工程，学院将定期审核并分批通知面试。
-URL:http://intelligence.hitsz.edu.cn/currency.jsp?urltype=news.NewsContentUrl&wbtreeid=1259&wbnewsid=1924
+SUMMARY:[报名截止] 哈尔滨工业大学（深圳） · 智能学部智
+ 能科学与工程学院（推免预报名）
+DESCRIPTION:哈尔滨工业大学（深圳）智能学部智能科学与工
+ 程学院2027年接收推荐免试研究生报名，招生方向包括智
+ 能科学与技术、人工智能、控制科学与工程和控制工程
+ ，学院将定期审核并分批通知面试。
+URL:http://intelligence.hitsz.edu.cn/currency.jsp?urltype=news.NewsContentU
+ rl&wbtreeid=1259&wbnewsid=1924
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-0825bfd4b6-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 天津大学 · 电气自动化与信息工程学院（普通推免）
-DESCRIPTION:天津大学电气自动化与信息工程学院2027级研究生招生推免（普通推免）报名，招生方向包括电气工程、信息与通信工程、控制科学与工程、电子信息和低空技术与工程等，申请人须在天津大学推免申请系统完成报名。
+SUMMARY:[报名截止] 天津大学 · 电气自动化与信息工程学院
+ （普通推免）
+DESCRIPTION:天津大学电气自动化与信息工程学院2027级研究
+ 生招生推免（普通推免）报名，招生方向包括电气工程
+ 、信息与通信工程、控制科学与工程、电子信息和低空
+ 技术与工程等，申请人须在天津大学推免申请系统完成
+ 报名。
 URL:https://mp.weixin.qq.com/s/zGLQBWGOPKA2iB8J6L1IJQ
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-a40ea6a119-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 浙江大学 · 人工智能学院（推免研究生报名）
-DESCRIPTION:浙江大学人工智能学院2027级推荐免试研究生报名，接收人工智能学术学位直博、电子信息（人工智能）专业学位硕士和直博等申请，申请人须通过浙江大学研究生招生服务系统提交材料；申请直博还须提供至少两封专家推荐信。
+SUMMARY:[报名截止] 浙江大学 · 人工智能学院（推免研究生
+ 报名）
+DESCRIPTION:浙江大学人工智能学院2027级推荐免试研究生报
+ 名，接收人工智能学术学位直博、电子信息（人工智能
+ ）专业学位硕士和直博等申请，申请人须通过浙江大学
+ 研究生招生服务系统提交材料；申请直博还须提供至少
+ 两封专家推荐信。
 URL:https://ai.zju.edu.cn/2026/0810/c90497a3194262/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-14123171e8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 浙江大学 · 工程师学院（推免研究生报名）
-DESCRIPTION:浙江大学工程师学院2027年全日制专业学位硕士研究生推荐免试招生，面向校内外预计获得推免资格的优秀本科生，卓越培养项目覆盖电子信息、机械、材料与化工、能源动力、人工智能、大数据等多个工程方向。
+SUMMARY:[报名截止] 浙江大学 · 工程师学院（推免研究生报
+ 名）
+DESCRIPTION:浙江大学工程师学院2027年全日制专业学位硕士
+ 研究生推荐免试招生，面向校内外预计获得推免资格的
+ 优秀本科生，卓越培养项目覆盖电子信息、机械、材料
+ 与化工、能源动力、人工智能、大数据等多个工程方向
+ 。
 URL:https://pi.zju.edu.cn/2026/0730/c67026a3192667/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-7ba3494ff9-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 浙江大学 · 计算机科学与技术学院（推免研究生报名）
-DESCRIPTION:浙江大学计算机科学与技术学院2027级推荐免试研究生报名，招生方向包括计算机科学与技术、软件工程、网络空间安全和电子信息，接收专业学位硕士及学术、专业学位直博申请。
+SUMMARY:[报名截止] 浙江大学 · 计算机科学与技术学院（推
+ 免研究生报名）
+DESCRIPTION:浙江大学计算机科学与技术学院2027级推荐免试
+ 研究生报名，招生方向包括计算机科学与技术、软件工
+ 程、网络空间安全和电子信息，接收专业学位硕士及学
+ 术、专业学位直博申请。
 URL:http://www.cs.zju.edu.cn/csen/2026/0807/c27006a3193973/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-f45a3e86b4-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 浙江大学 · 软件学院（推免研究生报名）
-DESCRIPTION:浙江大学软件学院2027年全日制推荐免试研究生招生，招生方向包括人工智能、软件工程、工业设计工程以及电子信息直博，面向预计获得推免资格的优秀本科生。
+SUMMARY:[报名截止] 浙江大学 · 软件学院（推免研究生报名
+ ）
+DESCRIPTION:浙江大学软件学院2027年全日制推荐免试研究生
+ 招生，招生方向包括人工智能、软件工程、工业设计工
+ 程以及电子信息直博，面向预计获得推免资格的优秀本
+ 科生。
 URL:http://www.cst.zju.edu.cn/2026/0807/c36206a3193932/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-9dfd5ace9c-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——大数据智能分析赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——大数
+ 据智能分析赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260803
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-9dfd5ace9c-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260912T020000Z
 DTEND:20260912T023000Z
-SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——大数据智能分析赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——大数
+ 据智能分析赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260803
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-9dfd5ace9c-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T100000Z
 DTEND:20260913T103000Z
-SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——大数据智能分析赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——大数
+ 据智能分析赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260803
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-503b2f365a-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T155959Z
 DTEND:20260911T162959Z
-SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——编程考察赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——编程
+ 考察赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260802
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-503b2f365a-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T050000Z
 DTEND:20260913T053000Z
-SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——编程考察赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——编程
+ 考察赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260802
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-503b2f365a-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T100000Z
 DTEND:20260913T103000Z
-SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——编程考察赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——编程
+ 考察赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260802
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:global-hack-week-data-227bbee31b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T160000Z
 DTEND:20260911T163000Z
 SUMMARY:[比赛开始] Global Hack Week: Data
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://events.mlh.io/events/14416-global-hack-week-data
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:global-hack-week-data-227bbee31b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260917T180000Z
 DTEND:20260917T183000Z
 SUMMARY:[比赛结束] Global Hack Week: Data
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://events.mlh.io/events/14416-global-hack-week-data
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackrice-8df00cda89-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T200000Z
 DTEND:20260911T203000Z
 SUMMARY:[比赛开始] HackRice
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackrice.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackrice-8df00cda89-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T190000Z
 DTEND:20260913T193000Z
 SUMMARY:[比赛结束] HackRice
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackrice.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackmty-2026-048f38e26e-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260911T210000Z
 DTEND:20260911T213000Z
 SUMMARY:[比赛开始] HackMTY 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackmty.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackmty-2026-048f38e26e-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T170000Z
 DTEND:20260913T173000Z
 SUMMARY:[比赛结束] HackMTY 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackmty.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:adma-2026-db-adma-41006e5b81-schedule-round-5-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260912T115959Z
+DTEND:20260912T122959Z
+SUMMARY:[Poster Paper · 论文截止] ADMA 2026
+DESCRIPTION:Poster Paper
+URL:https://adma2026.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:adma-2026-db-adma-41006e5b81-schedule-round-6-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260912T115959Z
+DTEND:20260912T122959Z
+SUMMARY:[Encore Paper · 论文截止] ADMA 2026
+DESCRIPTION:Encore Paper
+URL:https://adma2026.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
 UID:hackwestx-26-19f36dd1a6-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260912T123000Z
 DTEND:20260912T130000Z
 SUMMARY:[比赛开始] HackWesTX 26
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackwestx.gdgttu.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackwestx-26-19f36dd1a6-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T193000Z
 DTEND:20260913T200000Z
 SUMMARY:[比赛结束] HackWesTX 26
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackwestx.gdgttu.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:20271phd-mphil-45563362e5-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260912T155959Z
 DTEND:20260912T162959Z
-SUMMARY:[报名截止] 香港理工大学 · 数据科学与人工智能学系（2027年1月入学PhD/MPhil）
-DESCRIPTION:香港理工大学数据科学与人工智能学系招收2027年1月入学PhD/MPhil研究生，研究方向包括机器学习、计算机视觉、数据技术及人工智能交叉应用等，申请材料包括研究计划和两封学术推荐信。
+SUMMARY:[报名截止] 香港理工大学 · 数据科学与人工智能学
+ 系（2027年1月入学PhD/MPhil）
+DESCRIPTION:香港理工大学数据科学与人工智能学系招收2027
+ 年1月入学PhD/MPhil研究生，研究方向包括机器学习、计算
+ 机视觉、数据技术及人工智能交叉应用等，申请材料包
+ 括研究计划和两封学术推荐信。
 URL:https://www.polyu.edu.hk/study/pg/rpg/20262/dsai
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c-c-95b4727e96-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260816T120000Z
 DTEND:20260816T123000Z
-SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--C
+ 语言/C++编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Combined202601
 CATEGORIES:工科竞赛\,程序设计\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c-c-95b4727e96-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260815T020000Z
 DTEND:20260815T023000Z
-SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--C
+ 语言/C++编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Combined202601
 CATEGORIES:工科竞赛\,程序设计\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c-c-95b4727e96-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T155959Z
 DTEND:20260913T162959Z
-SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--C
+ 语言/C++编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Combined202601
 CATEGORIES:工科竞赛\,程序设计\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-190487208e-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260913T155959Z
 DTEND:20260913T162959Z
-SUMMARY:[报名截止] 南开大学 · 计算机学院、密码与网络空间安全学院（推免预报名）
-DESCRIPTION:南开大学计算机学院、密码与网络空间安全学院2027年接收优秀应届本科毕业生免试攻读研究生预报名，接收计算机科学与技术、计算机技术、网络空间安全、网络与信息安全、密码等方向的硕士生和直接攻博生，申请人完成系统报名后还需向相关导师或实验室发送材料。
+SUMMARY:[报名截止] 南开大学 · 计算机学院、密码与网络空
+ 间安全学院（推免预报名）
+DESCRIPTION:南开大学计算机学院、密码与网络空间安全学院
+ 2027年接收优秀应届本科毕业生免试攻读研究生预报名，
+ 接收计算机科学与技术、计算机技术、网络空间安全、
+ 网络与信息安全、密码等方向的硕士生和直接攻博生，
+ 申请人完成系统报名后还需向相关导师或实验室发送材
+ 料。
 URL:https://cc.nankai.edu.cn/2026/0709/c13297a600172/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ab36a6648d-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260914T040000Z
 DTEND:20260914T043000Z
-SUMMARY:[报名截止] 2026长三角（芜湖）算力算法创新应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026长三角（芜湖）算力算法创新应用大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/wuhu2026
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ab36a6648d-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260802T160000Z
 DTEND:20260802T163000Z
-SUMMARY:[比赛开始] 2026长三角（芜湖）算力算法创新应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026长三角（芜湖）算力算法创新应用大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/wuhu2026
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ab36a6648d-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260914T041200Z
 DTEND:20260914T044200Z
-SUMMARY:[比赛结束] 2026长三角（芜湖）算力算法创新应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026长三角（芜湖）算力算法创新应用大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/wuhu2026
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-e9e938acf3-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260914T040000Z
 DTEND:20260914T043000Z
-SUMMARY:[报名截止] 东北大学 · 计算机科学与工程学院（推免预报名）
-DESCRIPTION:东北大学计算机科学与工程学院2027年接收推荐免试研究生预报名，面向计算机、人工智能、物联网、通信、软件、自动化、数学等相关专业且预计可获得推免资格的2027届本科生，学院将组织现场复试考核。
-URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784259492312001298&b=1784085098695001298
+SUMMARY:[报名截止] 东北大学 · 计算机科学与工程学院（推
+ 免预报名）
+DESCRIPTION:东北大学计算机科学与工程学院2027年接收推荐
+ 免试研究生预报名，面向计算机、人工智能、物联网、
+ 通信、软件、自动化、数学等相关专业且预计可获得推
+ 免资格的2027届本科生，学院将组织现场复试考核。
+URL:https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemp
+ tionEntranceDetail?a=1784259492312001298&b=1784085098695001298
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:date-2027-ds-date-a6f8d8fbd4-schedule-round-1-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260914T115959Z
+DTEND:20260914T122959Z
+SUMMARY:[摘要截止] DATE 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：March 22-24\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://www.date-conference.com/date-2027-call-papers
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:date-2027-ds-date-a6f8d8fbd4-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260921T115959Z
+DTEND:20260921T122959Z
+SUMMARY:[论文截止] DATE 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：March 22-24\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://www.date-conference.com/date-2027-call-papers
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-2319ba6183-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260914T155900Z
 DTEND:20260914T162900Z
-SUMMARY:[报名截止] 南京航空航天大学 · 计算机科学与技术学院/软件学院（推免预报名）
-DESCRIPTION:南京航空航天大学计算机科学与技术学院/软件学院2027年接收推荐免试研究生预报名，招收推荐免试硕士研究生和直接攻读博士学位研究生，学院将根据材料审核结果择优组织综合面试。
+SUMMARY:[报名截止] 南京航空航天大学 · 计算机科学与技术
+ 学院/软件学院（推免预报名）
+DESCRIPTION:南京航空航天大学计算机科学与技术学院/软件
+ 学院2027年接收推荐免试研究生预报名，招收推荐免试硕
+ 士研究生和直接攻读博士学位研究生，学院将根据材料
+ 审核结果择优组织综合面试。
 URL:https://cs.nuaa.edu.cn/2026/0726/c10851a407213/page.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-20d4724c10-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260914T155959Z
 DTEND:20260914T162959Z
-SUMMARY:[报名截止] 南京航空航天大学 · 人工智能学院（推免预报名）
-DESCRIPTION:南京航空航天大学人工智能学院2027年接收推荐免试研究生预报名，招收推荐免试硕士研究生和直接攻读博士学位研究生，前期参加学院实验室开放日或线上招生宣讲的申请信息可直接转为预报名信息。
+SUMMARY:[报名截止] 南京航空航天大学 · 人工智能学院（推
+ 免预报名）
+DESCRIPTION:南京航空航天大学人工智能学院2027年接收推荐
+ 免试研究生预报名，招收推荐免试硕士研究生和直接攻
+ 读博士学位研究生，前期参加学院实验室开放日或线上
+ 招生宣讲的申请信息可直接转为预报名信息。
 URL:https://mp.weixin.qq.com/s/oewIcHhwW2Ql2koyZUDSWQ
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-7876ab5900-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260915T040000Z
 DTEND:20260915T043000Z
-SUMMARY:[报名截止] 大连理工大学 · 人工智能学院（推免预报名）
-DESCRIPTION:大连理工大学人工智能学院2027级推荐免试研究生预报名，申请人须登录学校推免预报名系统并按系统申请须知提交材料。
+SUMMARY:[报名截止] 大连理工大学 · 人工智能学院（推免预
+ 报名）
+DESCRIPTION:大连理工大学人工智能学院2027级推荐免试研究
+ 生预报名，申请人须登录学校推免预报名系统并按系统
+ 申请须知提交材料。
 URL:https://gs.dlut.edu.cn/info/1173/51492.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-21a01602eb-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260915T155900Z
 DTEND:20260915T162900Z
-SUMMARY:[报名截止] 第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 第十届全国大学生集成电路创新创业大
+ 赛职业技能赛项--综合赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58261
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-21a01602eb-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260114T160000Z
 DTEND:20260114T163000Z
-SUMMARY:[比赛开始] 第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 第十届全国大学生集成电路创新创业大
+ 赛职业技能赛项--综合赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58261
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-21a01602eb-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260731T155959Z
 DTEND:20260731T162959Z
-SUMMARY:[比赛结束] 第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 第十届全国大学生集成电路创新创业大
+ 赛职业技能赛项--综合赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58261
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-c0851a3466-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260731T155959Z
 DTEND:20260731T162959Z
 SUMMARY:[报名截止] 第五届琶洲算法大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/aicompetition-pz
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-c0851a3466-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260430T160000Z
 DTEND:20260430T163000Z
 SUMMARY:[比赛开始] 第五届琶洲算法大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/aicompetition-pz
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-c0851a3466-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261015T155959Z
 DTEND:20261015T162959Z
 SUMMARY:[比赛结束] 第五届琶洲算法大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/aicompetition-pz
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
+UID:icra-2027-ai-icra-5b7861998e-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260916T065959Z
+DTEND:20260916T072959Z
+SUMMARY:[论文截止] ICRA 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-7；会议时间：May 24-28\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://2027.ieee-icra.org/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:fast-2027-ds-fast-ad7bfdf4c4-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260916T115900Z
+DTEND:20260916T122900Z
+SUMMARY:[Fall deadline · 论文截止] FAST 2027
+DESCRIPTION:Fall deadline
+URL:https://www.usenix.org/conference/fast27
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:wcnc-2027-nw-wcnc-46373ca145-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260916T115959Z
+DTEND:20260916T122959Z
+SUMMARY:[论文截止] WCNC 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 5-8\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://wcnc2027.ieee-wcnc.org/
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
 UID:summer_camp-d6ac1abd4f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260916T155959Z
 DTEND:20260916T162959Z
-SUMMARY:[报名截止] 西安电子科技大学 · 集成电路学部（推免预报名）
-DESCRIPTION:西安电子科技大学集成电路学部2027年推荐免试研究生预报名，面向预计获得推免资格的优秀本科生，学院将于2026年9月20日前分批组织现场考核。
+SUMMARY:[报名截止] 西安电子科技大学 · 集成电路学部（推
+ 免预报名）
+DESCRIPTION:西安电子科技大学集成电路学部2027年推荐免试
+ 研究生预报名，面向预计获得推免资格的优秀本科生，
+ 学院将于2026年9月20日前分批组织现场考核。
 URL:https://sme.xidian.edu.cn/html/tzgg/jl/2026/0720/3660.html
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
+UID:icassp-2027-cg-icassp-aeee5e9013-schedule-round-1-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260917T115959Z
+DTEND:20260917T122959Z
+SUMMARY:[论文截止] ICASSP 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：May 16-21\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://2027.ieeeicassp.org/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:vmcai-2027-se-vmcai-ac464a3330-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20260917T115959Z
+DTEND:20260917T122959Z
+SUMMARY:[论文截止] VMCAI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：January 11-12\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://conf.researchr.org/home/VMCAI-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocrypt-2027-sc-eurocrypt-acbff356ca-schedule-round-1-deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260918T115959Z
+DTEND:20260918T122959Z
+SUMMARY:[论文截止] EUROCRYPT 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 11-15\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://eurocrypt.iacr.org/2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-2027-ds-eurosys-9e88af4d05-schedule-round-2-abstract_deadline-e
+ nd@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260918T115959Z
+DTEND:20260918T122959Z
+SUMMARY:[Fall Submission Deadline · 摘要截止] EuroSys 2027
+DESCRIPTION:Fall Submission Deadline
+URL:https://2027.eurosys.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-2027-ds-eurosys-9e88af4d05-schedule-round-2-deadline-end@contes
+ t-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260925T115959Z
+DTEND:20260925T122959Z
+SUMMARY:[Fall Submission Deadline · 论文截止] EuroSys 2027
+DESCRIPTION:Fall Submission Deadline
+URL:https://2027.eurosys.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:fc-2027-sc-fc-4735babcf1-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260918T115959Z
+DTEND:20260918T122959Z
+SUMMARY:[Submission deadline · 论文截止] FC 2027
+DESCRIPTION:Submission deadline
+URL:https://fc27.ifca.ai/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:hackhers-gsu-318139c300-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T130000Z
 DTEND:20260918T133000Z
 SUMMARY:[比赛开始] HackHers @GSU
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackhers.club/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackhers-gsu-318139c300-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T220000Z
 DTEND:20260919T223000Z
 SUMMARY:[比赛结束] HackHers @GSU
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackhers.club/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-8f41c7fbe8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T155959Z
 DTEND:20260918T162959Z
-SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——算法编程赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026“华青杯”大学生人工智能大赛——
+ 算法编程赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HQBRGZN2601
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,网络安全\,电子
+ 信息\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-6483f2b33d-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T155959Z
 DTEND:20260918T162959Z
-SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机组成原理赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCOA
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-6483f2b33d-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机组成原理赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCOA
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-6483f2b33d-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T100000Z
 DTEND:20260920T103000Z
-SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机组成原理赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCOA
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-05a5231c20-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T155959Z
 DTEND:20260918T162959Z
-SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--网络安全巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--
+ 网络安全巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Cyber202601
-CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-05a5231c20-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--网络安全巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--
+ 网络安全巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Cyber202601
-CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-05a5231c20-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T100000Z
 DTEND:20260920T103000Z
-SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--网络安全巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--
+ 网络安全巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Cyber202601
-CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,人工智能\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-433ea540db-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T155959Z
 DTEND:20260918T162959Z
-SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——算法能力赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 第八届CRH大学生程序设计大赛——算法
+ 能力赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260801
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-433ea540db-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——算法能力赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 第八届CRH大学生程序设计大赛——算法
+ 能力赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260801
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息
 END:VEVENT
 BEGIN:VEVENT
 UID:crh-433ea540db-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T100000Z
 DTEND:20260920T103000Z
-SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——算法能力赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 第八届CRH大学生程序设计大赛——算法
+ 能力赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CRH260801
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信息
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人\,电子信
+ 息
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-f7744ba9e8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T155959Z
 DTEND:20260918T162959Z
-SUMMARY:[报名截止] 计算机能力竞赛暨城市联赛（冬季赛）——计算机素养赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 计算机能力竞赛暨城市联赛（冬季赛）
+ ——计算机素养赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLComputer2026WT
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-f7744ba9e8-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 计算机能力竞赛暨城市联赛（冬季赛）——计算机素养赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 计算机能力竞赛暨城市联赛（冬季赛）
+ ——计算机素养赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLComputer2026WT
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-f7744ba9e8-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261227T100000Z
 DTEND:20261227T103000Z
-SUMMARY:[比赛结束] 计算机能力竞赛暨城市联赛（冬季赛）——计算机素养赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 计算机能力竞赛暨城市联赛（冬季赛）
+ ——计算机素养赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLComputer2026WT
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-the-north-c9453fb71b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T190000Z
 DTEND:20260918T193000Z
 SUMMARY:[比赛开始] Hack the North
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackthenorth.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-the-north-c9453fb71b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T200000Z
 DTEND:20260920T203000Z
 SUMMARY:[比赛结束] Hack the North
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackthenorth.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:vthacks-14-968a9ffddd-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T201500Z
 DTEND:20260918T204500Z
 SUMMARY:[比赛开始] VTHacks 14
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://vthacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:vthacks-14-968a9ffddd-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T181500Z
 DTEND:20260920T184500Z
 SUMMARY:[比赛结束] VTHacks 14
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://vthacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hophacks-37902b8e08-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260918T220000Z
 DTEND:20260918T223000Z
 SUMMARY:[比赛开始] HopHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hophacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hophacks-37902b8e08-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T170000Z
 DTEND:20260920T173000Z
 SUMMARY:[比赛结束] HopHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hophacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f2c01e6985-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T090000Z
 DTEND:20260919T093000Z
-SUMMARY:[报名截止] 2026全国大学生机器人与算法-模拟仿真赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026全国大学生机器人与算法-模拟仿真
+ 赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Robot/arborseek/26
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f2c01e6985-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 2026全国大学生机器人与算法-模拟仿真赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026全国大学生机器人与算法-模拟仿真
+ 赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Robot/arborseek/26
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-f2c01e6985-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T100000Z
 DTEND:20260919T103000Z
-SUMMARY:[比赛结束] 2026全国大学生机器人与算法-模拟仿真赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026全国大学生机器人与算法-模拟仿真
+ 赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Robot/arborseek/26
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-28eddf92f6-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T135959Z
 DTEND:20260920T142959Z
-SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——办公软件应用技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——办
+ 公软件应用技能大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26WLBOFFICE
 CATEGORIES:工科竞赛\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-28eddf92f6-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T020000Z
 DTEND:20260919T023000Z
-SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——办公软件应用技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——办
+ 公软件应用技能大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26WLBOFFICE
 CATEGORIES:工科竞赛\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-28eddf92f6-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T220000Z
 DTEND:20260919T223000Z
-SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——办公软件应用技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——办
+ 公软件应用技能大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26WLBOFFICE
 CATEGORIES:工科竞赛\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
+UID:iclr-2027-ai-iclr-b34fe11f7f-schedule-round-1-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260919T115959Z
+DTEND:20260919T122959Z
+SUMMARY:[摘要截止] ICLR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 26-30\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://iclr.cc/Conferences/2027
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2027-ai-iclr-b34fe11f7f-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260926T115959Z
+DTEND:20260926T122959Z
+SUMMARY:[论文截止] ICLR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 26-30\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://iclr.cc/Conferences/2027
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
 UID:steelhacks-xiii-75a262f371-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T123000Z
 DTEND:20260919T130000Z
 SUMMARY:[比赛开始] SteelHacks XIII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://steelhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:steelhacks-xiii-75a262f371-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T200000Z
 DTEND:20260920T203000Z
 SUMMARY:[比赛结束] SteelHacks XIII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://steelhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:summer_camp-9b48237204-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260919T155959Z
 DTEND:20260919T162959Z
-SUMMARY:[报名截止] 西安电子科技大学 · 人工智能学院（推免预报名）
-DESCRIPTION:西安电子科技大学人工智能学院2027年推荐免试研究生预报名，面向预计获得推免资格的优秀本科生，申请人须在学校研究生招生服务平台填报信息并按要求提交材料。
+SUMMARY:[报名截止] 西安电子科技大学 · 人工智能学院（推
+ 免预报名）
+DESCRIPTION:西安电子科技大学人工智能学院2027年推荐免试
+ 研究生预报名，面向预计获得推免资格的优秀本科生，
+ 申请人须在学校研究生招生服务平台填报信息并按要求
+ 提交材料。
 URL:https://sai.xidian.edu.cn/info/1106/28372.htm
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-dc3529429b-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260920T140000Z
 DTEND:20260920T143000Z
 SUMMARY:[报名截止] 2026华智·高校大学生人工智能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HZRGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-dc3529429b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260809T010000Z
 DTEND:20260809T013000Z
 SUMMARY:[比赛开始] 2026华智·高校大学生人工智能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HZRGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-dc3529429b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261115T150000Z
 DTEND:20261115T153000Z
 SUMMARY:[比赛结束] 2026华智·高校大学生人工智能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/HZRGZN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
+UID:saner-2027-se-wcre-9c10aafde4-schedule-round-1-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260922T115959Z
+DTEND:20260922T122959Z
+SUMMARY:[摘要截止] SANER 2027
+DESCRIPTION:Research Track Paper submission deadline
+URL:https://conf.researchr.org/home/saner-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:saner-2027-se-wcre-9c10aafde4-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260926T115959Z
+DTEND:20260926T122959Z
+SUMMARY:[论文截止] SANER 2027
+DESCRIPTION:Research Track Paper submission deadline
+URL:https://conf.researchr.org/home/saner-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-ai-418911c74b-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260924T120000Z
 DTEND:20260924T123000Z
-SUMMARY:[报名截止] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——AI大模型创新应用挑战赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——AI大模型创新应用挑战赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAIBM2026WN
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-418911c74b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260923T020000Z
 DTEND:20260923T023000Z
-SUMMARY:[比赛开始] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——AI大模型创新应用挑战赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——AI大模型创新应用挑战赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAIBM2026WN
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-418911c74b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260924T150000Z
 DTEND:20260924T153000Z
-SUMMARY:[比赛结束] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——AI大模型创新应用挑战赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——AI大模型创新应用挑战赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAIBM2026WN
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:hacks-xii-cf061e5592-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260925T011111Z
 DTEND:20260925T014111Z
 SUMMARY:[比赛开始] &HACKS XII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://andhacks.cs.wm.edu/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacks-xii-cf061e5592-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T210000Z
 DTEND:20260927T213000Z
 SUMMARY:[比赛结束] &HACKS XII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://andhacks.cs.wm.edu/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:acns-2027-sc-acns-5de2b6d214-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260925T115959Z
+DTEND:20260925T122959Z
+SUMMARY:[Cycle 1 Submission deadline · 论文截止] ACNS 2027
+DESCRIPTION:Cycle 1 Submission deadline
+URL:https://acns2027.isg.rhul.ac.uk/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:acns-2027-sc-acns-5de2b6d214-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270122T115959Z
+DTEND:20270122T122959Z
+SUMMARY:[Cycle 2 Submission deadline · 论文截止] ACNS 2027
+DESCRIPTION:Cycle 2 Submission deadline
+URL:https://acns2027.isg.rhul.ac.uk/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:hacknex-season-2-8573351bab-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260925T130000Z
 DTEND:20260925T133000Z
 SUMMARY:[比赛开始] HackNex Season 2
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innovocon.online/events/hacknex
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacknex-season-2-8573351bab-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260926T170000Z
 DTEND:20260926T173000Z
 SUMMARY:[比赛结束] HackNex Season 2
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innovocon.online/events/hacknex
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackgt-13-43d125d705-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260925T180000Z
 DTEND:20260925T183000Z
 SUMMARY:[比赛开始] HackGT 13
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:http://hack.gt/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackgt-13-43d125d705-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T190000Z
 DTEND:20260927T193000Z
 SUMMARY:[比赛结束] HackGT 13
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:http://hack.gt/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:shellhacks-fdf085e1b9-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260925T190000Z
 DTEND:20260925T193000Z
 SUMMARY:[比赛开始] ShellHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://shellhacks.net/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:shellhacks-fdf085e1b9-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T230000Z
 DTEND:20260927T233000Z
 SUMMARY:[比赛结束] ShellHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://shellhacks.net/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:ecir-2027-db-ecir-35b5e55c5c-schedule-round-1-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260925T235959Z
+DTEND:20260926T002959Z
+SUMMARY:[摘要截止] ECIR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：March 21-25\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://ecir2027.co.uk/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:ecir-2027-db-ecir-35b5e55c5c-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261002T235959Z
+DTEND:20261003T002959Z
+SUMMARY:[论文截止] ECIR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：March 21-25\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://ecir2027.co.uk/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:eurographics-2027-cg-eurographics-8dffe57691-schedule-round-1-abstract_
+ deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260925T235959Z
+DTEND:20260926T002959Z
+SUMMARY:[摘要截止] Eurographics 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC；会议时间：May 10-14\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://eg2027.isti.cnr.it/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:eurographics-2027-cg-eurographics-8dffe57691-schedule-round-1-deadline-
+ end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261001T235959Z
+DTEND:20261002T002959Z
+SUMMARY:[论文截止] Eurographics 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC；会议时间：May 10-14\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://eg2027.isti.cnr.it/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
 UID:divhacks-30fc892d8b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260926T130000Z
 DTEND:20260926T133000Z
 SUMMARY:[比赛开始] DivHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.columbiadivhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:divhacks-30fc892d8b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T200000Z
 DTEND:20260927T203000Z
 SUMMARY:[比赛结束] DivHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.columbiadivhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackumbc-54593d63e9-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260926T130000Z
 DTEND:20260926T133000Z
 SUMMARY:[比赛开始] hackUMBC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackumbc.tech/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackumbc-54593d63e9-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T210000Z
 DTEND:20260927T213000Z
 SUMMARY:[比赛结束] hackUMBC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackumbc.tech/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:owlhacks-40c64cc163-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260926T130000Z
 DTEND:20260926T133000Z
 SUMMARY:[比赛开始] OwlHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.owlhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:owlhacks-40c64cc163-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260927T190000Z
 DTEND:20260927T193000Z
 SUMMARY:[比赛结束] OwlHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.owlhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-d8210c61a8-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260929T040000Z
 DTEND:20260929T043000Z
 SUMMARY:[报名截止] 2026年高校学生数学建模能力测评考试
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/gxbsm26
 CATEGORIES:工科竞赛\,程序设计\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-b6367fd9ea-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260930T040000Z
 DTEND:20260930T043000Z
 SUMMARY:[报名截止] 首届量子计算应用场景挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/LZJS
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
+UID:satml-2027-sc-satml-204cb7fbab-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20260930T115959Z
+DTEND:20260930T122959Z
+SUMMARY:[论文截止] SATML 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：May 2027 (exact dates TBD)；日期可能调整
+ ，投稿前请回会议官网复核。
+URL:https://satml.org/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-99ebf1389a-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260930T155955Z
 DTEND:20260930T162955Z
 SUMMARY:[报名截止] 2026山东省大学生力学理论与应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026sdlxjs
 CATEGORIES:工科竞赛\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-99ebf1389a-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261101T010000Z
 DTEND:20261101T013000Z
 SUMMARY:[比赛开始] 2026山东省大学生力学理论与应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026sdlxjs
 CATEGORIES:工科竞赛\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-99ebf1389a-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261101T033000Z
 DTEND:20261101T040000Z
 SUMMARY:[比赛结束] 2026山东省大学生力学理论与应用大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026sdlxjs
 CATEGORIES:工科竞赛\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:20271phd-mphil-9bb8418f0f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261001T155959Z
 DTEND:20261001T162959Z
-SUMMARY:[报名截止] 香港理工大学 · 计算学系（2027年1月入学PhD/MPhil）
-DESCRIPTION:香港理工大学计算学系招收2027年1月入学PhD/MPhil研究生，研究方向覆盖算法理论、机器学习与人工智能、大数据、网络安全、网络系统和软件工程等。
+SUMMARY:[报名截止] 香港理工大学 · 计算学系（2027年1月入
+ 学PhD/MPhil）
+DESCRIPTION:香港理工大学计算学系招收2027年1月入学PhD/MPhil
+ 研究生，研究方向覆盖算法理论、机器学习与人工智能
+ 、大数据、网络安全、网络系统和软件工程等。
 URL:https://www.polyu.edu.hk/study/pg/rpg/20262/comp
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:bigred-hacks-2026-82ada2597c-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261002T011111Z
 DTEND:20261002T014111Z
 SUMMARY:[比赛开始] BigRed//Hacks 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.bigredhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:bigred-hacks-2026-82ada2597c-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T235959Z
 DTEND:20261005T002959Z
 SUMMARY:[比赛结束] BigRed//Hacks 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.bigredhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
-UID:hack-dearborn-5-conjure-reality-374bcaf81d-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+UID:aamas-2027-ai-ifaamas-45f46c0e5f-schedule-round-1-abstract_deadline-end
+ @contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261002T115900Z
+DTEND:20261002T122900Z
+SUMMARY:[摘要截止] AAMAS 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：May 03\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:aamas-2027-ai-ifaamas-45f46c0e5f-schedule-round-1-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261009T115900Z
+DTEND:20261009T122900Z
+SUMMARY:[论文截止] AAMAS 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：May 03\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:fpga-2027-ds-fpga-dd6190b8b4-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261002T115959Z
+DTEND:20261002T122959Z
+SUMMARY:[Abstracts Due · 论文截止] FPGA 2027
+DESCRIPTION:Abstracts Due
+URL:https://www.isfpga.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:fpga-2027-ds-fpga-dd6190b8b4-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261009T115959Z
+DTEND:20261009T122959Z
+SUMMARY:[Submissions Due · 论文截止] FPGA 2027
+DESCRIPTION:Submissions Due
+URL:https://www.isfpga.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:ipdps-2027-ds-ipps-460e428f61-schedule-round-1-abstract_deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261002T115959Z
+DTEND:20261002T122959Z
+SUMMARY:[摘要截止] IPDPS 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 1-5\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://www.ipdps.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:ipdps-2027-ds-ipps-460e428f61-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261009T115959Z
+DTEND:20261009T122959Z
+SUMMARY:[论文截止] IPDPS 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 1-5\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://www.ipdps.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:hack-dearborn-5-conjure-reality-374bcaf81d-competition_start@contest-dd
+ l
+DTSTAMP:20260829T121255Z
 DTSTART:20261003T011111Z
 DTEND:20261003T014111Z
 SUMMARY:[比赛开始] Hack Dearborn 5: Conjure Reality
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackdearborn.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-dearborn-5-conjure-reality-374bcaf81d-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T235959Z
 DTEND:20261005T002959Z
 SUMMARY:[比赛结束] Hack Dearborn 5: Conjure Reality
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackdearborn.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:rowdy-hacks-9dd64760e7-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261003T011111Z
 DTEND:20261003T014111Z
 SUMMARY:[比赛开始] Rowdy Hacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://rowdyhacks.org
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:rowdy-hacks-9dd64760e7-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T220000Z
 DTEND:20261004T223000Z
 SUMMARY:[比赛结束] Rowdy Hacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://rowdyhacks.org
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:icc-2027-nw-icc-a6a2e619dc-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261003T035959Z
+DTEND:20261003T042959Z
+SUMMARY:[论文截止] ICC 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-4；会议时间：May 30 - June 3\, 2027；日期可能调整，
+ 投稿前请回会议官网复核。
+URL:https://icc2027.ieee-icc.org
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:dcc-2027-cg-dcc-a58aa31dd2-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261003T065959Z
+DTEND:20261003T072959Z
+SUMMARY:[论文截止] DCC 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：PT；会议时间：March 23-26\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://datacompressionconference.org/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-2027-ds-sigmetrics-6af2d5aead-schedule-round-2-abstract_dead
+ line-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261003T115900Z
+DTEND:20261003T122900Z
+SUMMARY:[fall round · 摘要截止] SIGMETRICS 2027
+DESCRIPTION:fall round
+URL:https://www.sigmetrics.org/sigmetrics2027/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-2027-ds-sigmetrics-6af2d5aead-schedule-round-2-deadline-end@
+ contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261010T115900Z
+DTEND:20261010T122900Z
+SUMMARY:[fall round · 论文截止] SIGMETRICS 2027
+DESCRIPTION:fall round
+URL:https://www.sigmetrics.org/sigmetrics2027/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-2027-ds-sigmetrics-6af2d5aead-schedule-round-3-abstract_dead
+ line-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270105T115900Z
+DTEND:20270105T122900Z
+SUMMARY:[winter round · 摘要截止] SIGMETRICS 2027
+DESCRIPTION:winter round
+URL:https://www.sigmetrics.org/sigmetrics2027/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-2027-ds-sigmetrics-6af2d5aead-schedule-round-3-deadline-end@
+ contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270112T115900Z
+DTEND:20270112T122900Z
+SUMMARY:[winter round · 论文截止] SIGMETRICS 2027
+DESCRIPTION:winter round
+URL:https://www.sigmetrics.org/sigmetrics2027/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
+UID:fse-2027-se-sigsoft-f24d54ea47-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261003T115959Z
+DTEND:20261003T122959Z
+SUMMARY:[论文截止] FSE 2027 · ACM International Conference on the Foun
+ dations of Software Engineering
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：July 12-16\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://conf.researchr.org/home/fse-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
 UID:mhacks-1488e6a1a1-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261003T130000Z
 DTEND:20261003T133000Z
 SUMMARY:[比赛开始] MHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.mhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:mhacks-1488e6a1a1-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T230000Z
 DTEND:20261004T233000Z
 SUMMARY:[比赛结束] MHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.mhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:girlhacks-4e707882ab-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261003T133000Z
 DTEND:20261003T140000Z
 SUMMARY:[比赛开始] GirlHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.njitgirlhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:girlhacks-4e707882ab-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T194500Z
 DTEND:20261004T201500Z
 SUMMARY:[比赛结束] GirlHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.njitgirlhacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:innohacks-4-0-b3a694bc6c-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261003T140000Z
 DTEND:20261003T143000Z
 SUMMARY:[比赛开始] Innohacks 4.0
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innohacks.live
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
 UID:innohacks-4-0-b3a694bc6c-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261004T193000Z
 DTEND:20261004T200000Z
 SUMMARY:[比赛结束] Innohacks 4.0
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innohacks.live
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
+UID:edbt-2027-db-edbt-f5eedf920d-schedule-round-3-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261008T115959Z
+DTEND:20261008T122959Z
+SUMMARY:[第 3 轮 · 论文截止] EDBT 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 6-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://edbticdt2027.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
 UID:x-game-2026-aeba3101b3-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261008T160000Z
 DTEND:20261008T163000Z
 SUMMARY:[报名截止] X-GAME 2026智能新源汽车大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/labsshevdccom/xgame/2026
 CATEGORIES:工科竞赛\,人工智能\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:x-game-2026-aeba3101b3-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260428T160000Z
 DTEND:20260428T163000Z
 SUMMARY:[比赛开始] X-GAME 2026智能新源汽车大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/labsshevdccom/xgame/2026
 CATEGORIES:工科竞赛\,人工智能\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:x-game-2026-aeba3101b3-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261029T160000Z
 DTEND:20261029T163000Z
 SUMMARY:[比赛结束] X-GAME 2026智能新源汽车大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/labsshevdccom/xgame/2026
 CATEGORIES:工科竞赛\,人工智能\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:hacknc-d8d9afefb1-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T011111Z
 DTEND:20261009T014111Z
 SUMMARY:[比赛开始] HackNC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacknc.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacknc-d8d9afefb1-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T200000Z
 DTEND:20261011T203000Z
 SUMMARY:[比赛结束] HackNC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacknc.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:sbuhacks-a41e7bf676-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T011111Z
 DTEND:20261009T014111Z
 SUMMARY:[比赛开始] SBUHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hack.sbcs.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:sbuhacks-a41e7bf676-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T235959Z
 DTEND:20261012T002959Z
 SUMMARY:[比赛结束] SBUHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hack.sbcs.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-knight-ac91e06ffa-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T140000Z
 DTEND:20261009T143000Z
 SUMMARY:[比赛开始] Hack Knight
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackknight.org/
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-knight-ac91e06ffa-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T200000Z
 DTEND:20261011T203000Z
 SUMMARY:[比赛结束] Hack Knight
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackknight.org/
 CATEGORIES:黑客松\,Software
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-75b3ae60d6-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T155959Z
 DTEND:20261009T162959Z
-SUMMARY:[报名截止] 2026年第二届“智联杯”大学生信息通信技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第二届“智联杯”大学生信息通信
+ 技术大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026ICT
 CATEGORIES:工科竞赛\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-75b3ae60d6-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261010T020000Z
 DTEND:20261010T023000Z
-SUMMARY:[比赛开始] 2026年第二届“智联杯”大学生信息通信技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第二届“智联杯”大学生信息通信
+ 技术大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026ICT
 CATEGORIES:工科竞赛\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-75b3ae60d6-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T150000Z
 DTEND:20261011T153000Z
-SUMMARY:[比赛结束] 2026年第二届“智联杯”大学生信息通信技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第二届“智联杯”大学生信息通信
+ 技术大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026ICT
 CATEGORIES:工科竞赛\,电子信息\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-656fc5b530-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T155959Z
 DTEND:20261009T162959Z
-SUMMARY:[报名截止] 第五届全国大学生大数据分析技术技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 第五届全国大学生大数据分析技术技能
+ 大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59526
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-656fc5b530-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T160000Z
 DTEND:20261016T163000Z
-SUMMARY:[比赛开始] 第五届全国大学生大数据分析技术技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 第五届全国大学生大数据分析技术技能
+ 大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59526
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-656fc5b530-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261025T155959Z
 DTEND:20261025T162959Z
-SUMMARY:[比赛结束] 第五届全国大学生大数据分析技术技能大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 第五届全国大学生大数据分析技术技能
+ 大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59526
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:knight-hacks-ix-7c98427431-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261009T200000Z
 DTEND:20261009T203000Z
 SUMMARY:[比赛开始] Knight Hacks IX
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://2026.knighthacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:knight-hacks-ix-7c98427431-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T220000Z
 DTEND:20261011T223000Z
 SUMMARY:[比赛结束] Knight Hacks IX
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://2026.knighthacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:fg-2027-ai-fg-635d158123-schedule-round-1-abstract_deadline-end@contest
+ -ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261010T115959Z
+DTEND:20261010T122959Z
+SUMMARY:[摘要截止] FG 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 26-30\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://fg2027.ieee-biometrics.org/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:fg-2027-ai-fg-635d158123-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261017T115959Z
+DTEND:20261017T122959Z
+SUMMARY:[论文截止] FG 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 26-30\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://fg2027.ieee-biometrics.org/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
 UID:codered-orion-00aa5f7afe-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261010T130000Z
 DTEND:20261010T133000Z
 SUMMARY:[比赛开始] CodeRED Orion
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://uhcode.red/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:codered-orion-00aa5f7afe-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261011T210000Z
 DTEND:20261011T213000Z
 SUMMARY:[比赛结束] CodeRED Orion
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://uhcode.red/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-561f0df058-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261010T155959Z
 DTEND:20261010T162959Z
 SUMMARY:[报名截止] 山东大学生数智技术创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58894
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-561f0df058-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261010T160000Z
 DTEND:20261010T163000Z
 SUMMARY:[比赛开始] 山东大学生数智技术创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58894
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-561f0df058-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
 SUMMARY:[比赛结束] 山东大学生数智技术创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58894
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械\,大数据
 END:VEVENT
 BEGIN:VEVENT
+UID:sigmod-2027-db-sigmod-b03243955e-schedule-round-4-abstract_deadline-end
+ @contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261011T115900Z
+DTEND:20261011T122900Z
+SUMMARY:[round 4 · 摘要截止] SIGMOD 2027
+DESCRIPTION:round 4
+URL:https://2027.sigmod.org/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-2027-db-sigmod-b03243955e-schedule-round-4-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261018T115900Z
+DTEND:20261018T122900Z
+SUMMARY:[round 4 · 论文截止] SIGMOD 2027
+DESCRIPTION:round 4
+URL:https://2027.sigmod.org/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:www-2027-mx-www-af5a83b6a1-schedule-round-1-abstract_deadline-end@conte
+ st-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261012T115959Z
+DTEND:20261012T122959Z
+SUMMARY:[摘要截止] WWW 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：May 10 - 14\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://acmweb2027.org/
+CATEGORIES:交叉/综合/新兴
+END:VEVENT
+BEGIN:VEVENT
+UID:www-2027-mx-www-af5a83b6a1-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261019T115959Z
+DTEND:20261019T122959Z
+SUMMARY:[论文截止] WWW 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：May 10 - 14\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://acmweb2027.org/
+CATEGORIES:交叉/综合/新兴
+END:VEVENT
+BEGIN:VEVENT
+UID:alt-2027-ai-alt-6ac41bccd3-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261013T115959Z
+DTEND:20261013T122959Z
+SUMMARY:[论文截止] ALT 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：March 9-12\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://algorithmiclearningtheory.org/alt2027/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:coling-2027-ai-coling-ccf2187e3b-schedule-round-1-deadline-end@contest-
+ ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261013T115959Z
+DTEND:20261013T122959Z
+SUMMARY:[ARR Submission · 论文截止] COLING 2027
+DESCRIPTION:ARR Submission
+URL:https://2027.coling-iccl.org/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
+UID:naacl-2027-ai-naacl-227f61ff84-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261013T115959Z
+DTEND:20261013T122959Z
+SUMMARY:[ARR Submission · 论文截止] NAACL 2027
+DESCRIPTION:ARR Submission
+URL:https://2027.naacl.org/
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
 UID:competition-b45b4a4cb5-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260331T155959Z
 DTEND:20260331T162959Z
 SUMMARY:[报名截止] 第十九届全国大学生结构设计大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58009
 CATEGORIES:工科竞赛\,电子信息\,机械\,机械工程
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-b45b4a4cb5-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261013T160000Z
 DTEND:20261013T163000Z
 SUMMARY:[比赛开始] 第十九届全国大学生结构设计大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58009
 CATEGORIES:工科竞赛\,电子信息\,机械\,机械工程
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-b45b4a4cb5-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T155959Z
 DTEND:20261018T162959Z
 SUMMARY:[比赛结束] 第十九届全国大学生结构设计大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/58009
 CATEGORIES:工科竞赛\,电子信息\,机械\,机械工程
 END:VEVENT
 BEGIN:VEVENT
+UID:iscas-2027-ds-iscas-015272c17c-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261014T115959Z
+DTEND:20261014T122959Z
+SUMMARY:[论文截止] ISCAS 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 6-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://2027.ieee-iscas.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
 UID:swamphacks-xii-8feb016d56-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T011111Z
 DTEND:20261016T014111Z
 SUMMARY:[比赛开始] SwampHacks XII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://swamphacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:swamphacks-xii-8feb016d56-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T235959Z
 DTEND:20261019T002959Z
 SUMMARY:[比赛结束] SwampHacks XII
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://swamphacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:ches-2027-sc-ches-1655e756ad-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261016T115959Z
+DTEND:20261016T122959Z
+SUMMARY:[Schedule for TCHES Volume 2027/2 · 论文截止] CHES 2027
+DESCRIPTION:Schedule for TCHES Volume 2027/2
+URL:https://ches.iacr.org/2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-2027-sc-ches-1655e756ad-schedule-round-3-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270116T115959Z
+DTEND:20270116T122959Z
+SUMMARY:[Schedule for TCHES Volume 2027/3 · 论文截止] CHES 2027
+DESCRIPTION:Schedule for TCHES Volume 2027/3
+URL:https://ches.iacr.org/2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-2027-sc-ches-1655e756ad-schedule-round-4-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270416T115959Z
+DTEND:20270416T122959Z
+SUMMARY:[Schedule for TCHES Volume 2027/4 · 论文截止] CHES 2027
+DESCRIPTION:Schedule for TCHES Volume 2027/4
+URL:https://ches.iacr.org/2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:csfw-2027-sc-csfw-60932c25b5-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261016T115959Z
+DTEND:20261016T122959Z
+SUMMARY:[Fall · 论文截止] CSFW 2027
+DESCRIPTION:Fall
+URL:https://www.ieee-security.org/TC/CSF2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:csfw-2027-sc-csfw-60932c25b5-schedule-round-3-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270129T115959Z
+DTEND:20270129T122959Z
+SUMMARY:[Winter · 论文截止] CSFW 2027
+DESCRIPTION:Winter
+URL:https://www.ieee-security.org/TC/CSF2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-3787e52eb7-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T155959Z
 DTEND:20261016T162959Z
-SUMMARY:[报名截止] 2026年“智联杯”大学生人工智能竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年“智联杯”大学生人工智能竞答大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026RGZN
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3787e52eb7-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261017T020000Z
 DTEND:20261017T023000Z
-SUMMARY:[比赛开始] 2026年“智联杯”大学生人工智能竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年“智联杯”大学生人工智能竞答大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026RGZN
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3787e52eb7-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T150000Z
 DTEND:20261018T153000Z
-SUMMARY:[比赛结束] 2026年“智联杯”大学生人工智能竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年“智联杯”大学生人工智能竞答大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/ZHGCxy2026RGZN
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-21ec037781-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T155959Z
 DTEND:20261016T162959Z
-SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛——算法赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛
+ ——算法赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXSF
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与
+ 信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-21ec037781-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T050000Z
 DTEND:20261018T053000Z
-SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛——算法赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛
+ ——算法赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXSF
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与
+ 信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-21ec037781-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T100000Z
 DTEND:20261018T103000Z
-SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛——算法赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛
+ ——算法赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXSF
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,机械\,计算机与
+ 信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-aiai-a9ae1b035a-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261017T155900Z
 DTEND:20261017T162900Z
-SUMMARY:[报名截止] 2026 “AI生成世界”— AI图像图形技术创新大赛【AI机器人素养赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【AI机器人素养赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI03
 CATEGORIES:工科竞赛\,人工智能\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-aiai-a9ae1b035a-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T160000Z
 DTEND:20261016T163000Z
-SUMMARY:[比赛开始] 2026 “AI生成世界”— AI图像图形技术创新大赛【AI机器人素养赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【AI机器人素养赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI03
 CATEGORIES:工科竞赛\,人工智能\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-aiai-a9ae1b035a-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T155900Z
 DTEND:20261018T162900Z
-SUMMARY:[比赛结束] 2026 “AI生成世界”— AI图像图形技术创新大赛【AI机器人素养赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【AI机器人素养赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI03
 CATEGORIES:工科竞赛\,人工智能\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-the-valley-528ebc1594-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261016T200000Z
 DTEND:20261016T203000Z
 SUMMARY:[比赛开始] Hack the Valley
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackthevalley.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-the-valley-528ebc1594-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T220000Z
 DTEND:20261018T223000Z
 SUMMARY:[比赛结束] Hack the Valley
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackthevalley.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:la-hacks-ai-hackathon-2026-48593329e0-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261017T011111Z
 DTEND:20261017T014111Z
 SUMMARY:[比赛开始] LA Hacks AI Hackathon 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ai.lahacks.com
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:la-hacks-ai-hackathon-2026-48593329e0-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T235959Z
 DTEND:20261019T002959Z
 SUMMARY:[比赛结束] LA Hacks AI Hackathon 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ai.lahacks.com
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3253252b90-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T155959Z
 DTEND:20261023T162959Z
-SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛——计算机网络赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机网络赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3253252b90-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261017T020000Z
 DTEND:20261017T023000Z
-SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛——计算机网络赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机网络赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3253252b90-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T100000Z
 DTEND:20261018T103000Z
-SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛——计算机网络赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛
+ ——计算机网络赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026TJKXCN
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-ai-32a8686f11-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261017T155900Z
 DTEND:20261017T162900Z
-SUMMARY:[报名截止] 2026 “AI生成世界”— AI图像图形技术创新大赛【算法编程赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【算法编程赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI04
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-ai-32a8686f11-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T050000Z
 DTEND:20261018T053000Z
-SUMMARY:[比赛开始] 2026 “AI生成世界”— AI图像图形技术创新大赛【算法编程赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【算法编程赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI04
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-ai-ai-32a8686f11-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261018T100000Z
 DTEND:20261018T103000Z
-SUMMARY:[比赛结束] 2026 “AI生成世界”— AI图像图形技术创新大赛【算法编程赛道】
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026 “AI生成世界”— AI图像图形技术创
+ 新大赛【算法编程赛道】
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026CSoIaGAI04
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026it-1819e8f445-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261020T155959Z
 DTEND:20261020T162959Z
-SUMMARY:[报名截止] 2026年第十六届IT科技节--信息技术与素养大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第十六届IT科技节--信息技术与素
+ 养大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26itxxjs
 CATEGORIES:工科竞赛\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026mathorcup-052b327cdb-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T040000Z
 DTEND:20261023T043000Z
-SUMMARY:[报名截止] 2026年第七届MathorCup数学应用挑战赛——大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第七届MathorCup数学应用挑战赛——
+ 大数据竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/bigdata2026
 CATEGORIES:工科竞赛\,程序设计\,数学建模\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026mathorcup-052b327cdb-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T100000Z
 DTEND:20261023T103000Z
-SUMMARY:[比赛开始] 2026年第七届MathorCup数学应用挑战赛——大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第七届MathorCup数学应用挑战赛——
+ 大数据竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/bigdata2026
 CATEGORIES:工科竞赛\,程序设计\,数学建模\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026mathorcup-052b327cdb-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261030T120000Z
 DTEND:20261030T123000Z
-SUMMARY:[比赛结束] 2026年第七届MathorCup数学应用挑战赛——大数据竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第七届MathorCup数学应用挑战赛——
+ 大数据竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/bigdata2026
 CATEGORIES:工科竞赛\,程序设计\,数学建模\,大数据
 END:VEVENT
 BEGIN:VEVENT
+UID:ct-rsa-2027-sc-ctrsa-141ee46ba7-schedule-round-1-deadline-end@contest-d
+ dl
+DTSTAMP:20260829T121255Z
+DTSTART:20261023T115959Z
+DTEND:20261023T122959Z
+SUMMARY:[Paper submission deadline · 论文截止] CT-RSA 2027
+DESCRIPTION:Paper submission deadline
+URL:https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-983d260698-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T155959Z
 DTEND:20261023T162959Z
-SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——计算机能力挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——计
+ 算机能力挑战赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026WLBcomputilit
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-983d260698-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T160000Z
 DTEND:20261023T163000Z
-SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——计算机能力挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——计
+ 算机能力挑战赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026WLBcomputilit
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-983d260698-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261025T155959Z
 DTEND:20261025T162959Z
-SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——计算机能力挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——计
+ 算机能力挑战赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026WLBcomputilit
-CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,电子信息\,计算机与信息技
+ 术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-84281cec9b-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T155959Z
 DTEND:20261024T162959Z
-SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛—数据库实操竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛—数据
+ 库实操竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/sjk26
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-84281cec9b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260822T010000Z
 DTEND:20260822T013000Z
-SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛—数据库实操竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛—数据
+ 库实操竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/sjk26
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-84281cec9b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T100000Z
 DTEND:20261024T103000Z
-SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛—数据库实操竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛—数据
+ 库实操竞赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/sjk26
-CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数据
+CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息\,大数
+ 据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-bf527f871f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T155959Z
 DTEND:20261023T162959Z
-SUMMARY:[报名截止] 2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第二届工业互联网技术与应用挑战
+ 赛——工业互联网专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Industrial
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-bf527f871f-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T020000Z
 DTEND:20261024T023000Z
-SUMMARY:[比赛开始] 2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第二届工业互联网技术与应用挑战
+ 赛——工业互联网专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Industrial
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-bf527f871f-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261025T150000Z
 DTEND:20261025T153000Z
-SUMMARY:[比赛结束] 2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第二届工业互联网技术与应用挑战
+ 赛——工业互联网专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Industrial
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-d75ff931df-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261023T160000Z
 DTEND:20261023T163000Z
-SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛——数据统计赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年大学生统计科学与算法编程挑战赛
+ ——数据统计赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/tjkx/2026
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-d75ff931df-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T020000Z
 DTEND:20261024T023000Z
-SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛——数据统计赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年大学生统计科学与算法编程挑战赛
+ ——数据统计赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/tjkx/2026
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-d75ff931df-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T100000Z
 DTEND:20261024T103000Z
-SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛——数据统计赛项
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年大学生统计科学与算法编程挑战赛
+ ——数据统计赛项
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/tjkx/2026
 CATEGORIES:工科竞赛\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
+UID:cvm-2027-cg-cvm-f3705a8e8b-schedule-round-1-abstract_deadline-end@conte
+ st-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261023T235959Z
+DTEND:20261024T002959Z
+SUMMARY:[摘要截止] CVM 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：April 9-11\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:http://iccvm.org/2027/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:cvm-2027-cg-cvm-f3705a8e8b-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261026T235959Z
+DTEND:20261027T002959Z
+SUMMARY:[论文截止] CVM 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC+0；会议时间：April 9-11\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:http://iccvm.org/2027/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
 UID:hacktx-26-75afe3888e-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261024T120000Z
 DTEND:20261024T123000Z
 SUMMARY:[比赛开始] HackTX 26
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacktx.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacktx-26-75afe3888e-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261025T220000Z
 DTEND:20261025T223000Z
 SUMMARY:[比赛结束] HackTX 26
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacktx.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-8091e32ae2-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261025T120000Z
 DTEND:20261025T123000Z
 SUMMARY:[报名截止] 2026大学生“麟创杯”创新数学竞赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/LCBCXSX
 CATEGORIES:工科竞赛\,电子信息\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026eda-ea60867991-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261030T155959Z
 DTEND:20261030T162959Z
-SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——EDA设计与开发竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第三届大学生高新技术竞赛——EDA
+ 设计与开发竞答大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/EDA2026
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026eda-ea60867991-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T020000Z
 DTEND:20261031T023000Z
-SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——EDA设计与开发竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第三届大学生高新技术竞赛——EDA
+ 设计与开发竞答大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/EDA2026
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026eda-ea60867991-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261101T150000Z
 DTEND:20261101T153000Z
-SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——EDA设计与开发竞答大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第三届大学生高新技术竞赛——EDA
+ 设计与开发竞答大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/EDA2026
 CATEGORIES:工科竞赛\,人工智能\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-91e5dd802a-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261030T155959Z
 DTEND:20261030T162959Z
-SUMMARY:[报名截止] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——算法编程赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——算法编程赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAlgorithmp2026WT
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-91e5dd802a-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T050000Z
 DTEND:20261031T053000Z
-SUMMARY:[比赛开始] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——算法编程赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——算法编程赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAlgorithmp2026WT
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-91e5dd802a-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T100000Z
 DTEND:20261031T103000Z
-SUMMARY:[比赛结束] 2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——算法编程赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第二届计算机能力竞赛暨城市联赛
+ （冬季赛）——算法编程赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/CLAlgorithmp2026WT
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,电子信息
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-python-b69d85c31f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261030T155959Z
 DTEND:20261030T162959Z
-SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--Python编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--P
+ ython编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Python202601
-CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-python-b69d85c31f-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T020000Z
 DTEND:20261031T023000Z
-SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--Python编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--P
+ ython编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Python202601
-CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-python-b69d85c31f-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261122T155959Z
 DTEND:20261122T162959Z
-SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--Python编程巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--P
+ ython编程巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Python202601
-CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械\,
+ 计算机与信息技术
+END:VEVENT
+BEGIN:VEVENT
+UID:mlsys-2027-mx-mlsys-e166681a6a-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261030T200000Z
+DTEND:20261030T203000Z
+SUMMARY:[论文截止] MLSys 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC；会议时间：TBD；日期可能调整，投稿前请回会议
+ 官网复核。
+URL:https://mlsys.org/
+CATEGORIES:交叉/综合/新兴
 END:VEVENT
 BEGIN:VEVENT
 UID:hackcbs-9-o-1426d24663-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T120000Z
 DTEND:20261031T123000Z
 SUMMARY:[比赛开始] hackCBS 9.O
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackcbs.tech
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackcbs-9-o-1426d24663-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261101T230000Z
 DTEND:20261101T233000Z
 SUMMARY:[比赛结束] hackCBS 9.O
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackcbs.tech
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-cea7fd0fae-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
-SUMMARY:[报名截止] 2026年第五届“华秦杯”网络安全创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第五届“华秦杯”网络安全创新大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/huaqin_cup/2026
 CATEGORIES:工科竞赛\,网络安全\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-cea7fd0fae-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20260331T160000Z
 DTEND:20260331T163000Z
-SUMMARY:[比赛开始] 2026年第五届“华秦杯”网络安全创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第五届“华秦杯”网络安全创新大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/huaqin_cup/2026
 CATEGORIES:工科竞赛\,网络安全\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-cea7fd0fae-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261120T155959Z
 DTEND:20261120T162959Z
-SUMMARY:[比赛结束] 2026年第五届“华秦杯”网络安全创新大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第五届“华秦杯”网络安全创新大
+ 赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/huaqin_cup/2026
 CATEGORIES:工科竞赛\,网络安全\,计算机与信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026it-877abe8b98-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
-SUMMARY:[报名截止] 2026年第十六届IT科技节--人工智能科技作品 创新设计大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第十六届IT科技节--人工智能科技
+ 作品 创新设计大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26itrgzn
 CATEGORIES:工科竞赛\,人工智能\,电子信息\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026it-3f5eb177d5-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
-SUMMARY:[报名截止] 2026年第十六届IT科技节—人工智能大模型智能体设计大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第十六届IT科技节—人工智能大模
+ 型智能体设计大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26wlht
 CATEGORIES:工科竞赛\,人工智能\,机器人
 END:VEVENT
 BEGIN:VEVENT
 UID:2026it-835192060f-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
-SUMMARY:[报名截止] 2026年第十六届IT科技节—人工智能算法挑战大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第十六届IT科技节—人工智能算法
+ 挑战大赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26itrgznsf
 CATEGORIES:工科竞赛\,人工智能\,程序设计
 END:VEVENT
 BEGIN:VEVENT
 UID:2026it-1e18f01e08-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261031T155959Z
 DTEND:20261031T162959Z
 SUMMARY:[报名截止] 2026年第十六届IT科技节—网络技术大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/26it-wljs
 CATEGORIES:工科竞赛\,电子信息\,程序设计
 END:VEVENT
 BEGIN:VEVENT
+UID:ubicomp-iswc-2026-hi-huc-635d89f598-schedule-round-4-deadline-end@conte
+ st-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261102T115959Z
+DTEND:20261102T122959Z
+SUMMARY:[fourth round · 论文截止] UbiComp/ISWC 2026
+DESCRIPTION:fourth round
+URL:https://www.ubicomp.org/ubicomp-iswc-2026
+CATEGORIES:人机交互与普适计算
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-a30fb4005c-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261106T000000Z
 DTEND:20261106T003000Z
-SUMMARY:[报名截止] 2026年第十二届数维杯大学生数学建模挑战赛（秋季赛）
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第十二届数维杯大学生数学建模挑
+ 战赛（秋季赛）
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59859
 CATEGORIES:工科竞赛\,电子信息\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-a30fb4005c-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261120T010000Z
 DTEND:20261120T013000Z
-SUMMARY:[比赛开始] 2026年第十二届数维杯大学生数学建模挑战赛（秋季赛）
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第十二届数维杯大学生数学建模挑
+ 战赛（秋季赛）
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59859
 CATEGORIES:工科竞赛\,电子信息\,数学建模
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-a30fb4005c-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261124T010000Z
 DTEND:20261124T013000Z
-SUMMARY:[比赛结束] 2026年第十二届数维杯大学生数学建模挑战赛（秋季赛）
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第十二届数维杯大学生数学建模挑
+ 战赛（秋季赛）
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/59859
 CATEGORIES:工科竞赛\,电子信息\,数学建模
 END:VEVENT
 BEGIN:VEVENT
+UID:refsq-2027-se-refsq-77041c4d01-schedule-round-1-abstract_deadline-end@c
+ ontest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261106T115959Z
+DTEND:20261106T122959Z
+SUMMARY:[摘要截止] REFSQ 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 12-15\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://2027.refsq.org/
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:refsq-2027-se-refsq-77041c4d01-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261113T115959Z
+DTEND:20261113T122959Z
+SUMMARY:[论文截止] REFSQ 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：April 12-15\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://2027.refsq.org/
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:rtas-2027-ds-rtas-ef8fa4d0af-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261106T115959Z
+DTEND:20261106T122959Z
+SUMMARY:[Submission Deadline (Firm) · 论文截止] RTAS 2027
+DESCRIPTION:Submission Deadline (Firm)
+URL:https://2027.rtas.org/
+CATEGORIES:计算机体系结构/并行与分布计算/存储系统
+END:VEVENT
+BEGIN:VEVENT
 UID:hackutd-0dbb004b17-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261107T011111Z
 DTEND:20261107T014111Z
 SUMMARY:[比赛开始] HackUTD
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://zeroday.hackutd.co
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackutd-0dbb004b17-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261108T235959Z
 DTEND:20261109T002959Z
 SUMMARY:[比赛结束] HackUTD
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://zeroday.hackutd.co
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackrpi-2026-7e19f70fac-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261107T140000Z
 DTEND:20261107T143000Z
 SUMMARY:[比赛开始] HackRPI 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackrpi.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackrpi-2026-7e19f70fac-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261108T210000Z
 DTEND:20261108T213000Z
 SUMMARY:[比赛结束] HackRPI 2026
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackrpi.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:makecu-bd9b396310-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261107T140000Z
 DTEND:20261107T143000Z
 SUMMARY:[比赛开始] MakeCU
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://v0-curc-makecu.vercel.app/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:makecu-bd9b396310-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261108T213000Z
 DTEND:20261108T220000Z
 SUMMARY:[比赛结束] MakeCU
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://v0-curc-makecu.vercel.app/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:s-p-2027-sc-sp-d873f9fbc8-schedule-round-2-abstract_deadline-end@contes
+ t-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261111T115959Z
+DTEND:20261111T122959Z
+SUMMARY:[Second Paper submission deadline · 摘要截止] S&P 2027
+DESCRIPTION:Second Paper submission deadline
+URL:https://sp2027.ieee-security.org/index.html
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:s-p-2027-sc-sp-d873f9fbc8-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261118T115959Z
+DTEND:20261118T122959Z
+SUMMARY:[Second Paper submission deadline · 论文截止] S&P 2027
+DESCRIPTION:Second Paper submission deadline
+URL:https://sp2027.ieee-security.org/index.html
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:icde-2027-db-icde-6313a4fdf2-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261112T000000Z
+DTEND:20261112T003000Z
+SUMMARY:[second round · 论文截止] ICDE 2027
+DESCRIPTION:second round
+URL:https://icde2027.github.io/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
 UID:hackumass-2ede3c3537-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261113T011111Z
 DTEND:20261113T014111Z
 SUMMARY:[比赛开始] HackUMass
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackumass.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackumass-2ede3c3537-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261115T235959Z
 DTEND:20261116T002959Z
 SUMMARY:[比赛结束] HackUMass
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackumass.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:pldi-2027-se-pldi-26e3c39e63-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261113T115959Z
+DTEND:20261113T122959Z
+SUMMARY:[论文截止] PLDI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 5-11\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://pldi27.sigplan.org/
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-08fcb996ed-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261113T155959Z
 DTEND:20261113T162959Z
-SUMMARY:[报名截止] 2026年度第七届大学生算法设计与编程挑战赛(秋季赛)
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年度第七届大学生算法设计与编程挑
+ 战赛(秋季赛)
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/adpc2026autumn
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08fcb996ed-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261115T050000Z
 DTEND:20261115T053000Z
-SUMMARY:[比赛开始] 2026年度第七届大学生算法设计与编程挑战赛(秋季赛)
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年度第七届大学生算法设计与编程挑
+ 战赛(秋季赛)
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/adpc2026autumn
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-08fcb996ed-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261115T100000Z
 DTEND:20261115T103000Z
-SUMMARY:[比赛结束] 2026年度第七届大学生算法设计与编程挑战赛(秋季赛)
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年度第七届大学生算法设计与编程挑
+ 战赛(秋季赛)
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/adpc2026autumn
 CATEGORIES:工科竞赛\,人工智能\,程序设计\,大数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3a4d267ef7-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261113T155959Z
 DTEND:20261113T162959Z
-SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第四届大学生信息系统创新大赛--
+ 办公软件知识巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/OFFICE202601
 CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3a4d267ef7-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261114T020000Z
 DTEND:20261114T023000Z
-SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第四届大学生信息系统创新大赛--
+ 办公软件知识巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/OFFICE202601
 CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-3a4d267ef7-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261129T155959Z
 DTEND:20261129T162959Z
-SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第四届大学生信息系统创新大赛--
+ 办公软件知识巅峰赛
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/OFFICE202601
 CATEGORIES:工科竞赛\,程序设计\,网络安全\,电子信息\,机械
 END:VEVENT
 BEGIN:VEVENT
 UID:durhack-732e42c9d1-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261114T143000Z
 DTEND:20261114T150000Z
 SUMMARY:[比赛开始] DurHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://durhack.com
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:durhack-732e42c9d1-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261115T220000Z
 DTEND:20261115T223000Z
 SUMMARY:[比赛结束] DurHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://durhack.com
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:wsdm-2027-db-wsdm-d7d1c8d2b1-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260825T115959Z
+DTEND:20260825T122959Z
+SUMMARY:[Full Paper · 论文截止] WSDM 2027
+DESCRIPTION:Full Paper
+URL:https://wsdm-conference.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
+UID:wsdm-2027-db-wsdm-d7d1c8d2b1-schedule-round-2-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261118T115959Z
+DTEND:20261118T122959Z
+SUMMARY:[Short Paper · 论文截止] WSDM 2027
+DESCRIPTION:Short Paper
+URL:https://wsdm-conference.org/2027/
+CATEGORIES:数据库/数据挖掘/内容检索
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-dcda4e5166-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261120T155959Z
 DTEND:20261120T162959Z
-SUMMARY:[报名截止] 2026年第二届工业互联网技术与应用挑战赛——自动化竞答专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[报名截止] 2026年第二届工业互联网技术与应用挑战
+ 赛——自动化竞答专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Automation
-CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大
+ 数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-dcda4e5166-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261121T020000Z
 DTEND:20261121T023000Z
-SUMMARY:[比赛开始] 2026年第二届工业互联网技术与应用挑战赛——自动化竞答专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛开始] 2026年第二届工业互联网技术与应用挑战
+ 赛——自动化竞答专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Automation
-CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大
+ 数据
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-dcda4e5166-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20261122T100000Z
 DTEND:20261122T103000Z
-SUMMARY:[比赛结束] 2026年第二届工业互联网技术与应用挑战赛——自动化竞答专项赛道
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+SUMMARY:[比赛结束] 2026年第二届工业互联网技术与应用挑战
+ 赛——自动化竞答专项赛道
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/2026Automation
-CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大数据
+CATEGORIES:工科竞赛\,人工智能\,电子信息\,自动化\,机械\,大
+ 数据
+END:VEVENT
+BEGIN:VEVENT
+UID:dsn-2027-sc-dsn-b290dd0aac-schedule-round-1-abstract_deadline-end@conte
+ st-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261126T115959Z
+DTEND:20261126T122959Z
+SUMMARY:[摘要截止] DSN 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 22-25\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://dsn2027-berlin.github.io/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:dsn-2027-sc-dsn-b290dd0aac-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261203T115959Z
+DTEND:20261203T122959Z
+SUMMARY:[论文截止] DSN 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：June 22-25\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://dsn2027-berlin.github.io/
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:secon-2027-nw-secon-67e0e07219-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261201T045959Z
+DTEND:20261201T052959Z
+SUMMARY:[论文截止] SECON 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-5；会议时间：May 5-7\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://secon2027.ieee-secon.org/
+CATEGORIES:计算机网络
+END:VEVENT
+BEGIN:VEVENT
+UID:osdi-2027-se-osdi-e91b01cc33-schedule-round-1-abstract_deadline-end@con
+ test-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261201T225959Z
+DTEND:20261201T232959Z
+SUMMARY:[摘要截止] OSDI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC；会议时间：July 7-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://www.usenix.org/conference/osdi27
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:osdi-2027-se-osdi-e91b01cc33-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20261208T225959Z
+DTEND:20261208T232959Z
+SUMMARY:[论文截止] OSDI 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC；会议时间：July 7-9\, 2027；日期可能调整，投稿前
+ 请回会议官网复核。
+URL:https://www.usenix.org/conference/osdi27
+CATEGORIES:软件工程/系统软件/程序设计语言
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c33d441ef4-registration_deadline@contest-ddl
@@ -2762,9 +4583,11 @@ DTSTAMP:20260826T015711Z
 DTSTART:20261204T155959Z
 DTEND:20261204T162959Z
 SUMMARY:[报名截止] 2026第七届大学生算法挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/algorithm202602
-CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与
+ 信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c33d441ef4-competition_start@contest-ddl
@@ -2772,9 +4595,11 @@ DTSTAMP:20260826T015711Z
 DTSTART:20261206T050000Z
 DTEND:20261206T053000Z
 SUMMARY:[比赛开始] 2026第七届大学生算法挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/algorithm202602
-CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与
+ 信息技术
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-c33d441ef4-competition_end@contest-ddl
@@ -2782,9 +4607,22 @@ DTSTAMP:20260826T015711Z
 DTSTART:20261206T100000Z
 DTEND:20261206T103000Z
 SUMMARY:[比赛结束] 2026第七届大学生算法挑战赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/algorithm202602
-CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与信息技术
+CATEGORIES:工科竞赛\,程序设计\,机器人\,自动化\,计算机与
+ 信息技术
+END:VEVENT
+BEGIN:VEVENT
+UID:asiaccs-2027-sc-ccs-2ab89c20da-schedule-round-2-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20261212T115959Z
+DTEND:20261212T122959Z
+SUMMARY:[2nd round Deadline · 论文截止] AsiaCCS 2027
+DESCRIPTION:2nd round Deadline
+URL:https://asiaccs2027.cityu.edu.mo/index.html
+CATEGORIES:网络与信息安全
 END:VEVENT
 BEGIN:VEVENT
 UID:competition-4519397219-registration_deadline@contest-ddl
@@ -2792,7 +4630,8 @@ DTSTAMP:20260826T015711Z
 DTSTART:20261231T155959Z
 DTEND:20261231T162959Z
 SUMMARY:[报名截止] 茶艺大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Tea666Art
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
@@ -2802,7 +4641,8 @@ DTSTAMP:20260826T015711Z
 DTSTART:20251231T160000Z
 DTEND:20251231T163000Z
 SUMMARY:[比赛开始] 茶艺大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Tea666Art
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
@@ -2812,567 +4652,726 @@ DTSTAMP:20260826T015711Z
 DTSTART:20261231T155959Z
 DTEND:20261231T162959Z
 SUMMARY:[比赛结束] 茶艺大赛
-DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前请回到主办方官网复核。
+DESCRIPTION:赛氪公开前端 API 用于赛事发现；报名或提交前
+ 请回到主办方官网复核。
 URL:https://new.saikr.com/vse/Tea666Art
 CATEGORIES:工科竞赛\,人工智能
 END:VEVENT
 BEGIN:VEVENT
+UID:issta-2027-se-issta-cb4a26b53a-schedule-round-1-abstract_deadline-end@c
+ ontest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270109T115959Z
+DTEND:20270109T122959Z
+SUMMARY:[摘要截止] ISSTA 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：September 7-10\, 2027；日期可能调整，投
+ 稿前请回会议官网复核。
+URL:https://conf.researchr.org/home/issta-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
+UID:issta-2027-se-issta-cb4a26b53a-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20270112T115959Z
+DTEND:20270112T122959Z
+SUMMARY:[论文截止] ISSTA 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：AoE；会议时间：September 7-10\, 2027；日期可能调整，投
+ 稿前请回会议官网复核。
+URL:https://conf.researchr.org/home/issta-2027
+CATEGORIES:软件工程/系统软件/程序设计语言
+END:VEVENT
+BEGIN:VEVENT
 UID:deltahacks-64e0677c7f-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270109T130000Z
 DTEND:20270109T133000Z
 SUMMARY:[比赛开始] DeltaHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.deltahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:deltahacks-64e0677c7f-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270110T220000Z
 DTEND:20270110T223000Z
 SUMMARY:[比赛结束] DeltaHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.deltahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:20275phd-mphil-9810fd5c9b-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270114T155959Z
 DTEND:20270114T162959Z
-SUMMARY:[报名截止] 香港理工大学 · 数据科学与人工智能学系（2027年5月入学PhD/MPhil）
-DESCRIPTION:香港理工大学数据科学与人工智能学系招收2027年5月入学PhD/MPhil研究生，研究方向包括机器学习、计算机视觉、数据技术及人工智能交叉应用等，申请材料包括研究计划和两封学术推荐信。
+SUMMARY:[报名截止] 香港理工大学 · 数据科学与人工智能学
+ 系（2027年5月入学PhD/MPhil）
+DESCRIPTION:香港理工大学数据科学与人工智能学系招收2027
+ 年5月入学PhD/MPhil研究生，研究方向包括机器学习、计算
+ 机视觉、数据技术及人工智能交叉应用等，申请材料包
+ 括研究计划和两封学术推荐信。
 URL:https://www.polyu.edu.hk/study/pg/rpg/20263/dsai
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:uofthacks-b25da95b90-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270115T011111Z
 DTEND:20270115T014111Z
 SUMMARY:[比赛开始] UofTHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://uofthacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:uofthacks-b25da95b90-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270117T235959Z
 DTEND:20270118T002959Z
 SUMMARY:[比赛结束] UofTHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://uofthacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:uottahack-9-bba83078ef-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270115T011111Z
 DTEND:20270115T014111Z
 SUMMARY:[比赛开始] uOttaHack 9
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://2027.uottahack.ca/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:uottahack-9-bba83078ef-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270117T235959Z
 DTEND:20270118T002959Z
 SUMMARY:[比赛结束] uOttaHack 9
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://2027.uottahack.ca/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:nwhacks-1aa23dcf5f-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270116T140000Z
 DTEND:20270116T143000Z
 SUMMARY:[比赛开始] nwHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://nwhacks.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:nwhacks-1aa23dcf5f-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270117T230000Z
 DTEND:20270117T233000Z
 SUMMARY:[比赛结束] nwHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://nwhacks.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:usenix-security-2027-sc-uss-82bda33a90-schedule-round-1-deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20260826T115959Z
+DTEND:20260826T122959Z
+SUMMARY:[Cycle 1 Deadline · 论文截止] USENIX Security 2027
+DESCRIPTION:Cycle 1 Deadline
+URL:https://www.usenix.org/conference/usenixsecurity27
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-sc-uss-82bda33a90-schedule-round-2-abstract_deadli
+ ne-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270120T115959Z
+DTEND:20270120T122959Z
+SUMMARY:[Cycle 2 Deadline · 摘要截止] USENIX Security 2027
+DESCRIPTION:Cycle 2 Deadline
+URL:https://www.usenix.org/conference/usenixsecurity27
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-sc-uss-82bda33a90-schedule-round-2-deadline-end@co
+ ntest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270127T115959Z
+DTEND:20270127T122959Z
+SUMMARY:[Cycle 2 Deadline · 论文截止] USENIX Security 2027
+DESCRIPTION:Cycle 2 Deadline
+URL:https://www.usenix.org/conference/usenixsecurity27
+CATEGORIES:网络与信息安全
+END:VEVENT
+BEGIN:VEVENT
 UID:hackville-2027-a314aa0d68-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270122T011111Z
 DTEND:20270122T014111Z
 SUMMARY:[比赛开始] Hackville 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackville.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackville-2027-a314aa0d68-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270124T235959Z
 DTEND:20270125T002959Z
 SUMMARY:[比赛结束] Hackville 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackville.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hoya-hacks-f7aa8a35f1-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270122T220000Z
 DTEND:20270122T223000Z
 SUMMARY:[比赛开始] Hoya Hacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hoyahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hoya-hacks-f7aa8a35f1-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270124T170000Z
 DTEND:20270124T173000Z
 SUMMARY:[比赛结束] Hoya Hacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hoyahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:ellehacks-bb78fd7821-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270129T011111Z
 DTEND:20270129T014111Z
 SUMMARY:[比赛开始] ElleHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ellehacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:ellehacks-bb78fd7821-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270131T235959Z
 DTEND:20270201T002959Z
 SUMMARY:[比赛结束] ElleHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ellehacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:icmr-2027-cg-mir-96a44efc10-schedule-round-1-deadline-end@contest-ddl
+DTSTAMP:20260829T121255Z
+DTSTART:20270201T115959Z
+DTEND:20270201T122959Z
+SUMMARY:[论文截止] ICMR 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：June 7-10\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://www.icmr2027.org/
+CATEGORIES:计算机图形学与多媒体
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcnn-2027-ai-ijcnn-712fe7c74d-schedule-round-1-deadline-end@contest-dd
+ l
+DTSTAMP:20260829T121255Z
+DTSTART:20270201T115959Z
+DTEND:20270201T122959Z
+SUMMARY:[论文截止] IJCNN 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：June 14 - 18\, 2027；日期可能调整，投
+ 稿前请回会议官网复核。
+URL:https://ijcnn.org/2027
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
 UID:20275phd-mphil-5285551085-registration_deadline@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270201T155959Z
 DTEND:20270201T162959Z
-SUMMARY:[报名截止] 香港理工大学 · 计算学系（2027年5月入学PhD/MPhil）
-DESCRIPTION:香港理工大学计算学系招收2027年5月入学PhD/MPhil研究生，研究方向覆盖算法理论、机器学习与人工智能、大数据、网络安全、网络系统和软件工程等。
+SUMMARY:[报名截止] 香港理工大学 · 计算学系（2027年5月入
+ 学PhD/MPhil）
+DESCRIPTION:香港理工大学计算学系招收2027年5月入学PhD/MPhil
+ 研究生，研究方向覆盖算法理论、机器学习与人工智能
+ 、大数据、网络安全、网络系统和软件工程等。
 URL:https://www.polyu.edu.hk/study/pg/rpg/20263/comp
 CATEGORIES:保研夏令营
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-brown-2027-1f2d5e0466-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270205T011111Z
 DTEND:20270205T014111Z
 SUMMARY:[比赛开始] Hack@Brown 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackatbrown.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-brown-2027-1f2d5e0466-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270207T223000Z
 DTEND:20270207T230000Z
 SUMMARY:[比赛结束] Hack@Brown 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackatbrown.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:ugahacks-67be602121-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270205T011111Z
 DTEND:20270205T014111Z
 SUMMARY:[比赛开始] UGAHacks 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ugahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:ugahacks-67be602121-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270207T235959Z
 DTEND:20270208T002959Z
 SUMMARY:[比赛结束] UGAHacks 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ugahacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-ncstate-7703241128-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270206T011111Z
 DTEND:20270206T014111Z
 SUMMARY:[比赛开始] Hack_NCState
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackncstate.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hack-ncstate-7703241128-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270207T235959Z
 DTEND:20270208T002959Z
 SUMMARY:[比赛结束] Hack_NCState
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hackncstate.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:innovateher-51f833de71-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270206T011111Z
 DTEND:20270206T014111Z
 SUMMARY:[比赛开始] InnovateHer
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innovateherhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:innovateher-51f833de71-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270207T235959Z
 DTEND:20270208T002959Z
 SUMMARY:[比赛结束] InnovateHer
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://innovateherhacks.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:spartahack-7e646c712d-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270206T011111Z
 DTEND:20270206T014111Z
 SUMMARY:[比赛开始] SpartaHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.spartahack.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:spartahack-7e646c712d-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270207T235959Z
 DTEND:20270208T002959Z
 SUMMARY:[比赛结束] SpartaHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.spartahack.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:makeuoft-99f1b0d451-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270213T140000Z
 DTEND:20270213T143000Z
 SUMMARY:[比赛开始] MakeUofT
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:http://makeuoft.ca/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:makeuoft-99f1b0d451-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270214T210000Z
 DTEND:20270214T213000Z
 SUMMARY:[比赛结束] MakeUofT
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:http://makeuoft.ca/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:sf-hacks-d72362dafb-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270219T170000Z
 DTEND:20270219T173000Z
 SUMMARY:[比赛开始] SF Hacks 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://sfhacks.io
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:sf-hacks-d72362dafb-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270221T210000Z
 DTEND:20270221T213000Z
 SUMMARY:[比赛结束] SF Hacks 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://sfhacks.io
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:cuhackit-7232b6c913-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270220T011111Z
 DTEND:20270220T014111Z
 SUMMARY:[比赛开始] CUhackit
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://cuhack.it/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:cuhackit-7232b6c913-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270221T235959Z
 DTEND:20270222T002959Z
 SUMMARY:[比赛结束] CUhackit
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://cuhack.it/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackillinois-abdcc8da49-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270226T011111Z
 DTEND:20270226T014111Z
 SUMMARY:[比赛开始] HackIllinois
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackillinois.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackillinois-abdcc8da49-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270228T235959Z
 DTEND:20270301T002959Z
 SUMMARY:[比赛结束] HackIllinois
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackillinois.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacklytics-2027-877ca5216c-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270226T011111Z
 DTEND:20270226T014111Z
 SUMMARY:[比赛开始] Hacklytics 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacklytics2027.web.app/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hacklytics-2027-877ca5216c-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270228T235959Z
 DTEND:20270301T002959Z
 SUMMARY:[比赛结束] Hacklytics 2027
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://hacklytics2027.web.app/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackhers-b1b6d2f66b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270227T011111Z
 DTEND:20270227T014111Z
 SUMMARY:[比赛开始] HackHERS 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ruhackhers.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackhers-b1b6d2f66b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270228T235959Z
 DTEND:20270301T002959Z
 SUMMARY:[比赛结束] HackHERS 
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://ruhackhers.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:revolutionuc-71b7953c53-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270227T011111Z
 DTEND:20270227T014111Z
 SUMMARY:[比赛开始] RevolutionUC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.revolutionuc.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:revolutionuc-71b7953c53-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270228T235959Z
 DTEND:20270301T002959Z
 SUMMARY:[比赛结束] RevolutionUC
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.revolutionuc.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:wichacks-4cbb2232e3-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270227T150000Z
 DTEND:20270227T153000Z
 SUMMARY:[比赛开始] WiCHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://wichacks.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:wichacks-4cbb2232e3-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270228T210000Z
 DTEND:20270228T213000Z
 SUMMARY:[比赛结束] WiCHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://wichacks.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
+UID:ieee-cec-2027-ai-cec-16e78b8563-schedule-round-1-deadline-end@contest-d
+ dl
+DTSTAMP:20260829T121255Z
+DTSTART:20270301T115959Z
+DTEND:20270301T122959Z
+SUMMARY:[论文截止] IEEE CEC 2027
+DESCRIPTION:CCFDDL 社区协作维护的会议截稿数据；原始时区
+ ：UTC-12；会议时间：July 25-28\, 2027；日期可能调整，投稿
+ 前请回会议官网复核。
+URL:https://ieeecec.org/2027
+CATEGORIES:人工智能
+END:VEVENT
+BEGIN:VEVENT
 UID:henhacks-69c393c123-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270306T011111Z
 DTEND:20270306T014111Z
 SUMMARY:[比赛开始] HenHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.henhackshackathon.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:henhacks-69c393c123-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270307T093000Z
 DTEND:20270307T100000Z
 SUMMARY:[比赛结束] HenHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.henhackshackathon.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:kent-hack-enough-11ebe2939b-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270306T150000Z
 DTEND:20270306T153000Z
 SUMMARY:[比赛开始] Kent Hack Enough
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://khe.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:kent-hack-enough-11ebe2939b-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270307T210000Z
 DTEND:20270307T213000Z
 SUMMARY:[比赛结束] Kent Hack Enough
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://khe.io/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:diamondhacks-9dc3600abe-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270404T011111Z
 DTEND:20270404T014111Z
 SUMMARY:[比赛开始] Diamondhacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://diamondhacks.acmucsd.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:diamondhacks-9dc3600abe-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270405T235959Z
 DTEND:20270406T002959Z
 SUMMARY:[比赛结束] Diamondhacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://diamondhacks.acmucsd.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackku27-314937b9b9-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270409T011111Z
 DTEND:20270409T014111Z
 SUMMARY:[比赛开始] HackKU27
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackku.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:hackku27-314937b9b9-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270411T235959Z
 DTEND:20270412T002959Z
 SUMMARY:[比赛结束] HackKU27
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.hackku.org/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:marihacks-ab566f7935-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270409T011111Z
 DTEND:20270409T014111Z
 SUMMARY:[比赛开始] MariHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.marihacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:marihacks-ab566f7935-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270410T235959Z
 DTEND:20270411T002959Z
 SUMMARY:[比赛结束] MariHacks
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.marihacks.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:wehack-1deda0c824-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270410T011111Z
 DTEND:20270410T014111Z
 SUMMARY:[比赛开始] WEHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.wehackutd.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:wehack-1deda0c824-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270411T235959Z
 DTEND:20270412T002959Z
 SUMMARY:[比赛结束] WEHack
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://www.wehackutd.com/
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:la-hacks-27-2305e7e8e8-competition_start@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270416T011111Z
 DTEND:20270416T014111Z
 SUMMARY:[比赛开始] LA Hacks 27
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://lahacks.com
 CATEGORIES:黑客松
 END:VEVENT
 BEGIN:VEVENT
 UID:la-hacks-27-2305e7e8e8-competition_end@contest-ddl
-DTSTAMP:20260829T070133Z
+DTSTAMP:20260829T121255Z
 DTSTART:20270418T235959Z
 DTEND:20270419T002959Z
 SUMMARY:[比赛结束] LA Hacks 27
-DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供时，请以活动官网为准。
+DESCRIPTION:MLH 官方高校黑客松日历；报名截止时间未提供
+ 时，请以活动官网为准。
 URL:https://lahacks.com
 CATEGORIES:黑客松
 END:VEVENT

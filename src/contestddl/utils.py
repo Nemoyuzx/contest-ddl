@@ -118,16 +118,23 @@ def compute_status(event, now: datetime | None = None) -> str:
     reg_end = parse_datetime(event.registration_deadline)
     comp_start = parse_datetime(event.competition_start)
     comp_end = parse_datetime(event.competition_end)
+    abstract = parse_datetime(getattr(event, "abstract_deadline", None))
     submit = parse_datetime(event.submission_deadline)
     schedule = event.schedule if isinstance(getattr(event, "schedule", None), list) else []
-    registration_stages, competition_stages = [], []
+    registration_stages, submission_stages, competition_stages = [], [], []
     for stage in schedule:
         if not isinstance(stage, dict):
             continue
         start, end = parse_datetime(stage.get("start")), parse_datetime(stage.get("end"))
         if not start and not end:
             continue
-        target = registration_stages if re.search(r"报名|注册|征集", f"{stage.get('name', '')} {stage.get('content', '')}") else competition_stages
+        label = f"{stage.get('name', '')} {stage.get('content', '')}"
+        if re.search(r"报名|注册|征集", label):
+            target = registration_stages
+        elif re.search(r"摘要|论文|投稿|截稿|作品提交|材料提交", label):
+            target = submission_stages
+        else:
+            target = competition_stages
         target.append((start, end))
     if any(start and current >= start and (not end or current <= end) for start, end in competition_stages):
         return "ongoing"
@@ -139,6 +146,12 @@ def compute_status(event, now: datetime | None = None) -> str:
         return "registration_upcoming"
     if reg_end and current <= reg_end:
         return "registration_open"
+    if any((not start or current >= start) and end and current <= end for start, end in submission_stages):
+        return "submission_open"
+    if any(start and current < start for start, _ in submission_stages):
+        return "submission_upcoming"
+    if abstract and current <= abstract:
+        return "submission_open"
     if submit and current <= submit:
         return "submission_open"
     if any(start and current < start for start, _ in competition_stages):
@@ -153,12 +166,14 @@ def compute_status(event, now: datetime | None = None) -> str:
         return "registration_upcoming"
     if reg_end and current <= reg_end:
         return "registration_open"
-    if submit and current <= submit:
-        return "submission_open"
     if comp_start and current < comp_start:
         return "registration_closed" if reg_end else "upcoming"
     if reg_end and current > reg_end:
         return "registration_closed"
+    if submission_stages and all(end and current > end for _, end in submission_stages):
+        return "submission_closed"
+    if (abstract or submit) and all(value is None or current > value for value in (abstract, submit)):
+        return "submission_closed"
     return "unknown"
 
 
@@ -167,6 +182,7 @@ def choose_primary_deadline(event, now: datetime | None = None) -> str | None:
     current = now or now_china()
     values = [
         event.registration_deadline,
+        getattr(event, "abstract_deadline", None),
         event.submission_deadline,
         event.competition_start,
         event.competition_end,

@@ -1,4 +1,4 @@
-name: 新增赛事 / 夏令营 / 黑客松
+name: 新增赛事 / 论文会议 / 期刊专题 / 夏令营 / 黑客松
 description: 提交一条有官方来源的 DDL
 title: "[新增] "
 labels: [data, needs-verification]
@@ -13,7 +13,7 @@ body:
     id: type
     attributes:
       label: 类型
-      options: [竞赛, 黑客松, 夏令营, 预推免]
+      options: [竞赛, 论文会议, 期刊专题, 黑客松, 夏令营, 预推免]
     validations:
       required: true
   - type: input
@@ -34,7 +34,7 @@ body:
     id: details
     attributes:
       label: 其他时间与说明
-      description: 报名开始、比赛起止、提交截止、校内/全国 DDL 等
+      description: 报名开始、摘要截止、投稿/提交截止、比赛起止、校内/全国 DDL 等
   - type: checkboxes
     id: confirmation
     attributes:

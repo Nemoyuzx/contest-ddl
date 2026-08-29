@@ -9,7 +9,7 @@ from contestddl.pipeline import SOURCE_ADAPTERS, run_pipeline
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Update competition deadline data")
+    parser = argparse.ArgumentParser(description="Update deadline data")
     parser.add_argument("command", nargs="?", default="update", choices=("update", "check"))
     parser.add_argument("--root", default=".", help="repository root")
     parser.add_argument("--source", action="append", choices=sorted(SOURCE_ADAPTERS), help="only run selected source; repeatable")

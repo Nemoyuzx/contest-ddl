@@ -23,12 +23,18 @@ def collect(fetcher=None, now=None, path: str | Path = "data/manual.yml"):
             checked_at = row.get("checked_at") or iso(current)
             source = SourceEvidence(row.get("source_name", "Maintainer reviewed"), row.get("source_url") or official_url, "manual_review", 5, checked_at, row.get("verified_fields", []))
             event = Event(
-                id=row.get("id") or stable_id(name, event_type, row.get("competition_start") or row.get("registration_deadline"), "manual"),
+                id=row.get("id") or stable_id(
+                    name, event_type,
+                    row.get("competition_start") or row.get("registration_deadline")
+                    or row.get("abstract_deadline") or row.get("submission_deadline"),
+                    "manual",
+                ),
                 name=name, event_type=event_type, categories=row.get("categories", []), official_url=official_url,
                 source=source, organizer=row.get("organizer", ""), level=row.get("level", ""), region=row.get("region", ""),
                 location=row.get("location", ""), mode=row.get("mode", ""), eligibility=row.get("eligibility", ""),
                 registration_start=iso_or_none(row.get("registration_start")), registration_deadline=iso_or_none(row.get("registration_deadline"), end_of_day=True),
                 competition_start=iso_or_none(row.get("competition_start")), competition_end=iso_or_none(row.get("competition_end")),
+                abstract_deadline=iso_or_none(row.get("abstract_deadline"), end_of_day=True),
                 submission_deadline=iso_or_none(row.get("submission_deadline"), end_of_day=True),
                 tags=row.get("tags", []), notes=row.get("notes", ""), confidence="high", verification_status="maintainer_reviewed",
             )

@@ -40,6 +40,18 @@ def test_validation_rejects_event_without_any_date():
     assert not _validate(item, errors, NOW)
 
 
+def test_validation_accepts_abstract_only_conference():
+    item = make_event(
+        name="ICLR 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-30T23:59:59-12:00",
+    )
+    assert _validate(item, [], NOW)
+    assert item.primary_deadline == item.abstract_deadline
+    assert item.status == "submission_open"
+
+
 def test_lifecycle_preserves_unseen_old_record():
     old = make_event()
     old.first_seen_at = iso(NOW - timedelta(days=40))
@@ -47,6 +59,37 @@ def test_lifecycle_preserves_unseen_old_record():
     items = _lifecycle([], {old.id: old}, NOW)
     assert len(items) == 1
     assert items[0].stale and items[0].archived
+
+
+def test_lifecycle_does_not_mutate_fresh_records_list():
+    current = [make_event()]
+    old = make_event(
+        id="old-id",
+        name="Old Event 2025",
+        official_url="https://old.example",
+        competition_start="2025-09-01T08:00:00+08:00",
+    )
+    old.first_seen_at = iso(NOW - timedelta(days=40))
+    old.last_seen_at = iso(NOW - timedelta(days=40))
+    items = _lifecycle(current, {old.id: old}, NOW)
+    assert len(current) == 1
+    assert len(items) == 2
+
+
+def test_lifecycle_advances_cached_event_to_its_next_deadline():
+    old = make_event(
+        name="ICLR 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-21T19:59:59+08:00",
+        submission_deadline="2026-08-23T19:59:59+08:00",
+    )
+    old.primary_deadline = old.abstract_deadline
+    old.first_seen_at = iso(NOW - timedelta(days=2))
+    old.last_seen_at = iso(NOW - timedelta(days=1))
+    item = _lifecycle([], {old.id: old}, NOW)[0]
+    assert item.primary_deadline == item.submission_deadline
+    assert item.status == "submission_open"
 
 
 def test_lifecycle_does_not_duplicate_same_event_after_id_migration():
@@ -87,6 +130,92 @@ def test_ics_contains_deadline_and_url():
     assert "BEGIN:VCALENDAR" in text
     assert "[报名截止] Test Hack 2026" in text
     assert "https://event.example" in text
+
+
+def test_ics_contains_abstract_deadline():
+    item = make_event(
+        name="ICLR 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-30T23:59:59-12:00",
+    )
+    item.last_seen_at = iso(NOW)
+    assert _validate(item, [], NOW)
+    text = build_ics([item.to_dict()])
+    assert "[摘要截止] ICLR 2027" in text
+
+
+def test_ics_contains_every_conference_schedule_deadline_with_stable_uids():
+    item = make_event(
+        name="VLDB 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-25T17:00:00-07:00",
+        submission_deadline="2026-09-01T17:00:00-07:00",
+        schedule=[
+            {"id": "round-1-abstract", "name": "第 1 轮 · 摘要截止", "end": "2026-08-25T17:00:00-07:00"},
+            {"id": "round-1-paper", "name": "第 1 轮 · 论文截止", "end": "2026-09-01T17:00:00-07:00"},
+            {"id": "round-2-abstract", "name": "第 2 轮 · 摘要截止", "end": "2026-09-25T17:00:00-07:00"},
+            {"id": "round-2-paper", "name": "第 2 轮 · 论文截止", "end": "2026-10-01T17:00:00-07:00"},
+        ],
+    )
+    item.last_seen_at = iso(NOW)
+    assert _validate(item, [], NOW)
+    text = build_ics([item.to_dict()])
+    assert text.count("BEGIN:VEVENT") == 4
+    assert f"{item.id}-abstract_deadline@contest-ddl" not in text
+    assert f"{item.id}-schedule-round-2-paper-end@contest-ddl" in text
+    assert "[第 2 轮 · 论文截止] VLDB 2027" in text
+
+
+def test_ics_keeps_top_level_deadline_not_covered_by_conference_schedule():
+    item = make_event(
+        name="Conference 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-25T23:59:59-12:00",
+        submission_deadline="2026-09-01T23:59:59-12:00",
+        schedule=[{
+            "id": "round-1-paper",
+            "name": "第 1 轮 · 论文截止",
+            "end": "2026-09-01T23:59:59-12:00",
+        }],
+    )
+    item.last_seen_at = iso(NOW)
+    assert _validate(item, [], NOW)
+    text = build_ics([item.to_dict()])
+    assert text.count("BEGIN:VEVENT") == 2
+    assert f"{item.id}-abstract_deadline@contest-ddl" in text
+    assert f"{item.id}-schedule-round-1-paper-end@contest-ddl" in text
+
+
+def test_ics_deduplicates_english_abstract_schedule_mirror():
+    item = make_event(
+        name="Conference 2027",
+        event_type="conference",
+        competition_start=None,
+        abstract_deadline="2026-08-25T23:59:59-12:00",
+        schedule=[{
+            "id": "round-1-abstract",
+            "name": "Abstract deadline",
+            "end": "2026-08-25T23:59:59-12:00",
+        }],
+    )
+    item.last_seen_at = iso(NOW)
+    assert _validate(item, [], NOW)
+    text = build_ics([item.to_dict()])
+    assert text.count("BEGIN:VEVENT") == 1
+    assert f"{item.id}-abstract_deadline@contest-ddl" not in text
+    assert f"{item.id}-schedule-round-1-abstract-end@contest-ddl" in text
+
+
+def test_ics_folds_long_utf8_lines_to_75_octets():
+    item = make_event(notes="很长的说明" * 100)
+    item.last_seen_at = iso(NOW)
+    assert _validate(item, [], NOW)
+    text = build_ics([item.to_dict()])
+    assert "\r\n " in text
+    assert all(len(line.encode("utf-8")) <= 75 for line in text.split("\r\n"))
 
 
 def test_ctf_and_codeforces_records_are_removed():

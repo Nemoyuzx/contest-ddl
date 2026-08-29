@@ -20,14 +20,59 @@ def _ics_dt(value: str) -> str:
     return parse_datetime(value).astimezone(UTC).strftime("%Y%m%dT%H%M%SZ")
 
 
+def _ics_fold(line: str) -> str:
+    """Fold one content line to RFC 5545's 75-octet physical-line limit."""
+    if len(line.encode("utf-8")) <= 75:
+        return line
+    chunks = []
+    current = ""
+    limit = 75
+    for character in line:
+        if current and len((current + character).encode("utf-8")) > limit:
+            chunks.append(current)
+            current = character
+            limit = 74  # continuation lines begin with one whitespace octet
+        else:
+            current += character
+    if current:
+        chunks.append(current)
+    return "\r\n ".join(chunks)
+
+
+def _conference_schedule_milestones(item: dict) -> list[tuple[str, str, str, str, str]]:
+    milestones = []
+    for index, stage in enumerate(item.get("schedule") or [], start=1):
+        if not isinstance(stage, dict):
+            continue
+        name = str(stage.get("name") or "").strip()
+        if not re.search(r"摘要|论文|投稿|截稿|提交|deadline", name, flags=re.I):
+            continue
+        semantic_field = (
+            "abstract_deadline"
+            if re.search(r"摘要|abstract", name, flags=re.I)
+            else "submission_deadline"
+        )
+        raw_identity = str(stage.get("id") or index)
+        identity = re.sub(r"[^a-zA-Z0-9_.-]+", "-", raw_identity).strip("-") or str(index)
+        for edge, suffix in (("start", "开始"), ("end", "结束")):
+            value = stage.get(edge)
+            if not value or not parse_datetime(value):
+                continue
+            label = name if re.search(r"截止|deadline", name, flags=re.I) else f"{name}{suffix}"
+            description = str(stage.get("content") or item.get("notes") or "")[:500]
+            milestones.append((f"schedule-{identity}-{edge}", label, value, description, semantic_field))
+    return milestones
+
+
 def build_ics(items: list[dict]) -> str:
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Contest DDL//CN",
-        "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:大学生竞赛 DDL",
+        "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Contest DDL 截止日期",
         "X-WR-TIMEZONE:Asia/Shanghai", "REFRESH-INTERVAL;VALUE=DURATION:P1D",
     ]
     labels = {
-        "registration_deadline": "报名截止", "submission_deadline": "提交截止",
+        "registration_deadline": "报名截止", "abstract_deadline": "摘要截止",
+        "submission_deadline": "提交截止",
         "competition_start": "比赛开始", "competition_end": "比赛结束",
     }
     observed_times = [parse_datetime(item.get("last_seen_at")) for item in items]
@@ -36,26 +81,41 @@ def build_ics(items: list[dict]) -> str:
         primary = parse_datetime(item.get("primary_deadline"))
         if item.get("archived") or not primary or (current and primary < current):
             continue
+        schedule_milestones = (
+            _conference_schedule_milestones(item)
+            if item.get("event_type") == "conference" else []
+        )
+        skip_fields = {
+            semantic_field
+            for _, _, value, _, semantic_field in schedule_milestones
+            if item.get(semantic_field)
+            and parse_datetime(item[semantic_field]) == parse_datetime(value)
+        }
+        milestones = [
+            (field, label, item.get(field), str(item.get("notes") or "")[:500])
+            for field, label in labels.items()
+            if field not in skip_fields and item.get(field)
+        ]
+        milestones.extend(entry[:4] for entry in schedule_milestones)
         emitted = set()
-        for field, label in labels.items():
-            value = item.get(field)
-            if not value or (field, value) in emitted:
+        for identity, label, value, description in milestones:
+            if not value or (identity, value) in emitted:
                 continue
-            emitted.add((field, value))
+            emitted.add((identity, value))
             start = parse_datetime(value)
             if not start:
                 continue
-            uid = f"{item['id']}-{field}@contest-ddl"
+            uid = f"{item['id']}-{identity}@contest-ddl"
             lines.extend([
                 "BEGIN:VEVENT", f"UID:{uid}", f"DTSTAMP:{_ics_dt(item.get('last_seen_at') or value)}",
                 f"DTSTART:{_ics_dt(value)}", f"DTEND:{(start.astimezone(UTC) + timedelta(minutes=30)).strftime('%Y%m%dT%H%M%SZ')}",
                 f"SUMMARY:{_ics_escape('[' + label + '] ' + item['name'])}",
-                f"DESCRIPTION:{_ics_escape(item.get('notes', '')[:500])}",
+                f"DESCRIPTION:{_ics_escape(description)}",
                 f"URL:{_ics_escape(item.get('official_url', ''))}",
                 f"CATEGORIES:{_ics_escape(','.join(item.get('categories', [])))}", "END:VEVENT",
             ])
     lines.append("END:VCALENDAR")
-    return "\r\n".join(lines) + "\r\n"
+    return "\r\n".join(_ics_fold(line) for line in lines) + "\r\n"
 
 
 def update_readme_snapshot(path: Path, payload: dict) -> None:

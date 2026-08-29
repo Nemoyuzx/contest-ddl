@@ -11,7 +11,7 @@ import yaml
 
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence, SourceResult
-from contestddl.sources import manual, mlh, official_sites, saikr, summer_camps
+from contestddl.sources import ccfddl, manual, mlh, official_sites, saikr, summer_camps
 from contestddl.utils import (
     canonical_url,
     choose_primary_deadline,
@@ -22,7 +22,7 @@ from contestddl.utils import (
     parse_datetime,
 )
 
-SCHEMA_VERSION = "1.3"
+SCHEMA_VERSION = "1.4"
 CATALOG_REFERENCE_URL = "https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
@@ -30,6 +30,7 @@ SOURCE_ADAPTERS = {
     "official_sites": official_sites.collect,
     "mlh": mlh.collect,
     "cs_baoyan": summer_camps.collect,
+    "ccfddl": ccfddl.collect,
 }
 
 REMOVED_SOURCE_NAMES = {"CTFtime API", "Hello-CTFtime CN", "Codeforces API"}
@@ -37,12 +38,12 @@ REMOVED_SOURCE_NAMES = {"CTFtime API", "Hello-CTFtime CN", "Codeforces API"}
 MERGE_FIELDS = (
     "organizer", "level", "region", "location", "mode", "eligibility",
     "registration_start", "registration_deadline", "competition_start",
-    "competition_end", "submission_deadline", "notes", "description",
+    "competition_end", "abstract_deadline", "submission_deadline", "notes", "description",
     "schedule", "attachments", "image_url",
 )
 DATE_FIELDS = (
     "registration_start", "registration_deadline", "competition_start",
-    "competition_end", "submission_deadline",
+    "competition_end", "abstract_deadline", "submission_deadline",
 )
 
 
@@ -80,7 +81,10 @@ def _mark_catalog_matches(events: list[Event], entries: list[dict]) -> None:
 
 def _dedup_key(event: Event) -> str:
     title = normalize_title(event.name)
-    date = parse_datetime(event.competition_start or event.registration_deadline or event.submission_deadline)
+    date = parse_datetime(
+        event.competition_start or event.registration_deadline
+        or event.abstract_deadline or event.submission_deadline
+    )
     year = date.year if date else ""
     if title:
         return f"title:{title}:{year}:{event.event_type}"
@@ -196,6 +200,7 @@ def _load_previous(path: Path) -> dict[str, Event]:
 
 
 def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Event]:
+    combined = list(current)
     current_ids = set()
     current_keys = {_dedup_key(event) for event in current}
     current_urls = {canonical_url(event.official_url) for event in current if event.official_url}
@@ -215,9 +220,10 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Ev
         age = now - last_seen
         old.stale = age >= timedelta(days=7)
         old.archived = age >= timedelta(days=30)
+        old.primary_deadline = choose_primary_deadline(old, now)
         old.status = compute_status(old, now)
-        current.append(old)
-    return current
+        combined.append(old)
+    return combined
 
 
 def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = None, fetcher: Fetcher | None = None) -> dict[str, Any]:
