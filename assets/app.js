@@ -57,6 +57,17 @@ function sourceStatus(item) {
   return item.source?.name || "来源未知";
 }
 
+function ccfRank(item) {
+  if (item.event_type !== "conference") return "";
+  const tags = item.tags || [];
+  const ranked = tags.find((tag) => /^CCF [ABC]$/.test(tag));
+  if (ranked) return ranked;
+  if (tags.includes("非 CCF")) return "非 CCF";
+  const match = String(item.level || "").match(/(?:^|\s|\/)CCF\s+([ABC])(?:\s|\/|$)/);
+  if (match) return `CCF ${match[1]}`;
+  return String(item.level || "").includes("非 CCF") ? "非 CCF" : "";
+}
+
 function httpUrl(value) {
   try {
     const url = new URL(value);
@@ -190,6 +201,15 @@ function renderList() {
     node.querySelector(".event-kicker").textContent = `${typeLabels[item.event_type] || item.event_type} / ${(item.region || "global").toUpperCase()}`;
     node.querySelector(".event-meta").textContent = [item.organizer, item.level, item.location, item.mode].filter(Boolean).join(" · ") || sourceStatus(item);
     const categories = node.querySelector(".event-categories");
+    const rank = ccfRank(item);
+    if (rank) {
+      const tag = document.createElement("span");
+      const rankClass = rank === "非 CCF" ? "none" : rank.slice(-1).toLowerCase();
+      tag.className = `tag rank-tag rank-ccf-${rankClass}`;
+      tag.textContent = rank;
+      tag.title = `会议评级：${rank}`;
+      categories.append(tag);
+    }
     (item.categories || []).slice(0, 3).forEach((category) => {
       const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = category; categories.append(tag);
     });

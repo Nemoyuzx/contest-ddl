@@ -92,6 +92,11 @@ kbd { padding: 3px 7px; color: var(--dim); background: rgba(255,255,255,.035); b
 .event-meta { margin: 8px 0 0; color: var(--dim); font: 10px var(--font-mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .event-categories { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag { padding: 5px 7px; color: var(--cyan); background: rgba(109,225,223,.06); border: 1px solid rgba(109,225,223,.18); font: 9px var(--font-mono); }
+.rank-tag { font-weight: 800; letter-spacing: .04em; }
+.rank-ccf-a { color: var(--acid); background: rgba(201,255,91,.09); border-color: rgba(201,255,91,.38); }
+.rank-ccf-b { color: var(--warn); background: rgba(255,191,105,.08); border-color: rgba(255,191,105,.34); }
+.rank-ccf-c { color: var(--cyan); background: rgba(109,225,223,.08); border-color: rgba(109,225,223,.32); }
+.rank-ccf-none { color: var(--dim); background: rgba(145,170,158,.05); border-color: rgba(145,170,158,.18); }
 .tier-tag { font-weight: 750; letter-spacing: .03em; }
 .tier-985 { color: var(--acid); background: rgba(201,255,91,.08); border-color: rgba(201,255,91,.32); }
 .tier-211 { color: var(--warn); background: rgba(255,191,105,.07); border-color: rgba(255,191,105,.3); }

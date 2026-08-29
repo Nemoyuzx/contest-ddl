@@ -129,6 +129,7 @@ def test_ccfddl_collects_conference_deadlines_and_skips_bad_edition():
     assert event.submission_deadline == "2026-09-02T19:59:59+08:00"
     assert event.categories == ["人工智能"]
     assert event.level == "CCF A / CORE A* / TH-CPL A"
+    assert "CCF A" in event.tags
     assert event.source.authority == 4
     assert [stage["name"] for stage in event.schedule] == ["摘要截止", "论文截止"]
     assert result.details["invalid_entries"] == 1
