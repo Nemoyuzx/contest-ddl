@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T21:45:04+08:00",
+  "generated_at": "2026-08-30T13:21:07+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,18 +7,18 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:04+08:00",
+      "fetched_at": "2026-08-30T13:21:07+08:00",
       "duration_ms": 0,
       "details": {}
     },
     {
       "name": "saikr",
       "ok": true,
-      "records": 72,
+      "records": 71,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:22+08:00",
-      "duration_ms": 17795,
+      "fetched_at": "2026-08-30T13:21:20+08:00",
+      "duration_ms": 13332,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -35,13 +35,9 @@
           "人工智能": 56
         },
         "unique_list_records": 425,
-        "engineering_current_selected": 72,
+        "engineering_current_selected": 71,
         "detail_success": 67,
         "detail_failures": [
-          {
-            "contest": "第十届全国大学生集成电路创新创业大赛（集创赛-芯创成果方向）",
-            "error": "ValueError: unexpected Saikr API response"
-          },
           {
             "contest": "2026全国大学生机器人与算法-模拟仿真赛道",
             "error": "ValueError: unexpected Saikr API response"
@@ -68,8 +64,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:48+08:00",
-      "duration_ms": 26655,
+      "fetched_at": "2026-08-30T13:21:38+08:00",
+      "duration_ms": 17916,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -169,8 +165,8 @@
       "records": 66,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:51+08:00",
-      "duration_ms": 3152,
+      "fetched_at": "2026-08-30T13:21:43+08:00",
+      "duration_ms": 4621,
       "details": {}
     },
     {
@@ -179,8 +175,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:52+08:00",
-      "duration_ms": 309,
+      "fetched_at": "2026-08-30T13:21:43+08:00",
+      "duration_ms": 275,
       "details": {}
     },
     {
@@ -189,8 +185,8 @@
       "records": 66,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-08-29T21:45:53+08:00",
-      "duration_ms": 1272,
+      "fetched_at": "2026-08-30T13:21:44+08:00",
+      "duration_ms": 1241,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,

@@ -21,12 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-29T21:45:04+08:00`，共 454 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-30T13:21:07+08:00`，共 454 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [哈尔滨工业大学（深圳） · 信息学部计算机科学与技术学院（推免预报名）](http://cist.hitsz.edu.cn/info/1038/2789.htm) | summer_camp | 2026-08-29T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [苏州大学 · 计算机科学与技术学院（软件学院）（推免预报名）](https://scst.suda.edu.cn/da/c4/c29555a711364/page.htm) | summer_camp | 2026-08-29T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [2026年第二届大学生网络信息技术大赛](https://new.saikr.com/vse/NEAI202602) | competition | 2026-08-30T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [北京科技大学 · 计算机与通信工程学院（推免预报名）](https://scce.ustb.edu.cn/info/1111/3831.htm) | summer_camp | 2026-08-30T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [Midnight Virtual Hackathon [August]](https://events.mlh.com/events/14510-midnight-hackathon-august) | hackathon | 2026-08-31T07:59:59+08:00 | ongoing | Major League Hacking |
@@ -37,6 +35,8 @@
 | [2026年“数据要素×”大赛北京分赛暨北京数智创新大赛](https://new.saikr.com/vse/59501) | competition | 2026-08-31T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 | [2026年度CCF量子计算编程挑战赛-量旋杯-量子国际象棋赛道](https://new.saikr.com/vse/lzxq2026) | competition | 2026-08-31T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 | [南方科技大学 · 计算机科学与工程系](https://cse.sustech.edu.cn/notices/3775.html) | summer_camp | 2026-08-31T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [广西大学 · 计算机与电子信息学院（推免预报名）](https://yjsc.gxu.edu.cn/info/1021/4680.htm) | summer_camp | 2026-08-31T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [IEEE VR 2027](https://ieeevr.org/2027/) | conference | 2026-09-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
