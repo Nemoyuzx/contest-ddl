@@ -21,14 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-08-30T13:21:07+08:00`，共 454 条；数据源状态：`healthy`。
+> 数据生成于 `2026-08-31T13:29:52+08:00`，共 454 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年第二届大学生网络信息技术大赛](https://new.saikr.com/vse/NEAI202602) | competition | 2026-08-30T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [北京科技大学 · 计算机与通信工程学院（推免预报名）](https://scce.ustb.edu.cn/info/1111/3831.htm) | summer_camp | 2026-08-30T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [Midnight Virtual Hackathon [August]](https://events.mlh.com/events/14510-midnight-hackathon-august) | hackathon | 2026-08-31T07:59:59+08:00 | ongoing | Major League Hacking |
-| [PEC HACKS 4.0](https://pechacks.org/) | hackathon | 2026-08-31T07:59:59+08:00 | ongoing | Major League Hacking |
 | [MSN 2026](https://ieee-msn.org/2026) | conference | 2026-08-31T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [南方科技大学 · 深港微电子学院（推免预报名）](https://mp.weixin.qq.com/s/p9QdSnhvbnqEKeDBs7MN7w) | summer_camp | 2026-08-31T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [香港大学 · 计算与数据科学学院（2027研究型硕博早招第二轮）](https://www.cs.hku.hk/programmes/research-based/mphil-phd-admission) | summer_camp | 2026-08-31T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
@@ -37,6 +33,10 @@
 | [南方科技大学 · 计算机科学与工程系](https://cse.sustech.edu.cn/notices/3775.html) | summer_camp | 2026-08-31T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [广西大学 · 计算机与电子信息学院（推免预报名）](https://yjsc.gxu.edu.cn/info/1021/4680.htm) | summer_camp | 2026-08-31T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [IEEE VR 2027](https://ieeevr.org/2027/) | conference | 2026-09-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [PETS 2027](https://petsymposium.org/cfp27.php) | conference | 2026-09-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [中国科学院大学 · 电子电气与通信工程学院（推免研究生接收）](https://eece.ucas.ac.cn/index.php/zh-cn/2014-06-13-06-51-06/2715-2027) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [南方科技大学 · 计算机科学与工程系（国优计划）](https://cse.sustech.edu.cn/notices/3776.html) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [西南财经大学 · 计算机与人工智能学院（推免研究生报名）](https://it.swufe.edu.cn/info/1166/22608.htm) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
