@@ -74,6 +74,25 @@ def test_summer_camp_filters_non_engineering():
     assert result.events[0].tags == ["985", "211", "双一流"]
 
 
+def test_current_camp_bucket_uses_explicit_institute_label_for_pre_admission():
+    payload = {"camp2026": [
+        {
+            "name": "甲大学", "institute": "计算机学院（推免预报名）",
+            "description": "2027年接收推荐免试研究生预报名。",
+            "deadline": "2026-09-01", "website": "https://a.edu.cn", "tags": [],
+        },
+        {
+            "name": "乙大学", "institute": "人工智能学院",
+            "description": "夏令营报名后使用推免生预报名系统提交材料。",
+            "deadline": "2026-09-02", "website": "https://b.edu.cn", "tags": [],
+        },
+    ]}
+    result = summer_camps.collect(FakeFetcher(payload), NOW)
+    assert result.ok
+    assert [item.event_type for item in result.events] == ["pre_admission", "summer_camp"]
+    assert [item.categories for item in result.events] == [["预推免"], ["保研夏令营"]]
+
+
 def test_mlh_embedded_json_parser():
     page = {"props": {"upcomingEvents": [{
         "id": "1", "name": "AI Student Hack", "startsAt": "2026-09-01T00:00:00Z",

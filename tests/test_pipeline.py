@@ -2,7 +2,15 @@ from datetime import datetime, timedelta
 
 from contestddl.models import Event, SourceEvidence
 from contestddl.output import build_ics
-from contestddl.pipeline import _is_removed_event, _lifecycle, _mark_catalog_matches, _merge_events, _validate
+from contestddl.pipeline import (
+    EVENT_TYPES,
+    _event_type_counts,
+    _is_removed_event,
+    _lifecycle,
+    _mark_catalog_matches,
+    _merge_events,
+    _validate,
+)
 from contestddl.utils import CHINA_TZ, iso
 
 
@@ -38,6 +46,14 @@ def test_validation_rejects_event_without_any_date():
     item = make_event(competition_start=None)
     errors = []
     assert not _validate(item, errors, NOW)
+
+
+def test_type_counts_keep_supported_empty_categories_explicit():
+    counts = _event_type_counts([make_event(event_type="competition")])
+    assert list(counts) == list(EVENT_TYPES)
+    assert counts["competition"] == 1
+    assert counts["journal_special_issue"] == 0
+    assert counts["pre_admission"] == 0
 
 
 def test_validation_accepts_abstract_only_conference():

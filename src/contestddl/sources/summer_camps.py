@@ -6,6 +6,27 @@ from contestddl.university_tiers import university_tiers
 from contestddl.utils import engineering_relevant, iso, iso_or_none, now_china, stable_id
 
 URL = "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json"
+PRE_ADMISSION_LABELS = (
+    "预推免",
+    "推免预报名",
+    "推免生预报名",
+    "推免研究生预报名",
+    "直博预报名",
+)
+
+
+def _event_type(key: str, institute: str) -> str:
+    """Use BoardCaster's structured bucket or an explicit institute label.
+
+    Some current-year pre-admission records are published under ``campYYYY``
+    after the dedicated ``yutuimianYYYY`` bucket disappears.  Only the short
+    institute/title field is used as a fallback; prose mentioning the
+    pre-admission registration system inside a real summer-camp notice must not
+    change that event's type.
+    """
+    if key.startswith("yutuimian") or any(label in institute for label in PRE_ADMISSION_LABELS):
+        return "pre_admission"
+    return "summer_camp"
 
 
 def collect(fetcher, now=None):
@@ -16,13 +37,13 @@ def collect(fetcher, now=None):
         keys = [f"camp{current.year}", f"camp{current.year + 1}", f"yutuimian{current.year}"]
         events = []
         for key in keys:
-            event_type = "pre_admission" if key.startswith("yutuimian") else "summer_camp"
             for row in payload.get(key, []):
                 name = str(row.get("name", "")).strip()
                 institute = str(row.get("institute", "")).strip()
                 description = str(row.get("description", "")).strip()
                 if not name or not engineering_relevant(institute, description):
                     continue
+                event_type = _event_type(key, institute)
                 deadline = iso_or_none(row.get("deadline"), end_of_day=True)
                 if not deadline:
                     continue

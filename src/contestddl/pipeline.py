@@ -23,6 +23,14 @@ from contestddl.utils import (
 )
 
 SCHEMA_VERSION = "1.4"
+EVENT_TYPES = (
+    "competition",
+    "conference",
+    "journal_special_issue",
+    "hackathon",
+    "summer_camp",
+    "pre_admission",
+)
 CATALOG_REFERENCE_URL = "https://github.com/xcg1125/college-competition-ddl/blob/main/competitions.json"
 SOURCE_ADAPTERS = {
     "manual": manual.collect,
@@ -100,6 +108,10 @@ def _is_removed_event(event: Event) -> bool:
         or "ctf" in labels
         or re.search(r"\bctf\b", event.name, flags=re.I)
     )
+
+
+def _event_type_counts(events: list[Event]) -> dict[str, int]:
+    return {kind: sum(event.event_type == kind for event in events) for kind in EVENT_TYPES}
 
 
 def _merge_events(events: list[Event], conflicts: list[dict]) -> list[Event]:
@@ -274,7 +286,9 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
                 and not event.archived for event in events
             ),
             "stale": sum(event.stale for event in events), "archived": sum(event.archived for event in events),
-            "by_type": {kind: sum(event.event_type == kind for event in events) for kind in sorted({event.event_type for event in events})},
+            # Keep supported zero-count types explicit so status clients render
+            # a truthful 0 instead of an ambiguous missing/blank value.
+            "by_type": _event_type_counts(events),
         },
         "items": [event.to_dict() for event in events],
     }
