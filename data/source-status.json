@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:19:55+08:00",
+  "generated_at": "2026-09-01T13:03:59+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-08-31T17:19:55+08:00",
+      "fetched_at": "2026-09-01T13:03:59+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 71,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-08-31T17:20:15+08:00",
-      "duration_ms": 20161,
+      "fetched_at": "2026-09-01T13:04:16+08:00",
+      "duration_ms": 16958,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -64,16 +64,16 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-08-31T17:20:48+08:00",
-      "duration_ms": 32755,
+      "fetched_at": "2026-09-01T13:04:38+08:00",
+      "duration_ms": 21920,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
         "accepted": 1,
         "outcomes": {
           "accepted": 1,
-          "fetch_failed": 8,
-          "no_labeled_current_timeline": 24
+          "fetch_failed": 7,
+          "no_labeled_current_timeline": 25
         },
         "accepted_sites": [
           {
@@ -162,11 +162,11 @@
     {
       "name": "mlh",
       "ok": true,
-      "records": 64,
+      "records": 68,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-08-31T17:20:51+08:00",
-      "duration_ms": 2625,
+      "fetched_at": "2026-09-01T13:04:42+08:00",
+      "duration_ms": 3570,
       "details": {}
     },
     {
@@ -175,8 +175,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-08-31T17:20:51+08:00",
-      "duration_ms": 97,
+      "fetched_at": "2026-09-01T13:04:42+08:00",
+      "duration_ms": 324,
       "details": {}
     },
     {
@@ -185,8 +185,8 @@
       "records": 66,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-08-31T17:20:52+08:00",
-      "duration_ms": 1261,
+      "fetched_at": "2026-09-01T13:04:43+08:00",
+      "duration_ms": 1099,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
