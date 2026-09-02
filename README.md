@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-01T13:03:59+08:00`，共 458 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-02T12:29:04+08:00`，共 461 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [IEEE VR 2027](https://ieeevr.org/2027/) | conference | 2026-09-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [PETS 2027](https://petsymposium.org/cfp27.php) | conference | 2026-09-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [中国科学院大学 · 电子电气与通信工程学院（推免研究生接收）](https://eece.ucas.ac.cn/index.php/zh-cn/2014-06-13-06-51-06/2715-2027) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [南方科技大学 · 计算机科学与工程系（国优计划）](https://cse.sustech.edu.cn/notices/3776.html) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [西南财经大学 · 计算机与人工智能学院（推免研究生报名）](https://it.swufe.edu.cn/info/1166/22608.htm) | summer_camp | 2026-09-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [VLDB 2027](https://www.vldb.org/2027/) | conference | 2026-09-02T08:00:00+08:00 | submission_open | CCFDDL Open Deadlines |
 | [MMAsia 2026](https://www.mmasia2026.org/) | conference | 2026-09-02T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [中国科学院 · 计算机网络信息中心（推免生接收）](https://cnic.cas.cn/yjsjy/zsxx/tjms/202608/t20260804_8259075.html) | summer_camp | 2026-09-02T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [南京理工大学 · 智能科学与技术学院（推免预报名）](https://sim.njust.edu.cn/67/10/c15653a354064/page.htm) | pre_admission | 2026-09-02T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [厦门大学 · 人工智能研究院（推免预报名）](https://iai.xmu.edu.cn/info/1120/6145.htm) | pre_admission | 2026-09-02T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [MobiCom 2027](https://www.sigmobile.org/mobicom/2027/) | conference | 2026-09-03T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [北京科技大学 · 人工智能学院（推免预报名）](https://ai.ustb.edu.cn/xwgg/tzgg/e41a2652d8ca473d85966eb9142585e6.htm) | pre_admission | 2026-09-03T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [南开大学 · 软件学院（推免预报名）](https://cs.nankai.edu.cn/info/1076/3673.htm) | pre_admission | 2026-09-03T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [南开大学 · 卓越工程师学院（计算机相关工程硕博士专项）](https://cee.nankai.edu.cn/2026/0821/c37052a601337/page.htm) | summer_camp | 2026-09-03T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [中山大学 · 人工智能学院（推免研究生报名）](https://sai.sysu.edu.cn/article/747) | summer_camp | 2026-09-04T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [ICDT 2027](https://edbticdt2027.github.io/) | conference | 2026-09-04T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [华青杯”AI机器人素养赛项](https://new.saikr.com/vse/HQBRGZN2603) | competition | 2026-09-04T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
+| [华东师范大学 · 计算机科学与技术学院（推免预报名）](http://www.cs.ecnu.edu.cn/c3/c2/c19867a771010/page.htm) | pre_admission | 2026-09-05T23:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
