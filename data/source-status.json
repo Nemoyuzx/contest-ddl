@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T12:19:54+08:00",
+  "generated_at": "2026-09-04T12:28:02+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-09-03T12:19:54+08:00",
+      "fetched_at": "2026-09-04T12:28:02+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 72,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-09-03T12:20:13+08:00",
-      "duration_ms": 18977,
+      "fetched_at": "2026-09-04T12:28:20+08:00",
+      "duration_ms": 17483,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -34,14 +34,10 @@
           "大数据": 100,
           "人工智能": 56
         },
-        "unique_list_records": 426,
+        "unique_list_records": 425,
         "engineering_current_selected": 72,
-        "detail_success": 68,
+        "detail_success": 69,
         "detail_failures": [
-          {
-            "contest": "2026全国大学生机器人与算法大赛-模拟仿真赛道",
-            "error": "ValueError: unexpected Saikr API response"
-          },
           {
             "contest": "X-GAME 2026智能新源汽车大数据竞赛",
             "error": "ValueError: unexpected Saikr API response"
@@ -64,16 +60,16 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-09-03T12:22:17+08:00",
-      "duration_ms": 123944,
+      "fetched_at": "2026-09-04T12:28:40+08:00",
+      "duration_ms": 19822,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
         "accepted": 1,
         "outcomes": {
           "accepted": 1,
-          "fetch_failed": 7,
-          "no_labeled_current_timeline": 25
+          "fetch_failed": 6,
+          "no_labeled_current_timeline": 26
         },
         "accepted_sites": [
           {
@@ -119,9 +115,8 @@
           },
           {
             "title": "工程实践与创新",
-            "reason": "fetch_failed",
-            "url": "http://www.gcxl.edu.cn/new/index.html",
-            "error": "ValueError: unsafe or unresolvable URL: http://www.gcxl.edu.cn/new/index.html"
+            "reason": "no_labeled_current_timeline",
+            "url": "http://www.gcxl.edu.cn/new/index.html"
           },
           {
             "title": "RoboMaster",
@@ -165,8 +160,8 @@
       "records": 70,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-09-03T12:22:20+08:00",
-      "duration_ms": 3231,
+      "fetched_at": "2026-09-04T12:28:43+08:00",
+      "duration_ms": 3485,
       "details": {}
     },
     {
@@ -175,23 +170,23 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-09-03T12:22:21+08:00",
-      "duration_ms": 138,
+      "fetched_at": "2026-09-04T12:28:43+08:00",
+      "duration_ms": 185,
       "details": {}
     },
     {
       "name": "ccfddl",
       "ok": true,
-      "records": 66,
+      "records": 68,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-09-03T12:22:21+08:00",
-      "duration_ms": 857,
+      "fetched_at": "2026-09-04T12:28:44+08:00",
+      "duration_ms": 1103,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
-        "dataset_editions": 1165,
-        "recent_or_upcoming_editions": 66,
+        "dataset_editions": 1166,
+        "recent_or_upcoming_editions": 68,
         "invalid_entries": 0,
         "window": {
           "recent_grace_days": 7,
