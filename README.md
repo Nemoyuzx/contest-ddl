@@ -21,11 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-04T12:28:02+08:00`，共 467 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-05T12:22:44+08:00`，共 468 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [ICDT 2027](https://edbticdt2027.github.io/) | conference | 2026-09-04T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [华东师范大学 · 计算机科学与技术学院（推免预报名）](http://www.cs.ecnu.edu.cn/c3/c2/c19867a771010/page.htm) | pre_admission | 2026-09-05T23:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [2026第19届全国3D大赛-具身智能机器人技术与工程应用场景大赛](https://new.saikr.com/vse/59323) | competition | 2026-09-05T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年高校大学生“工创杯”人工智能知识大赛](https://new.saikr.com/vse/2026RGZN) | competition | 2026-09-06T09:00:00+08:00 | registration_open | 赛氪公开前端 API |
@@ -37,6 +36,7 @@
 | [华东师范大学 · 软件工程学院（滴水湖国际软件学院）（推免预报名）](https://sei.ecnu.edu.cn/c4/0d/c33171a771085/page.htm) | pre_admission | 2026-09-07T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 数学科学学院](http://www.math.zju.edu.cn/2026/0806/c38123a3193823/page.htm) | summer_camp | 2026-09-07T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [南开大学 · 前沿交叉学科研究院（计算机相关直博预报名）](https://aais.nankai.edu.cn/2026/0821/c37162a601333/page.htm) | pre_admission | 2026-09-07T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [大连理工大学 · 软件学院（推免预报名）](https://ss.dlut.edu.cn/info/1321/34052.htm) | pre_admission | 2026-09-08T08:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
