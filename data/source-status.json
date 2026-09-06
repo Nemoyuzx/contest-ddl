@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T12:22:44+08:00",
+  "generated_at": "2026-09-06T12:34:14+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-09-05T12:22:44+08:00",
+      "fetched_at": "2026-09-06T12:34:14+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 72,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
       "error": "",
-      "fetched_at": "2026-09-05T12:23:04+08:00",
-      "duration_ms": 20010,
+      "fetched_at": "2026-09-06T12:34:34+08:00",
+      "duration_ms": 19860,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -64,8 +64,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-09-05T12:23:26+08:00",
-      "duration_ms": 22339,
+      "fetched_at": "2026-09-06T12:34:55+08:00",
+      "duration_ms": 20945,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -164,8 +164,8 @@
       "records": 70,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-09-05T12:23:28+08:00",
-      "duration_ms": 2500,
+      "fetched_at": "2026-09-06T12:34:59+08:00",
+      "duration_ms": 4028,
       "details": {}
     },
     {
@@ -174,23 +174,23 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-09-05T12:23:29+08:00",
-      "duration_ms": 160,
+      "fetched_at": "2026-09-06T12:34:59+08:00",
+      "duration_ms": 110,
       "details": {}
     },
     {
       "name": "ccfddl",
       "ok": true,
-      "records": 68,
+      "records": 67,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-09-05T12:23:30+08:00",
-      "duration_ms": 1212,
+      "fetched_at": "2026-09-06T12:35:00+08:00",
+      "duration_ms": 1162,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
         "dataset_editions": 1167,
-        "recent_or_upcoming_editions": 68,
+        "recent_or_upcoming_editions": 67,
         "invalid_entries": 0,
         "window": {
           "recent_grace_days": 7,
