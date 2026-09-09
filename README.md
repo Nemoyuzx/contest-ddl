@@ -21,11 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-08T12:31:11+08:00`，共 474 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-09T12:37:49+08:00`，共 478 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [中国电信星辰杯高校AI算子开发挑战赛](https://new.saikr.com/vse/XCB26) | competition | 2026-09-09T08:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [东北大学 · 机器人科学与工程学院（推免预报名）](https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784277365465001298&b=1784085098695001298) | pre_admission | 2026-09-09T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [Jon Test Event](https://jonmarkgo.com/) | hackathon | 2026-09-10T08:00:00+08:00 | upcoming | Major League Hacking |
 | [华东师范大学 · 空间人工智能学院（推免预报名）](https://geoai.ecnu.edu.cn/c3/bc/c48289a771004/page.htm) | pre_admission | 2026-09-10T10:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
@@ -37,6 +36,7 @@
 | [北京邮电大学 · 计算机学院（国家示范性软件学院）（推免研究生报名）](https://scs.bupt.edu.cn/info/1050/4416.htm) | summer_camp | 2026-09-10T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [北京邮电大学 · 集成电路学院（推免预报名）](https://ic.bupt.edu.cn/info/1024/1724.htm) | pre_admission | 2026-09-10T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [西安电子科技大学 · 计算机科学与技术学院（推免预报名）](https://cs.xidian.edu.cn/info/1003/25704.htm) | pre_admission | 2026-09-10T17:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名](https://new.saikr.com/vse/csumcmnational2026) | competition | 2026-09-10T18:00:00+08:00 | registration_closed | 赛氪公开前端 API |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
