@@ -30,6 +30,8 @@
 
 若页面结构变化，适配器失败会显示在 `source-status.json`，旧数据不会被删除。
 
+赛氪对 GitHub Actions 所在的境外线路返回国际版跳转提示 HTML，国内节点仍可取得原赛事 JSON。因此 GitHub 的赛氪来源现使用 `SAIKR_SOURCE=ubuntu`：由现有 Ubuntu 节点每日 07:40 运行同一套赛氪采集器，发布 `https://where-to-study.cn/data/saikr-snapshot.json`，GitHub 继续负责其余来源和全部聚合/发布。源网址和字段证据仍指向赛氪，不把快照站当作主办方。快照必须通过版本、条数、时间和摘要校验，超过 36 小时或采集失败时真实降级，不退回境外直采，不把历史数据刷新成“刚采集”。[节点部署与回滚说明](../deploy/ubuntu/README.md)。
+
 ## 国内竞赛：赛事官网自动核验
 
 使用 `xcg1125/college-competition-ddl` 的 `competitions.json` 作为官网入口目录，按本项目关心的工科类别筛选后，每天并发但限速访问。目录里的 `deadline` 可能过期，因此**只使用 `website`、赛事名称、类别和主办方，不直接导入目录中的日期**。

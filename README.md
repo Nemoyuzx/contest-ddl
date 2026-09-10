@@ -52,6 +52,8 @@
 
 完整说明见 [数据源文档](docs/sources.md)。本项目只调用赛氪新版公开赛事页自身使用的只读前端接口，不调用管理接口，也不绕过登录、验证码或访问控制。
 
+赛氪一项由国内 Ubuntu 节点每日采集，GitHub 读取经过校验且未过期的只读快照；其他来源、聚合、历史保留与 Pages 发布仍运行在 GitHub。详情见[国内采集节点说明](deploy/ubuntu/README.md)。
+
 ## 每日自动化
 
 `.github/workflows/update-pages.yml` 每天北京时间 **08:17** 运行：

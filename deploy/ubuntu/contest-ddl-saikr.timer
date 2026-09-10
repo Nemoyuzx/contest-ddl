@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh Saikr before the GitHub daily aggregation
+
+[Timer]
+OnCalendar=*-*-* 07:40:00 Asia/Shanghai
+RandomizedDelaySec=90s
+Persistent=true
+Unit=contest-ddl-saikr.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,32 @@
+[Unit]
+Description=Collect Saikr public competitions for Contest DDL
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=contest-ddl-saikr
+Group=contest-ddl-saikr
+WorkingDirectory=/srv/contest-ddl-saikr/current
+Environment=PYTHONPATH=/srv/contest-ddl-saikr/current/src
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=SAIKR_WORKERS=3
+Environment=SAIKR_LIMIT=72
+ExecStart=/srv/contest-ddl-saikr/venv/bin/python -m contestddl.saikr_snapshot --output /var/lib/contest-ddl-saikr/snapshot.json
+StateDirectory=contest-ddl-saikr
+StateDirectoryMode=0755
+UMask=0022
+TimeoutStartSec=10min
+MemoryMax=256M
+CPUQuota=50%
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+

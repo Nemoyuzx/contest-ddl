@@ -246,7 +246,7 @@ def _event_from_api(row: dict, detail: dict, current: datetime) -> Event:
     )
 
 
-def collect(fetcher, now=None, limit: int | None = None):
+def collect_direct(fetcher, now=None, limit: int | None = None):
     current = now or now_china()
     max_events = max(1, limit or int(os.getenv("SAIKR_LIMIT", "72")))
     workers = max(1, min(8, int(os.getenv("SAIKR_WORKERS", "6"))))
@@ -319,3 +319,15 @@ def collect(fetcher, now=None, limit: int | None = None):
         result.ok = False
         result.error = f"{len(failures)}/{len(CATEGORY_IDS)} Saikr category list requests failed; {failures[0]['error']}"
     return result
+
+
+def collect(fetcher, now=None, limit: int | None = None):
+    mode = os.getenv("SAIKR_SOURCE", "direct").strip()
+    if mode == "ubuntu":
+        from contestddl.saikr_snapshot import collect_snapshot
+        return collect_snapshot(fetcher, now=now)
+    if mode != "direct":
+        def invalid_mode():
+            raise ValueError("SAIKR_SOURCE must be direct or ubuntu")
+        return guarded("saikr", LIST_URL, invalid_mode)
+    return collect_direct(fetcher, now=now, limit=limit)

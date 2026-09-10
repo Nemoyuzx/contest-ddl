@@ -219,8 +219,12 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Ev
     for event in current:
         current_ids.add(event.id)
         old = previous.get(event.id)
-        event.first_seen_at = old.first_seen_at if old and old.first_seen_at else iso(now)
-        event.last_seen_at = iso(now)
+        # A mirrored source keeps its actual collection time across repeated
+        # GitHub runs. Other collectors leave this unset and use the current run.
+        observed = min(parse_datetime(event.last_seen_at) or now, now)
+        previous_observed = parse_datetime(old.last_seen_at or old.first_seen_at) if old else None
+        event.last_seen_at = iso(max(observed, previous_observed) if previous_observed else observed)
+        event.first_seen_at = old.first_seen_at if old and old.first_seen_at else iso(observed)
         event.stale = False
         event.archived = False
     for event_id, old in previous.items():
