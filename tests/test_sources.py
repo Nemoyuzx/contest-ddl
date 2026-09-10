@@ -27,6 +27,43 @@ def test_saikr_promotion_filter():
     assert not saikr._is_promotion("全国大学生智能车竞赛")
 
 
+def test_saikr_preserves_category_errors_and_api_messages():
+    result = saikr.collect(FakeFetcher({"code": 503, "msg": "service unavailable", "data": None}), NOW)
+    assert not result.ok
+    assert result.events == []
+    assert len(result.details["list_failures"]) == len(saikr.CATEGORY_IDS)
+    assert "code=503" in result.error
+    assert "service unavailable" in result.error
+    assert result.details["category_records"] == {}
+
+
+def test_saikr_rejects_missing_lists_but_accepts_genuine_empty_lists():
+    broken = saikr.collect(FakeFetcher({"code": 200, "data": {}}), NOW)
+    assert not broken.ok
+    assert "data.list is not an array" in broken.error
+    empty = saikr.collect(FakeFetcher({"code": 200, "data": {"list": []}}), NOW)
+    assert empty.ok
+    assert empty.events == []
+
+
+def test_saikr_retains_discoveries_when_another_category_fails():
+    row = {"contest_id": 1, "contest_name": "2026人工智能算法竞赛", "contest_url": "vse/test", "regist_end_time": 1789912800}
+
+    class PartialFetcher:
+        def json(self, url, **kwargs):
+            if url == saikr.DETAIL_URL:
+                return {"code": 200, "data": {}}
+            if kwargs["params"]["class_id"] == 1:
+                return {"code": 200, "data": {"list": [row]}}
+            raise ConnectionError("test transport failure")
+
+    result = saikr.collect(PartialFetcher(), NOW)
+    assert not result.ok
+    assert len(result.events) == 1
+    assert len(result.details["list_failures"]) == len(saikr.CATEGORY_IDS) - 1
+    assert "test transport failure" in result.error
+
+
 def test_saikr_api_detail_becomes_rich_event():
     row = {
         "contest_id": 59224, "contest_name": "2026高校大学生人工智能大赛", "contest_url": "vse/HZRGZN",

@@ -58,7 +58,10 @@ def _is_ctf(title: str) -> bool:
 
 def _api_data(payload: object) -> dict:
     if not isinstance(payload, dict) or payload.get("code") != 200 or not isinstance(payload.get("data"), dict):
-        raise ValueError("unexpected Saikr API response")
+        code = payload.get("code") if isinstance(payload, dict) else None
+        message = payload.get("msg") if isinstance(payload, dict) else None
+        message = clean_text(message)[:180] if isinstance(message, str) else ""
+        raise ValueError(f"unexpected Saikr API response (code={code!r}, message={message!r})")
     return payload["data"]
 
 
@@ -259,15 +262,15 @@ def collect(fetcher, now=None, limit: int | None = None):
                     params={"page": 1, "limit": 100, "univs_id": "", "class_id": category_id, "level": 0, "sort": 0},
                     headers=REQUEST_HEADERS,
                 )
-                rows = _api_data(payload).get("list", [])
+                rows = _api_data(payload).get("list")
+                if not isinstance(rows, list):
+                    raise ValueError("Saikr API data.list is not an array")
                 category_counts[category_name] = len(rows)
                 for row in rows:
                     if isinstance(row, dict) and row.get("contest_url"):
                         rows_by_slug.setdefault(str(row["contest_url"]), row)
             except Exception as exc:
-                list_failures.append({"category": category_name, "error": f"{type(exc).__name__}: {str(exc)[:100]}"})
-        if not rows_by_slug and list_failures:
-            raise RuntimeError("all Saikr category list requests failed")
+                list_failures.append({"category": category_name, "error": f"{type(exc).__name__}: {str(exc)[:500]}"})
 
         selected = [row for row in rows_by_slug.values() if _selected(row, current)]
         selected.sort(key=lambda row: int(row.get("regist_end_time") or row.get("contest_start_time") or 0))
@@ -308,4 +311,11 @@ def collect(fetcher, now=None, limit: int | None = None):
         }
         return events, details
 
-    return guarded("saikr", LIST_URL, run)
+    result = guarded("saikr", LIST_URL, run)
+    if result.ok and result.details.get("list_failures"):
+        # Keep partial discoveries and the underlying diagnostics. A failed
+        # category is not an empty category and must not report a healthy feed.
+        failures = result.details["list_failures"]
+        result.ok = False
+        result.error = f"{len(failures)}/{len(CATEGORY_IDS)} Saikr category list requests failed; {failures[0]['error']}"
+    return result
