@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T12:37:49+08:00",
+  "generated_at": "2026-09-10T12:37:48+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,73 +7,36 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-09-09T12:37:49+08:00",
+      "fetched_at": "2026-09-10T12:37:48+08:00",
       "duration_ms": 0,
       "details": {}
     },
     {
       "name": "saikr",
-      "ok": true,
-      "records": 72,
+      "ok": false,
+      "records": 0,
       "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
-      "error": "",
-      "fetched_at": "2026-09-09T12:38:09+08:00",
-      "duration_ms": 19469,
-      "details": {
-        "api": {
-          "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
-          "info": "https://apiv4buffer.saikr.com/api/pc/contest/info"
-        },
-        "category_records": {
-          "数学建模": 100,
-          "程序设计": 100,
-          "机器人": 100,
-          "电子信息与自动化": 100,
-          "计算机与信息技术": 100,
-          "机械工程": 100,
-          "大数据": 100,
-          "人工智能": 56
-        },
-        "unique_list_records": 425,
-        "engineering_current_selected": 72,
-        "detail_success": 68,
-        "detail_failures": [
-          {
-            "contest": "2026全国大学生机器人与算法大赛-模拟仿真赛道",
-            "error": "ValueError: unexpected Saikr API response"
-          },
-          {
-            "contest": "X-GAME 2026智能新源汽车大数据竞赛",
-            "error": "ValueError: unexpected Saikr API response"
-          },
-          {
-            "contest": "2026年大学生统计科学与算法编程挑战赛——数据统计赛项",
-            "error": "ValueError: unexpected Saikr API response"
-          },
-          {
-            "contest": "2026年第五届“华秦杯”网络安全创新大赛",
-            "error": "ValueError: unexpected Saikr API response"
-          }
-        ],
-        "list_failures": []
-      }
+      "error": "RuntimeError: all Saikr category list requests failed",
+      "fetched_at": "2026-09-10T12:37:51+08:00",
+      "duration_ms": 2904,
+      "details": {}
     },
     {
       "name": "official_sites",
       "ok": true,
-      "records": 2,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-09-09T12:38:29+08:00",
-      "duration_ms": 20297,
+      "fetched_at": "2026-09-10T12:38:24+08:00",
+      "duration_ms": 33176,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
-        "accepted": 2,
+        "accepted": 1,
         "outcomes": {
-          "accepted": 2,
+          "accepted": 1,
           "fetch_failed": 6,
-          "no_labeled_current_timeline": 25
+          "no_labeled_current_timeline": 26
         },
         "accepted_sites": [
           {
@@ -86,19 +49,6 @@
             "field_urls": {
               "http://www.mcm.edu.cn/": [
                 "competition_start"
-              ]
-            }
-          },
-          {
-            "title": "信息安全与对抗",
-            "reason": "accepted",
-            "url": "https://www.isclab.org.cn/2026/09/08/2026%e5%b9%b4%e7%ac%ac23%e5%b1%8a%e4%bf%a1%e6%81%af%e5%ae%89%e5%85%a8%e4%b8%8e%e5%af%b9%e6%8a%97%e6%8a%80%e6%9c%af%e7%ab%9e%e8%b5%9b%e9%80%9a%e7%9f%a5-%e5%af%86%e7%a0%81%e5%ae%89%e5%85%a8/",
-            "fields": [
-              "registration_deadline"
-            ],
-            "field_urls": {
-              "https://www.isclab.org.cn/2026/09/08/2026%e5%b9%b4%e7%ac%ac23%e5%b1%8a%e4%bf%a1%e6%81%af%e5%ae%89%e5%85%a8%e4%b8%8e%e5%af%b9%e6%8a%97%e6%8a%80%e6%9c%af%e7%ab%9e%e8%b5%9b%e9%80%9a%e7%9f%a5-%e5%af%86%e7%a0%81%e5%ae%89%e5%85%a8/": [
-                "registration_deadline"
               ]
             }
           }
@@ -174,11 +124,11 @@
     {
       "name": "mlh",
       "ok": true,
-      "records": 74,
+      "records": 75,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-09-09T12:38:34+08:00",
-      "duration_ms": 4969,
+      "fetched_at": "2026-09-10T12:38:28+08:00",
+      "duration_ms": 3901,
       "details": {}
     },
     {
@@ -187,8 +137,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-09-09T12:38:34+08:00",
-      "duration_ms": 208,
+      "fetched_at": "2026-09-10T12:38:28+08:00",
+      "duration_ms": 107,
       "details": {}
     },
     {
@@ -197,12 +147,12 @@
       "records": 67,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-09-09T12:38:35+08:00",
-      "duration_ms": 1172,
+      "fetched_at": "2026-09-10T12:38:30+08:00",
+      "duration_ms": 1348,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
-        "dataset_editions": 1169,
+        "dataset_editions": 1170,
         "recent_or_upcoming_editions": 67,
         "invalid_entries": 0,
         "window": {
