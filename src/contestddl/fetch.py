@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import time
+import re
+from html import unescape
 from collections import defaultdict
 from typing import Any
 
@@ -38,7 +40,21 @@ class Fetcher:
         return response
 
     def json(self, url: str, **kwargs) -> Any:
-        return self.get(url, **kwargs).json()
+        response = self.get(url, **kwargs)
+        try:
+            return response.json()
+        except requests.exceptions.JSONDecodeError as exc:
+            # Retain enough transport context to distinguish an HTML challenge,
+            # an empty response and unsupported compression. Never log bodies,
+            # cookies, authorization headers or query strings.
+            content_type = " ".join(response.headers.get("Content-Type", "unknown").split())[:100]
+            encoding = " ".join(response.headers.get("Content-Encoding", "identity").split())[:40]
+            title_match = re.search(r"<title\b[^>]*>(.*?)</title>", response.text[:4096], re.I | re.S)
+            title = " ".join(unescape(re.sub(r"<[^>]*>", "", title_match.group(1))).split())[:100] if title_match else ""
+            raise ValueError(
+                f"expected JSON: HTTP {response.status_code}, content-type={content_type}, "
+                f"content-encoding={encoding}, bytes={len(response.content)}, title={title!r}"
+            ) from exc
 
     def text(self, url: str, **kwargs) -> str:
         response = self.get(url, **kwargs)
