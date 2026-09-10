@@ -21,7 +21,7 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-10T21:45:59+08:00`，共 480 条；数据源状态：`degraded`。
+> 数据生成于 `2026-09-10T22:33:31+08:00`，共 481 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
@@ -31,12 +31,12 @@
 | [IEEE/ACM CGO 2027](https://conf.researchr.org/home/cgo-2027) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [MMSys 2027](https://2027.acmmmsys.org) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [2026年第三届大学生高新技术竞赛—数据分析竞赛](https://new.saikr.com/vse/SJFX2026) | competition | 2026-09-11T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [【本周末开考】2026大学生“麟创杯”人工智能知识竞赛（秋季赛）](https://new.saikr.com/vse/LCBRGZN02) | competition | 2026-09-11T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [哈尔滨工业大学（深圳） · 智能学部智能科学与工程学院（推免预报名）](http://intelligence.hitsz.edu.cn/currency.jsp?urltype=news.NewsContentUrl&wbtreeid=1259&wbnewsid=1924) | pre_admission | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [天津大学 · 电气自动化与信息工程学院（普通推免）](https://mp.weixin.qq.com/s/zGLQBWGOPKA2iB8J6L1IJQ) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 人工智能学院（推免研究生报名）](https://ai.zju.edu.cn/2026/0810/c90497a3194262/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 工程师学院（推免研究生报名）](https://pi.zju.edu.cn/2026/0730/c67026a3192667/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 计算机科学与技术学院（推免研究生报名）](http://www.cs.zju.edu.cn/csen/2026/0807/c27006a3193973/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [浙江大学 · 软件学院（推免研究生报名）](http://www.cst.zju.edu.cn/2026/0807/c36206a3193932/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源

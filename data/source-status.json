@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T21:45:59+08:00",
+  "generated_at": "2026-09-10T22:33:31+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,62 +7,63 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-09-10T21:45:59+08:00",
+      "fetched_at": "2026-09-10T22:33:31+08:00",
       "duration_ms": 0,
       "details": {}
     },
     {
       "name": "saikr",
-      "ok": false,
-      "records": 0,
-      "url": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
-      "error": "8/8 Saikr category list requests failed; ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'",
-      "fetched_at": "2026-09-10T21:46:02+08:00",
-      "duration_ms": 2578,
+      "ok": true,
+      "records": 72,
+      "url": "https://where-to-study.cn/data/saikr-snapshot.json",
+      "error": "",
+      "fetched_at": "2026-09-10T22:28:30+08:00",
+      "duration_ms": 2963,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
           "info": "https://apiv4buffer.saikr.com/api/pc/contest/info"
         },
-        "category_records": {},
-        "unique_list_records": 0,
-        "engineering_current_selected": 0,
-        "detail_success": 0,
-        "detail_failures": [],
-        "list_failures": [
+        "category_records": {
+          "数学建模": 100,
+          "程序设计": 100,
+          "机器人": 100,
+          "电子信息与自动化": 100,
+          "计算机与信息技术": 100,
+          "机械工程": 100,
+          "大数据": 100,
+          "人工智能": 57
+        },
+        "unique_list_records": 425,
+        "engineering_current_selected": 72,
+        "detail_success": 68,
+        "detail_failures": [
           {
-            "category": "数学建模",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
+            "contest": "2026全国大学生机器人与算法大赛-模拟仿真赛道",
+            "error": "ValueError: unexpected Saikr API response (code=4111, message='竞赛审核中')"
           },
           {
-            "category": "程序设计",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
+            "contest": "X-GAME 2026智能新源汽车大数据竞赛",
+            "error": "ValueError: unexpected Saikr API response (code=4110, message='竞赛不存在')"
           },
           {
-            "category": "机器人",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
+            "contest": "2026年大学生统计科学与算法编程挑战赛——数据统计赛项",
+            "error": "ValueError: unexpected Saikr API response (code=4110, message='竞赛不存在')"
           },
           {
-            "category": "电子信息与自动化",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
-          },
-          {
-            "category": "计算机与信息技术",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
-          },
-          {
-            "category": "机械工程",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
-          },
-          {
-            "category": "大数据",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
-          },
-          {
-            "category": "人工智能",
-            "error": "ValueError: expected JSON: HTTP 200, content-type=text/html; charset=utf-8, content-encoding=identity, bytes=2655, title='赛氪 - 跳转提示'"
+            "contest": "2026年第五届“华秦杯”网络安全创新大赛",
+            "error": "ValueError: unexpected Saikr API response (code=4110, message='竞赛不存在')"
           }
-        ]
+        ],
+        "list_failures": [],
+        "transport": {
+          "method": "ubuntu_snapshot",
+          "url": "https://where-to-study.cn/data/saikr-snapshot.json",
+          "fetched_at": "2026-09-10T22:28:30+08:00",
+          "last_success_at": "2026-09-10T22:28:30+08:00",
+          "sha256": "d7221b1ed258b4e66966e81eda03e1b7d277c8cd516e2d7dd5342e94244102ab",
+          "max_age_hours": 36
+        }
       }
     },
     {
@@ -71,8 +72,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-09-10T21:46:25+08:00",
-      "duration_ms": 23381,
+      "fetched_at": "2026-09-10T22:33:53+08:00",
+      "duration_ms": 19220,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -171,8 +172,8 @@
       "records": 75,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-09-10T21:46:31+08:00",
-      "duration_ms": 5324,
+      "fetched_at": "2026-09-10T22:34:00+08:00",
+      "duration_ms": 6922,
       "details": {}
     },
     {
@@ -181,8 +182,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-09-10T21:46:31+08:00",
-      "duration_ms": 584,
+      "fetched_at": "2026-09-10T22:34:00+08:00",
+      "duration_ms": 145,
       "details": {}
     },
     {
@@ -191,8 +192,8 @@
       "records": 66,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-09-10T21:46:32+08:00",
-      "duration_ms": 854,
+      "fetched_at": "2026-09-10T22:34:01+08:00",
+      "duration_ms": 996,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
