@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-11T12:35:34+08:00`，共 487 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-12T00:04:10+08:00`，共 487 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [CHI 2027](https://chi2027.acm.org/) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [ICDT 2027](https://edbticdt2027.github.io/) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [IEEE/ACM CGO 2027](https://conf.researchr.org/home/cgo-2027) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [MMSys 2027](https://2027.acmmmsys.org) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [2026年第三届大学生高新技术竞赛—数据分析竞赛](https://new.saikr.com/vse/SJFX2026) | competition | 2026-09-11T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [哈尔滨工业大学（深圳） · 智能学部智能科学与工程学院（推免预报名）](http://intelligence.hitsz.edu.cn/currency.jsp?urltype=news.NewsContentUrl&wbtreeid=1259&wbnewsid=1924) | pre_admission | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [天津大学 · 电气自动化与信息工程学院（普通推免）](https://mp.weixin.qq.com/s/zGLQBWGOPKA2iB8J6L1IJQ) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [浙江大学 · 人工智能学院（推免研究生报名）](https://ai.zju.edu.cn/2026/0810/c90497a3194262/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [浙江大学 · 工程师学院（推免研究生报名）](https://pi.zju.edu.cn/2026/0730/c67026a3192667/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [浙江大学 · 计算机科学与技术学院（推免研究生报名）](http://www.cs.zju.edu.cn/csen/2026/0807/c27006a3193973/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [浙江大学 · 软件学院（推免研究生报名）](http://www.cst.zju.edu.cn/2026/0807/c36206a3193932/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [第八届CRH大学生程序设计大赛——编程考察赛道](https://new.saikr.com/vse/CRH260802) | competition | 2026-09-11T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
+| [HackRice](https://hackrice.com/) | hackathon | 2026-09-12T04:00:00+08:00 | upcoming | Major League Hacking |
+| [HackCMU](https://www.acmatcmu.com/hackcmu2026/) | hackathon | 2026-09-12T05:00:00+08:00 | upcoming | Major League Hacking |
+| [HackMTY 2026](https://hackmty.com/) | hackathon | 2026-09-12T05:00:00+08:00 | upcoming | Major League Hacking |
+| [2026年第三届大学生高新技术竞赛—数据分析竞赛](https://new.saikr.com/vse/SJFX2026) | competition | 2026-09-12T09:00:00+08:00 | upcoming | 赛氪公开前端 API |
+| [第八届CRH大学生程序设计大赛——大数据智能分析赛道](https://new.saikr.com/vse/CRH260803) | competition | 2026-09-12T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [ADMA 2026](https://adma2026.github.io/) | conference | 2026-09-12T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [HackWesTX 26](https://hackwestx.gdgttu.com/) | hackathon | 2026-09-12T20:30:00+08:00 | upcoming | Major League Hacking |
+| [香港理工大学 · 数据科学与人工智能学系（2027年1月入学PhD/MPhil）](https://www.polyu.edu.hk/study/pg/rpg/20262/dsai) | summer_camp | 2026-09-12T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [第八届CRH大学生程序设计大赛——编程考察赛道](https://new.saikr.com/vse/CRH260802) | competition | 2026-09-13T13:00:00+08:00 | registration_closed | 赛氪公开前端 API |
+| [中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名](https://new.saikr.com/vse/csumcmnational2026) | competition | 2026-09-13T20:00:00+08:00 | ongoing | 赛氪公开前端 API |
+| [【本周末开考】2026大学生“麟创杯”人工智能知识竞赛（秋季赛）](https://new.saikr.com/vse/LCBRGZN02) | competition | 2026-09-13T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛](https://new.saikr.com/vse/Combined202601) | competition | 2026-09-13T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
