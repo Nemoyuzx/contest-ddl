@@ -21,11 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-10T22:33:31+08:00`，共 481 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-11T12:35:34+08:00`，共 487 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [NSDI 2027](https://www.usenix.org/conference/nsdi27) | conference | 2026-09-11T11:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [CHI 2027](https://chi2027.acm.org/) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [ICDT 2027](https://edbticdt2027.github.io/) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [IEEE/ACM CGO 2027](https://conf.researchr.org/home/cgo-2027) | conference | 2026-09-11T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
@@ -37,6 +36,7 @@
 | [浙江大学 · 工程师学院（推免研究生报名）](https://pi.zju.edu.cn/2026/0730/c67026a3192667/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 计算机科学与技术学院（推免研究生报名）](http://www.cs.zju.edu.cn/csen/2026/0807/c27006a3193973/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [浙江大学 · 软件学院（推免研究生报名）](http://www.cst.zju.edu.cn/2026/0807/c36206a3193932/page.htm) | summer_camp | 2026-09-11T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [第八届CRH大学生程序设计大赛——编程考察赛道](https://new.saikr.com/vse/CRH260802) | competition | 2026-09-11T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源

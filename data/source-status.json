@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:33:31+08:00",
+  "generated_at": "2026-09-11T12:35:34+08:00",
   "sources": [
     {
       "name": "manual",
@@ -7,7 +7,7 @@
       "records": 0,
       "url": "data/manual.yml",
       "error": "",
-      "fetched_at": "2026-09-10T22:33:31+08:00",
+      "fetched_at": "2026-09-11T12:35:34+08:00",
       "duration_ms": 0,
       "details": {}
     },
@@ -17,8 +17,8 @@
       "records": 72,
       "url": "https://where-to-study.cn/data/saikr-snapshot.json",
       "error": "",
-      "fetched_at": "2026-09-10T22:28:30+08:00",
-      "duration_ms": 2963,
+      "fetched_at": "2026-09-11T07:41:43+08:00",
+      "duration_ms": 2670,
       "details": {
         "api": {
           "lists": "https://apiv4buffer.saikr.com/api/pc/contest/lists",
@@ -59,9 +59,9 @@
         "transport": {
           "method": "ubuntu_snapshot",
           "url": "https://where-to-study.cn/data/saikr-snapshot.json",
-          "fetched_at": "2026-09-10T22:28:30+08:00",
-          "last_success_at": "2026-09-10T22:28:30+08:00",
-          "sha256": "d7221b1ed258b4e66966e81eda03e1b7d277c8cd516e2d7dd5342e94244102ab",
+          "fetched_at": "2026-09-11T07:41:43+08:00",
+          "last_success_at": "2026-09-11T07:41:43+08:00",
+          "sha256": "84b5ea71627279bfe2a07d09a31c25f9c1f5a94db9756fa43945a20dee4062f2",
           "max_age_hours": 36
         }
       }
@@ -72,8 +72,8 @@
       "records": 1,
       "url": "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json",
       "error": "",
-      "fetched_at": "2026-09-10T22:33:53+08:00",
-      "duration_ms": 19220,
+      "fetched_at": "2026-09-11T12:35:59+08:00",
+      "duration_ms": 21720,
       "details": {
         "catalog_records": 84,
         "engineering_sites_selected": 33,
@@ -169,11 +169,11 @@
     {
       "name": "mlh",
       "ok": true,
-      "records": 75,
+      "records": 81,
       "url": "https://mlh.io/seasons/2026/events",
       "error": "",
-      "fetched_at": "2026-09-10T22:34:00+08:00",
-      "duration_ms": 6922,
+      "fetched_at": "2026-09-11T12:36:03+08:00",
+      "duration_ms": 3849,
       "details": {}
     },
     {
@@ -182,8 +182,8 @@
       "records": 240,
       "url": "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json",
       "error": "",
-      "fetched_at": "2026-09-10T22:34:00+08:00",
-      "duration_ms": 145,
+      "fetched_at": "2026-09-11T12:36:03+08:00",
+      "duration_ms": 258,
       "details": {}
     },
     {
@@ -192,8 +192,8 @@
       "records": 66,
       "url": "https://ccfddl.com/conference/allconf.yml",
       "error": "",
-      "fetched_at": "2026-09-10T22:34:01+08:00",
-      "duration_ms": 996,
+      "fetched_at": "2026-09-11T12:36:04+08:00",
+      "duration_ms": 1180,
       "details": {
         "project": "https://github.com/ccfddl/ccf-deadlines",
         "dataset_series": 353,
