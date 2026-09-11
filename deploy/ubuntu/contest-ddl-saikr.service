@@ -12,11 +12,13 @@ Environment=PYTHONPATH=/srv/contest-ddl-saikr/current/src
 Environment=PYTHONDONTWRITEBYTECODE=1
 Environment=SAIKR_WORKERS=3
 Environment=SAIKR_LIMIT=72
-ExecStart=/srv/contest-ddl-saikr/venv/bin/python -m contestddl.saikr_snapshot --output /var/lib/contest-ddl-saikr/snapshot.json
+ExecStart=/usr/local/bin/node /usr/local/lib/where-to-study/retry-command.mjs --label saikr-collect --timeout-ms 600000 -- /srv/contest-ddl-saikr/venv/bin/python -m contestddl.saikr_snapshot --output /var/lib/contest-ddl-saikr/snapshot.json
 StateDirectory=contest-ddl-saikr
 StateDirectoryMode=0755
 UMask=0022
-TimeoutStartSec=10min
+TimeoutStartSec=4h
+TimeoutStopSec=15s
+KillMode=control-group
 MemoryMax=256M
 CPUQuota=50%
 Nice=10
@@ -29,4 +31,3 @@ ProtectKernelModules=true
 ProtectControlGroups=true
 RestrictSUIDSGID=true
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
-

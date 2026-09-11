@@ -7,13 +7,15 @@
 1. 在 Ubuntu 创建不可登录的专用系统用户/组 `contest-ddl-saikr`。
 2. 将已审核源码放在 `/srv/contest-ddl-saikr/releases/<commit>`，以 `current` 符号链接指向运行版本。代码和虚拟环境由 root 持有，采集账号只读。
 3. 用系统 Python 3.12 创建 `/srv/contest-ddl-saikr/venv`，通过该环境的 `pip install /srv/contest-ddl-saikr/current` 安装项目及既有依赖。unit 的 `PYTHONPATH` 始终指向当前发布源码。
-4. 安装本目录的 service/timer 到 `/etc/systemd/system/`，执行 `systemctl daemon-reload`，先 `systemctl start contest-ddl-saikr.service`，确认成功后 `systemctl enable --now contest-ddl-saikr.timer`。
+4. 先将网站仓库的 `scripts/retry-command.mjs` 安装为 root 持有、0644 权限的 `/usr/local/lib/where-to-study/retry-command.mjs`（只使用 Node 内建模块，独立于网站发布目录）。安装本目录的 service/timer 到 `/etc/systemd/system/`，执行 `systemctl daemon-reload`，用 `systemctl start --no-block contest-ddl-saikr.service` 启动，确认成功后 `systemctl enable --now contest-ddl-saikr.timer`。
 5. 在网站 Nginx 配置中只以精确路径 `/data/saikr-snapshot.json` 映射 `/var/lib/contest-ddl-saikr/snapshot.json`，仅允许 GET/HEAD；不要暴露整个状态目录。权威配置位于 `where_to_study-site/deploy/ubuntu/where-to-study.nginx`。
 6. 确认 `https://where-to-study.cn/data/saikr-snapshot.json` 可读取且通过 `validate_snapshot` 后，再让 GitHub 以 `SAIKR_SOURCE=ubuntu` 执行聚合。
 
 每天北京时间 07:40（最多随机延后 90 秒）采集，先于 GitHub 的 08:17 计划时间；错过的执行由 systemd 补跑。手动补采集使用 `systemctl start contest-ddl-saikr.service`。单次最多 72 条详情、3 并发，10 分钟超时，256 MiB 内存与 50% CPU 上限。
 
 ## 失败与校验
+
+采集失败结束后每隔 30 分钟重试，最多额外 5 次（首次加重试共 6 次）。单次仍限制 10 分钟，整个重试周期限制 4 小时；SIGTERM 会终止子进程并取消后续重试。耗尽后保持失败，等待下一个自然日程或手动执行，不用无限 `Restart=on-failure` 重置预算。正常 07:40 日程不变，GitHub 聚合与发布仍在 GitHub 执行。
 
 启动采集前原子发布进行中/失败标记；成功后再原子替换结果。全量成功副本单独保留为 `last-success.json`，不对外暴露。部分分类失败保留本轮确实取得的部分事件，但 `ok=false`；完全失败返回空事件，GitHub 的历史事件继续按原 7/30 天规则保留，绝不把旧成功副本重新盖上新时间。
 
