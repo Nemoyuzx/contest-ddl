@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-12T12:30:57+08:00`，共 487 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-13T12:43:03+08:00`，共 489 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年第三届大学生高新技术竞赛—数据分析竞赛](https://new.saikr.com/vse/SJFX2026) | competition | 2026-09-12T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [ADMA 2026](https://adma2026.github.io/) | conference | 2026-09-12T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [HackWesTX 26](https://hackwestx.gdgttu.com/) | hackathon | 2026-09-12T20:30:00+08:00 | upcoming | Major League Hacking |
-| [香港理工大学 · 数据科学与人工智能学系（2027年1月入学PhD/MPhil）](https://www.polyu.edu.hk/study/pg/rpg/20262/dsai) | summer_camp | 2026-09-12T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [HackCMU](https://www.acmatcmu.com/hackcmu2026/) | hackathon | 2026-09-13T06:00:00+08:00 | ongoing | Major League Hacking |
 | [第八届CRH大学生程序设计大赛——编程考察赛道](https://new.saikr.com/vse/CRH260802) | competition | 2026-09-13T13:00:00+08:00 | registration_closed | 赛氪公开前端 API |
 | [第八届CRH大学生程序设计大赛——大数据智能分析赛道](https://new.saikr.com/vse/CRH260803) | competition | 2026-09-13T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名](https://new.saikr.com/vse/csumcmnational2026) | competition | 2026-09-13T20:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [麟创杯人工智能知识竞赛（秋季赛）](https://new.saikr.com/vse/LCBRGZN02) | competition | 2026-09-13T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛](https://new.saikr.com/vse/Combined202601) | competition | 2026-09-13T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [中国移动第十届创客马拉松大赛AI x 无源物联网专题赛](https://new.saikr.com/vse/59869) | competition | 2026-09-13T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [南开大学 · 计算机学院、密码与网络空间安全学院（推免预报名）](https://cc.nankai.edu.cn/2026/0709/c13297a600172/page.htm) | pre_admission | 2026-09-13T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [HackMTY 2026](https://hackmty.com/) | hackathon | 2026-09-14T01:00:00+08:00 | ongoing | Major League Hacking |
+| [HackRice](https://hackrice.com/) | hackathon | 2026-09-14T03:00:00+08:00 | ongoing | Major League Hacking |
+| [HackWesTX 26](https://hackwestx.gdgttu.com/) | hackathon | 2026-09-14T03:30:00+08:00 | ongoing | Major League Hacking |
+| [2026长三角（芜湖）算力算法创新应用大赛](https://new.saikr.com/vse/wuhu2026) | competition | 2026-09-14T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [东北大学 · 计算机科学与工程学院（推免预报名）](https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784259492312001298&b=1784085098695001298) | pre_admission | 2026-09-14T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
