@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-13T12:43:03+08:00`，共 489 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-14T12:51:24+08:00`，共 489 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [第八届CRH大学生程序设计大赛——编程考察赛道](https://new.saikr.com/vse/CRH260802) | competition | 2026-09-13T13:00:00+08:00 | registration_closed | 赛氪公开前端 API |
-| [第八届CRH大学生程序设计大赛——大数据智能分析赛道](https://new.saikr.com/vse/CRH260803) | competition | 2026-09-13T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [中南大学学生参加2026年湖南省及全国大学生数学建模竞赛预报名](https://new.saikr.com/vse/csumcmnational2026) | competition | 2026-09-13T20:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [麟创杯人工智能知识竞赛（秋季赛）](https://new.saikr.com/vse/LCBRGZN02) | competition | 2026-09-13T22:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [2026年第四届大学生信息系统创新大赛--C语言/C++编程巅峰赛](https://new.saikr.com/vse/Combined202601) | competition | 2026-09-13T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
-| [中国移动第十届创客马拉松大赛AI x 无源物联网专题赛](https://new.saikr.com/vse/59869) | competition | 2026-09-13T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [南开大学 · 计算机学院、密码与网络空间安全学院（推免预报名）](https://cc.nankai.edu.cn/2026/0709/c13297a600172/page.htm) | pre_admission | 2026-09-13T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [HackMTY 2026](https://hackmty.com/) | hackathon | 2026-09-14T01:00:00+08:00 | ongoing | Major League Hacking |
-| [HackRice](https://hackrice.com/) | hackathon | 2026-09-14T03:00:00+08:00 | ongoing | Major League Hacking |
-| [HackWesTX 26](https://hackwestx.gdgttu.com/) | hackathon | 2026-09-14T03:30:00+08:00 | ongoing | Major League Hacking |
-| [2026长三角（芜湖）算力算法创新应用大赛](https://new.saikr.com/vse/wuhu2026) | competition | 2026-09-14T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [东北大学 · 计算机科学与工程学院（推免预报名）](https://yjszs.neu.edu.cn/yjszs/plugins/zs/ytmxsd/entrance#/tmfwksdExemptionEntranceDetail?a=1784259492312001298&b=1784085098695001298) | pre_admission | 2026-09-14T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | conference | 2026-09-14T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [南京航空航天大学 · 计算机科学与技术学院/软件学院（推免预报名）](https://cs.nuaa.edu.cn/2026/0726/c10851a407213/page.htm) | pre_admission | 2026-09-14T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [南京航空航天大学 · 人工智能学院（推免预报名）](https://mp.weixin.qq.com/s/oewIcHhwW2Ql2koyZUDSWQ) | pre_admission | 2026-09-14T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [大连理工大学 · 人工智能学院（推免预报名）](https://gs.dlut.edu.cn/info/1173/51492.htm) | pre_admission | 2026-09-15T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道](https://new.saikr.com/vse/58261) | competition | 2026-09-15T23:59:00+08:00 | registration_open | 赛氪公开前端 API |
+| [第五届琶洲算法大赛](https://new.saikr.com/vse/aicompetition-pz) | competition | 2026-09-15T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [ICRA 2027](https://2027.ieee-icra.org/) | conference | 2026-09-16T14:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [FAST 2027](https://www.usenix.org/conference/fast27) | conference | 2026-09-16T19:59:00+08:00 | submission_open | CCFDDL Open Deadlines |
+| [WCNC 2027](https://wcnc2027.ieee-wcnc.org/) | conference | 2026-09-16T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [西安电子科技大学 · 集成电路学部（推免预报名）](https://sme.xidian.edu.cn/html/tzgg/jl/2026/0720/3660.html) | pre_admission | 2026-09-16T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [ICASSP 2027](https://2027.ieeeicassp.org/) | conference | 2026-09-17T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [VMCAI 2027](https://conf.researchr.org/home/VMCAI-2027) | conference | 2026-09-17T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
