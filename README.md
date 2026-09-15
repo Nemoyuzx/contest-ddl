@@ -21,14 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-14T12:51:24+08:00`，共 489 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-15T12:50:37+08:00`，共 502 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | conference | 2026-09-14T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [南京航空航天大学 · 计算机科学与技术学院/软件学院（推免预报名）](https://cs.nuaa.edu.cn/2026/0726/c10851a407213/page.htm) | pre_admission | 2026-09-14T23:59:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [南京航空航天大学 · 人工智能学院（推免预报名）](https://mp.weixin.qq.com/s/oewIcHhwW2Ql2koyZUDSWQ) | pre_admission | 2026-09-14T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
-| [大连理工大学 · 人工智能学院（推免预报名）](https://gs.dlut.edu.cn/info/1173/51492.htm) | pre_admission | 2026-09-15T12:00:00+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道](https://new.saikr.com/vse/58261) | competition | 2026-09-15T23:59:00+08:00 | registration_open | 赛氪公开前端 API |
 | [第五届琶洲算法大赛](https://new.saikr.com/vse/aicompetition-pz) | competition | 2026-09-15T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 | [ICRA 2027](https://2027.ieee-icra.org/) | conference | 2026-09-16T14:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
@@ -37,6 +33,10 @@
 | [西安电子科技大学 · 集成电路学部（推免预报名）](https://sme.xidian.edu.cn/html/tzgg/jl/2026/0720/3660.html) | pre_admission | 2026-09-16T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
 | [ICASSP 2027](https://2027.ieeeicassp.org/) | conference | 2026-09-17T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [VMCAI 2027](https://conf.researchr.org/home/VMCAI-2027) | conference | 2026-09-17T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [Global Hack Week: Data](https://events.mlh.io/events/14416-global-hack-week-data) | hackathon | 2026-09-18T02:00:00+08:00 | ongoing | Major League Hacking |
+| [NSDI 2027](https://www.usenix.org/conference/nsdi27) | conference | 2026-09-18T11:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [EUROCRYPT 2027](https://eurocrypt.iacr.org/2027/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [EuroSys 2027](https://2027.eurosys.org/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
