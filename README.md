@@ -21,12 +21,10 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-15T12:50:37+08:00`，共 502 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-16T12:46:07+08:00`，共 505 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道](https://new.saikr.com/vse/58261) | competition | 2026-09-15T23:59:00+08:00 | registration_open | 赛氪公开前端 API |
-| [第五届琶洲算法大赛](https://new.saikr.com/vse/aicompetition-pz) | competition | 2026-09-15T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
 | [ICRA 2027](https://2027.ieee-icra.org/) | conference | 2026-09-16T14:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [FAST 2027](https://www.usenix.org/conference/fast27) | conference | 2026-09-16T19:59:00+08:00 | submission_open | CCFDDL Open Deadlines |
 | [WCNC 2027](https://wcnc2027.ieee-wcnc.org/) | conference | 2026-09-16T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
@@ -37,6 +35,8 @@
 | [NSDI 2027](https://www.usenix.org/conference/nsdi27) | conference | 2026-09-18T11:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [EUROCRYPT 2027](https://eurocrypt.iacr.org/2027/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [EuroSys 2027](https://2027.eurosys.org/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [MMSys 2027](https://2027.acmmmsys.org) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [HackHers @GSU](https://hackhers.club/) | hackathon | 2026-09-18T21:00:00+08:00 | upcoming | Major League Hacking |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
