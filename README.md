@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-17T12:49:02+08:00`，共 513 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-18T12:39:31+08:00`，共 515 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [VMCAI 2027](https://conf.researchr.org/home/VMCAI-2027) | conference | 2026-09-17T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [Global Hack Week: Data](https://events.mlh.io/events/14416-global-hack-week-data) | hackathon | 2026-09-18T02:00:00+08:00 | ongoing | Major League Hacking |
-| [2026“华青杯”大学生人工智能大赛——算法编程赛项](https://new.saikr.com/vse/HQBRGZN2601) | competition | 2026-09-18T11:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [NSDI 2027](https://www.usenix.org/conference/nsdi27) | conference | 2026-09-18T11:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [EUROCRYPT 2027](https://eurocrypt.iacr.org/2027/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [EuroSys 2027](https://2027.eurosys.org/) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [MMSys 2027](https://2027.acmmmsys.org) | conference | 2026-09-18T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [HackHers @GSU](https://hackhers.club/) | hackathon | 2026-09-18T21:00:00+08:00 | upcoming | Major League Hacking |
 | [2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道](https://new.saikr.com/vse/2026TJKXCOA) | competition | 2026-09-18T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年第四届大学生信息系统创新大赛--网络安全巅峰赛](https://new.saikr.com/vse/Cyber202601) | competition | 2026-09-18T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [城市联赛（冬季赛）—计算机素养赛道](https://new.saikr.com/vse/CLComputer2026WT) | competition | 2026-09-18T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [第八届CRH大学生程序设计大赛——算法能力赛道](https://new.saikr.com/vse/CRH260801) | competition | 2026-09-18T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
+| [Hack the North](https://hackthenorth.com/) | hackathon | 2026-09-19T03:00:00+08:00 | upcoming | Major League Hacking |
+| [VTHacks 14](https://vthacks.com/) | hackathon | 2026-09-19T04:15:00+08:00 | upcoming | Major League Hacking |
+| [HopHacks](https://www.hophacks.com/) | hackathon | 2026-09-19T06:00:00+08:00 | upcoming | Major League Hacking |
+| [2026全国大学生机器人与算法大赛-知识竞答赛道](https://new.saikr.com/vse/59954) | competition | 2026-09-19T09:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [【本周六开考】2026全国大学生机器人与算法大赛-模拟仿真赛道](https://new.saikr.com/vse/Robot/arborseek/26) | competition | 2026-09-19T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
