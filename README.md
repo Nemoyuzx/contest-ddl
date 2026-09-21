@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-20T12:50:45+08:00`，共 514 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-21T12:51:30+08:00`，共 516 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道](https://new.saikr.com/vse/2026TJKXCOA) | competition | 2026-09-20T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [2026年第四届大学生信息系统创新大赛--网络安全巅峰赛](https://new.saikr.com/vse/Cyber202601) | competition | 2026-09-20T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [城市联赛（冬季赛）—计算机素养赛道](https://new.saikr.com/vse/CLComputer2026WT) | competition | 2026-09-20T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [第八届CRH大学生程序设计大赛——算法能力赛道](https://new.saikr.com/vse/CRH260801) | competition | 2026-09-20T18:00:00+08:00 | registration_open | 赛氪公开前端 API |
-| [办公软件应用技能大赛](https://new.saikr.com/vse/26WLBOFFICE) | competition | 2026-09-20T21:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [【周日开考】2026华智·高校大学生人工智能大赛](https://new.saikr.com/vse/HZRGZN) | competition | 2026-09-20T22:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [2026第七届大学生算法挑战赛](https://new.saikr.com/vse/algorithm202602) | competition | 2026-09-20T22:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [HopHacks](https://www.hophacks.com/) | hackathon | 2026-09-21T01:00:00+08:00 | ongoing | Major League Hacking |
-| [VTHacks 14](https://vthacks.com/) | hackathon | 2026-09-21T02:15:00+08:00 | ongoing | Major League Hacking |
-| [Hack the North](https://hackthenorth.com/) | hackathon | 2026-09-21T04:00:00+08:00 | ongoing | Major League Hacking |
-| [SteelHacks XIII](https://steelhacks.org/) | hackathon | 2026-09-21T04:00:00+08:00 | ongoing | Major League Hacking |
 | [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | conference | 2026-09-21T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [SANER 2027](https://conf.researchr.org/home/saner-2027) | conference | 2026-09-22T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [AI大模型创新应用挑战赛道](https://new.saikr.com/vse/CLAIBM2026WN) | competition | 2026-09-23T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [中国电信星辰杯高校AI算子开发挑战赛](https://new.saikr.com/vse/XCB26) | competition | 2026-09-24T08:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [ICASSP 2027](https://2027.ieeeicassp.org/) | conference | 2026-09-24T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛](https://new.saikr.com/vse/OFFICE202601) | competition | 2026-09-24T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
+| [&HACKS XII](https://andhacks.cs.wm.edu/) | hackathon | 2026-09-25T09:11:11+08:00 | upcoming | Major League Hacking |
+| [计算机能力挑战赛](https://new.saikr.com/vse/2026WLBcomputilit) | competition | 2026-09-25T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [ACNS 2027](https://acns2027.isg.rhul.ac.uk/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [EuroSys 2027](https://2027.eurosys.org/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [FC 2027](https://fc27.ifca.ai/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [HackNex Season 2](https://innovocon.online/events/hacknex) | hackathon | 2026-09-25T21:00:00+08:00 | upcoming | Major League Hacking |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
