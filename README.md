@@ -21,14 +21,13 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-22T12:50:39+08:00`，共 517 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-23T12:41:36+08:00`，共 518 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [SANER 2027](https://conf.researchr.org/home/saner-2027) | conference | 2026-09-22T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [AI大模型创新应用挑战赛道](https://new.saikr.com/vse/CLAIBM2026WN) | competition | 2026-09-23T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [中国电信星辰杯高校AI算子开发挑战赛](https://new.saikr.com/vse/XCB26) | competition | 2026-09-24T08:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [ICASSP 2027](https://2027.ieeeicassp.org/) | conference | 2026-09-24T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [AI大模型创新应用挑战赛道](https://new.saikr.com/vse/CLAIBM2026WN) | competition | 2026-09-24T20:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛](https://new.saikr.com/vse/OFFICE202601) | competition | 2026-09-24T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 | [&HACKS XII](https://andhacks.cs.wm.edu/) | hackathon | 2026-09-25T09:11:11+08:00 | upcoming | Major League Hacking |
 | [计算机能力挑战赛](https://new.saikr.com/vse/2026WLBcomputilit) | competition | 2026-09-25T10:00:00+08:00 | registration_open | 赛氪公开前端 API |
@@ -37,6 +36,7 @@
 | [FC 2027](https://fc27.ifca.ai/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [HackNex Season 2](https://innovocon.online/events/hacknex) | hackathon | 2026-09-25T21:00:00+08:00 | upcoming | Major League Hacking |
 | [HackGT 13](http://hack.gt/) | hackathon | 2026-09-26T02:00:00+08:00 | upcoming | Major League Hacking |
+| [ShellHacks](https://shellhacks.net/) | hackathon | 2026-09-26T03:00:00+08:00 | upcoming | Major League Hacking |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
