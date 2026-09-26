@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-25T12:53:40+08:00`，共 558 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-26T12:53:50+08:00`，共 563 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [ACNS 2027](https://acns2027.isg.rhul.ac.uk/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [EuroSys 2027](https://2027.eurosys.org/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [FC 2027](https://fc27.ifca.ai/) | conference | 2026-09-25T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [HackNex Season 2](https://innovocon.online/events/hacknex) | hackathon | 2026-09-25T21:00:00+08:00 | upcoming | Major League Hacking |
-| [HackGT 13](http://hack.gt/) | hackathon | 2026-09-26T02:00:00+08:00 | upcoming | Major League Hacking |
-| [ShellHacks](https://shellhacks.net/) | hackathon | 2026-09-26T03:00:00+08:00 | upcoming | Major League Hacking |
-| [TigerHacks](https://tigerhacks.dev) | hackathon | 2026-09-26T04:00:00+08:00 | upcoming | Major League Hacking |
-| [Hack the Hill](https://hackthehill.com/) | hackathon | 2026-09-26T05:00:00+08:00 | upcoming | Major League Hacking |
-| [Eurographics 2027](https://eg2027.isti.cnr.it/) | conference | 2026-09-26T07:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [VLDB 2027](https://www.vldb.org/2027/) | conference | 2026-09-26T08:00:00+08:00 | submission_open | CCFDDL Open Deadlines |
 | [ICLR 2027](https://iclr.cc/Conferences/2027) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [SANER 2027](https://conf.researchr.org/home/saner-2027) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [SPAA 2027](https://spaa.acm.org/) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [DivHacks](https://www.columbiadivhacks.org/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
+| [hackUMBC](https://hackumbc.tech/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
+| [OwlHacks](https://www.owlhacks.com/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
+| [HackNex Season 2](https://innovocon.online/events/hacknex) | hackathon | 2026-09-27T01:00:00+08:00 | ongoing | Major League Hacking |
+| [2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛](https://new.saikr.com/vse/OFFICE202601) | competition | 2026-09-27T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
+| [计算机能力挑战赛](https://new.saikr.com/vse/2026WLBcomputilit) | competition | 2026-09-27T23:00:00+08:00 | ongoing | 赛氪公开前端 API |
+| [HackGT 13](http://hack.gt/) | hackathon | 2026-09-28T03:00:00+08:00 | ongoing | Major League Hacking |
+| [Hack the Hill](https://hackthehill.com/) | hackathon | 2026-09-28T04:00:00+08:00 | ongoing | Major League Hacking |
+| [&HACKS XII](https://andhacks.cs.wm.edu/) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
