@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-26T12:53:50+08:00`，共 563 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-27T13:15:04+08:00`，共 566 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [ICLR 2027](https://iclr.cc/Conferences/2027) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [SANER 2027](https://conf.researchr.org/home/saner-2027) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [SPAA 2027](https://spaa.acm.org/) | conference | 2026-09-26T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [DivHacks](https://www.columbiadivhacks.org/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
-| [hackUMBC](https://hackumbc.tech/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
-| [OwlHacks](https://www.owlhacks.com/) | hackathon | 2026-09-26T21:00:00+08:00 | upcoming | Major League Hacking |
-| [HackNex Season 2](https://innovocon.online/events/hacknex) | hackathon | 2026-09-27T01:00:00+08:00 | ongoing | Major League Hacking |
 | [2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛](https://new.saikr.com/vse/OFFICE202601) | competition | 2026-09-27T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [计算机能力挑战赛](https://new.saikr.com/vse/2026WLBcomputilit) | competition | 2026-09-27T23:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [HackGT 13](http://hack.gt/) | hackathon | 2026-09-28T03:00:00+08:00 | ongoing | Major League Hacking |
+| [OwlHacks](https://www.owlhacks.com/) | hackathon | 2026-09-28T03:00:00+08:00 | ongoing | Major League Hacking |
+| [DivHacks](https://www.columbiadivhacks.org/) | hackathon | 2026-09-28T04:00:00+08:00 | ongoing | Major League Hacking |
 | [Hack the Hill](https://hackthehill.com/) | hackathon | 2026-09-28T04:00:00+08:00 | ongoing | Major League Hacking |
 | [&HACKS XII](https://andhacks.cs.wm.edu/) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
+| [hackUMBC](https://hackumbc.tech/) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
+| [TigerHacks](https://tigerhacks.dev) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
+| [ShellHacks](https://shellhacks.net/) | hackathon | 2026-09-28T07:00:00+08:00 | ongoing | Major League Hacking |
+| [中国电信星辰杯高校AI算子开发挑战赛](https://new.saikr.com/vse/XCB26) | competition | 2026-09-28T08:00:00+08:00 | ongoing | 赛氪公开前端 API |
+| [2026年下半年全国大学英语四六级考试报名工作启动](https://new.saikr.com/vse/60215) | competition | 2026-09-28T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
