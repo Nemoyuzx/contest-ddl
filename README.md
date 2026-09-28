@@ -21,22 +21,22 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-27T13:15:04+08:00`，共 566 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-28T13:19:09+08:00`，共 566 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛](https://new.saikr.com/vse/OFFICE202601) | competition | 2026-09-27T18:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [计算机能力挑战赛](https://new.saikr.com/vse/2026WLBcomputilit) | competition | 2026-09-27T23:00:00+08:00 | ongoing | 赛氪公开前端 API |
-| [HackGT 13](http://hack.gt/) | hackathon | 2026-09-28T03:00:00+08:00 | ongoing | Major League Hacking |
-| [OwlHacks](https://www.owlhacks.com/) | hackathon | 2026-09-28T03:00:00+08:00 | ongoing | Major League Hacking |
-| [DivHacks](https://www.columbiadivhacks.org/) | hackathon | 2026-09-28T04:00:00+08:00 | ongoing | Major League Hacking |
-| [Hack the Hill](https://hackthehill.com/) | hackathon | 2026-09-28T04:00:00+08:00 | ongoing | Major League Hacking |
-| [&HACKS XII](https://andhacks.cs.wm.edu/) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
-| [hackUMBC](https://hackumbc.tech/) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
-| [TigerHacks](https://tigerhacks.dev) | hackathon | 2026-09-28T05:00:00+08:00 | ongoing | Major League Hacking |
-| [ShellHacks](https://shellhacks.net/) | hackathon | 2026-09-28T07:00:00+08:00 | ongoing | Major League Hacking |
-| [中国电信星辰杯高校AI算子开发挑战赛](https://new.saikr.com/vse/XCB26) | competition | 2026-09-28T08:00:00+08:00 | ongoing | 赛氪公开前端 API |
 | [2026年下半年全国大学英语四六级考试报名工作启动](https://new.saikr.com/vse/60215) | competition | 2026-09-28T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
+| [2026年高校学生数学建模能力测评考试](https://new.saikr.com/vse/gxbsm26) | competition | 2026-09-29T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [ISPD 2027](https://ispd.cc/ispd2027/) | conference | 2026-09-29T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [首届量子计算应用场景挑战赛——高校组](https://new.saikr.com/vse/LZJS) | competition | 2026-09-30T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
+| [AISTATS 2027](https://virtual.aistats.org/Conferences/2027) | conference | 2026-09-30T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [SATML 2027](https://satml.org/) | conference | 2026-09-30T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [2026山东省大学生力学理论与应用大赛](https://new.saikr.com/vse/2026sdlxjs) | competition | 2026-09-30T23:59:55+08:00 | registration_open | 赛氪公开前端 API |
+| [2026年“数据要素×”大赛北京分赛暨北京数智创新大赛](https://new.saikr.com/vse/59501) | competition | 2026-09-30T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [中国移动第十届创客马拉松大赛AI x 无源物联网专题赛](https://new.saikr.com/vse/59869) | competition | 2026-09-30T23:59:59+08:00 | ongoing | 赛氪公开前端 API |
+| [WiCON 2026](https://wicon.eai-conferences.org/2026/) | conference | 2026-10-01T07:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [ISPA 2026](https://ieee-ai-for-science.org/2026/ispa/) | conference | 2026-10-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [VMCAI 2027](https://conf.researchr.org/home/VMCAI-2027) | conference | 2026-10-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
