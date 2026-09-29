@@ -21,14 +21,11 @@
 ## 当前数据快照
 
 <!-- DATA_SNAPSHOT_START -->
-> 数据生成于 `2026-09-28T13:19:09+08:00`，共 566 条；数据源状态：`healthy`。
+> 数据生成于 `2026-09-29T13:40:36+08:00`，共 566 条；数据源状态：`healthy`。
 
 | 事件 | 类型 | 最近 DDL / 时间 | 状态 | 来源 |
 | --- | --- | --- | --- | --- |
-| [2026年下半年全国大学英语四六级考试报名工作启动](https://new.saikr.com/vse/60215) | competition | 2026-09-28T23:59:59+08:00 | registration_open | 赛氪公开前端 API |
-| [2026年高校学生数学建模能力测评考试](https://new.saikr.com/vse/gxbsm26) | competition | 2026-09-29T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [ISPD 2027](https://ispd.cc/ispd2027/) | conference | 2026-09-29T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
-| [首届量子计算应用场景挑战赛——高校组](https://new.saikr.com/vse/LZJS) | competition | 2026-09-30T12:00:00+08:00 | registration_open | 赛氪公开前端 API |
 | [AISTATS 2027](https://virtual.aistats.org/Conferences/2027) | conference | 2026-09-30T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [SATML 2027](https://satml.org/) | conference | 2026-09-30T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [2026山东省大学生力学理论与应用大赛](https://new.saikr.com/vse/2026sdlxjs) | competition | 2026-09-30T23:59:55+08:00 | registration_open | 赛氪公开前端 API |
@@ -37,6 +34,9 @@
 | [WiCON 2026](https://wicon.eai-conferences.org/2026/) | conference | 2026-10-01T07:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [ISPA 2026](https://ieee-ai-for-science.org/2026/ispa/) | conference | 2026-10-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
 | [VMCAI 2027](https://conf.researchr.org/home/VMCAI-2027) | conference | 2026-10-01T19:59:59+08:00 | submission_open | CCFDDL Open Deadlines |
+| [香港理工大学 · 计算学系（2027年1月入学PhD/MPhil）](https://www.polyu.edu.hk/study/pg/rpg/20262/comp) | summer_camp | 2026-10-01T23:59:59+08:00 | registration_open | CS-BAOYAN BoardCaster |
+| [Eurographics 2027](https://eg2027.isti.cnr.it/) | conference | 2026-10-02T07:59:00+08:00 | submission_open | CCFDDL Open Deadlines |
+| [VLDB 2027](https://www.vldb.org/2027/) | conference | 2026-10-02T08:00:00+08:00 | submission_open | CCFDDL Open Deadlines |
 <!-- DATA_SNAPSHOT_END -->
 
 ## 数据源
