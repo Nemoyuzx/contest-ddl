@@ -16,9 +16,10 @@ from bs4 import BeautifulSoup
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence
 from contestddl.sources.common import guarded
+from contestddl.sources.github_contents import OFFICIAL_CATALOG_URL, load_public_json
 from contestddl.utils import CHINA_TZ, clean_text, iso, now_china, stable_id
 
-CATALOG_URL = "https://raw.githubusercontent.com/xcg1125/college-competition-ddl/main/competitions.json"
+CATALOG_URL = OFFICIAL_CATALOG_URL
 
 ALLOWED_CATEGORIES = {
     "创新创业", "数学建模", "程序设计", "电子设计", "机械设计", "智能车", "工程实践",
@@ -377,7 +378,7 @@ def collect(fetcher, now=None):
     workers = max(1, min(8, int(os.getenv("OFFICIAL_SITE_WORKERS", "6"))))
 
     def run():
-        catalog = fetcher.json(CATALOG_URL)
+        catalog = load_public_json(fetcher, CATALOG_URL)
         selected = [row for row in catalog if _catalog_selected(row)][:limit]
         with ThreadPoolExecutor(max_workers=min(workers, len(selected) or 1)) as executor:
             crawled = list(executor.map(lambda row: _crawl_one(row, fetcher, current), selected))

@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from contestddl.models import Event, SourceEvidence
 from contestddl.sources.common import guarded
+from contestddl.sources.github_contents import BOARDCASTER_URL, load_public_json
 from contestddl.university_tiers import university_tiers
 from contestddl.utils import engineering_relevant, iso, iso_or_none, now_china, stable_id
 
-URL = "https://raw.githubusercontent.com/CS-BAOYAN/BoardCaster/main/data.json"
+URL = BOARDCASTER_URL
 PRE_ADMISSION_LABELS = (
     "预推免",
     "推免预报名",
@@ -33,7 +34,7 @@ def collect(fetcher, now=None):
     current = now or now_china()
 
     def run():
-        payload = fetcher.json(URL)
+        payload = load_public_json(fetcher, URL)
         keys = [f"camp{current.year}", f"camp{current.year + 1}", f"yutuimian{current.year}"]
         events = []
         for key in keys:
