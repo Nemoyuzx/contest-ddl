@@ -247,7 +247,7 @@ function renderMetrics(payload, sourceStatusPayload) {
 
 async function init() {
   try {
-    const [dataResponse, sourceResponse] = await Promise.all([fetch("./data/competitions.json", { cache: "no-store" }), fetch("./data/source-status.json", { cache: "no-store" })]);
+    const [dataResponse, sourceResponse] = await Promise.all([fetch("./data/competitions.json"), fetch("./data/source-status.json")]);
     if (!dataResponse.ok) throw new Error(`data HTTP ${dataResponse.status}`);
     const payload = await dataResponse.json();
     const sourcePayload = sourceResponse.ok ? await sourceResponse.json() : null;
