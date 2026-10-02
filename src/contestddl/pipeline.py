@@ -20,6 +20,7 @@ from contestddl.utils import (
     normalize_title,
     now_china,
     parse_datetime,
+    saikr_competition_end_without_post_event,
 )
 
 SCHEMA_VERSION = "1.4"
@@ -153,6 +154,10 @@ def _validate(event: Event, errors: list[dict], now) -> bool:
     if not event.name or not event.official_url.startswith(("http://", "https://")):
         errors.append({"event": event.name or event.id, "reason": "missing_name_or_http_url"})
         return False
+    corrected_end = saikr_competition_end_without_post_event(event)
+    if corrected_end and corrected_end != event.competition_end:
+        errors.append({"event": event.name, "reason": "saikr_post_event_end_excluded", "selected": corrected_end, "rejected": event.competition_end})
+        event.competition_end = corrected_end
     for field_name in DATE_FIELDS:
         value = getattr(event, field_name)
         if value and not parse_datetime(value):
@@ -211,7 +216,7 @@ def _load_previous(path: Path) -> dict[str, Event]:
         return {}
 
 
-def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Event]:
+def _lifecycle(current: list[Event], previous: dict[str, Event], now, errors: list[dict] | None = None) -> list[Event]:
     combined = list(current)
     current_ids = set()
     current_keys = {_dedup_key(event) for event in current}
@@ -232,6 +237,11 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now) -> list[Ev
         # copy when the same title/year/type is present under its new ID.
         if event_id in current_ids or _dedup_key(old) in current_keys or canonical_url(old.official_url) in current_urls:
             continue
+        corrected_end = saikr_competition_end_without_post_event(old)
+        if corrected_end and corrected_end != old.competition_end:
+            if errors is not None:
+                errors.append({"event": old.name, "reason": "saikr_post_event_end_excluded", "selected": corrected_end, "rejected": old.competition_end})
+            old.competition_end = corrected_end
         last_seen = parse_datetime(old.last_seen_at or old.first_seen_at) or now
         age = now - last_seen
         old.stale = age >= timedelta(days=7)
@@ -275,7 +285,7 @@ def run_pipeline(root: str | Path = ".", selected_sources: list[str] | None = No
     override_log = _apply_overrides(fresh, root / "data/overrides.yml", now)
     fresh = [event for event in fresh if _validate(event, validation_errors, now)]
     previous = _load_previous(root / "data/competitions.json")
-    events = _lifecycle(fresh, previous, now)
+    events = _lifecycle(fresh, previous, now, validation_errors)
     events.sort(key=lambda item: (item.archived, parse_datetime(item.primary_deadline) or now.replace(year=now.year + 10), item.name.lower()))
 
     ok_sources = sum(1 for result in results if result.ok)

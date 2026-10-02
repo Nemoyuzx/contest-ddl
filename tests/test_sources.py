@@ -90,6 +90,62 @@ def test_saikr_api_detail_becomes_rich_event():
     assert event.attachments[0]["url"] == "https://files.example/notice.pdf"
 
 
+def test_saikr_preserves_post_event_stages_without_extending_competition():
+    cases = [
+        (
+            "2026年数据要素大赛北京分赛", "59501", "2026/09/30 00:00:00",
+            [
+                {"name": "竞赛评选阶段", "content": "确定获奖名单", "start_time": "2026.08.01", "end_time": "2026.08.31"},
+                {"name": "全国总决赛阶段", "start_time": "2026.09.01", "end_time": "2026.09.30"},
+                {"name": "成果转化阶段（持续开展）", "start_time": "2026.10.01", "end_time": "2029.10.01"},
+            ],
+            "2026-09-30T23:59:59+08:00",
+        ),
+        (
+            "第五届琶洲算法大赛", "aicompetition-pz", "2026/09/15 00:00:00",
+            [
+                {"name": "比赛阶段", "start_time": "2026.08.01", "end_time": "2026.09.15"},
+                {"name": "颁奖典礼", "start_time": "2026.10.13", "end_time": "2026.10.15"},
+            ],
+            "2026-09-15T23:59:59+08:00",
+        ),
+    ]
+    for title, slug, top_level_end, stages, expected_end in cases:
+        row = {"contest_id": 1, "contest_name": title, "contest_url": f"vse/{slug}"}
+        detail = {
+            "contest_name": title, "contest_end_time": top_level_end,
+            "contest_stage": {"list": stages},
+        }
+        item = saikr._event_from_api(row, detail, datetime(2026, 10, 2, 12, tzinfo=CHINA_TZ))
+        assert item.competition_end == expected_end
+        assert [stage["name"] for stage in item.schedule] == [stage["name"] for stage in stages]
+
+
+def test_saikr_keeps_later_real_competition_round():
+    row = {"contest_id": 2, "contest_name": "多轮计算机能力竞赛", "contest_url": "vse/rounds"}
+    detail = {
+        "contest_end_time": "2026/11/01 00:00:00",
+        "contest_stage": {"list": [
+            {"name": "第一场（获奖名单已公布）", "start_time": "2026.10.31", "end_time": "2026.11.01"},
+            {"name": "第二场", "start_time": "2026.12.26", "end_time": "2026.12.27"},
+            {"name": "颁奖典礼", "start_time": "2027.01.15", "end_time": "2027.01.15"},
+        ]},
+    }
+    item = saikr._event_from_api(row, detail, datetime(2026, 10, 2, 12, tzinfo=CHINA_TZ))
+    assert item.competition_end == "2026-12-27T23:59:59+08:00"
+
+
+def test_saikr_submission_stage_is_not_a_competition_round():
+    row = {"contest_id": 3, "contest_name": "集成电路创新创业大赛", "contest_url": "vse/chip"}
+    detail = {"contest_stage": {"list": [
+        {"name": "初赛", "start_time": "2026.05.01", "end_time": "2026.05.07"},
+        {"name": "中期报告检查提交", "start_time": "2026.05.08", "end_time": "2026.05.20"},
+    ]}}
+    item = saikr._event_from_api(row, detail, datetime(2026, 5, 1, 12, tzinfo=CHINA_TZ))
+    assert item.competition_end == "2026-05-07T23:59:59+08:00"
+    assert item.submission_deadline == "2026-05-20T23:59:59+08:00"
+
+
 def test_saikr_event_removes_marketing_title_prefix():
     row = {
         "contest_id": 1, "contest_name": "【9月开学领证书】2026年大学生网络信息技术大赛",

@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from contestddl.fetch import Fetcher
 from contestddl.models import Event, SourceEvidence
 from contestddl.sources.common import guarded
-from contestddl.utils import CHINA_TZ, clean_event_title, clean_text, iso, iso_or_none, now_china, parse_datetime, stable_id
+from contestddl.utils import CHINA_TZ, clean_event_title, clean_text, iso, iso_or_none, now_china, parse_datetime, saikr_stage_kind, stable_id
 
 API_BASE = "https://apiv4buffer.saikr.com/api/pc/contest"
 LIST_URL = f"{API_BASE}/lists"
@@ -207,19 +207,22 @@ def _event_from_api(row: dict, detail: dict, current: datetime) -> Event:
     competition_start = _normalize_detail_date(detail.get("contest_start_time")) or _unix_iso(row.get("contest_start_time"))
     competition_end = _normalize_detail_date(detail.get("contest_end_time"), end_of_day=True) or _unix_iso(row.get("contest_end_time"))
     schedule = _schedule(detail)
-    registration_stages = [stage for stage in schedule if re.search(r"报名|注册|征集", f"{stage['name']} {stage['content']}")]
-    competition_stages = [stage for stage in schedule if stage not in registration_stages]
+    stage_kinds = [(stage, saikr_stage_kind(stage)) for stage in schedule]
+    registration_stages = [stage for stage, kind in stage_kinds if kind == "registration"]
+    submission_stages = [stage for stage, kind in stage_kinds if kind == "submission"]
+    competition_stages = [stage for stage, kind in stage_kinds if kind == "competition"]
     registration_start = _extreme_date([registration_start, *(stage["start"] for stage in registration_stages)], latest=False)
     registration_deadline = _extreme_date([registration_deadline, *(stage["end"] for stage in registration_stages)], latest=True)
     competition_start = _extreme_date([competition_start, *(stage["start"] for stage in competition_stages)], latest=False)
     competition_end = _extreme_date([competition_end, *(stage["end"] for stage in competition_stages)], latest=True)
+    submission_deadline = _extreme_date([stage["end"] for stage in submission_stages], latest=True)
     participation = detail.get("participation_detail") or {}
     eligibility = clean_text(str(participation.get("detail") or "")) if isinstance(participation, dict) else ""
     description = _plain_html(detail.get("content"))
     organizer = _organizer(detail.get("organiser"), row.get("organiser"))
     evidence_fields = [
         "name", "organizer", "description", "eligibility", "schedule", "attachments",
-        "registration_start", "registration_deadline", "competition_start", "competition_end",
+        "registration_start", "registration_deadline", "competition_start", "competition_end", "submission_deadline",
     ]
     source = SourceEvidence("赛氪公开前端 API", official_url, "aggregator_api", 2, iso(current), evidence_fields)
     return Event(
@@ -237,6 +240,7 @@ def _event_from_api(row: dict, detail: dict, current: datetime) -> Event:
         registration_deadline=registration_deadline,
         competition_start=competition_start,
         competition_end=competition_end,
+        submission_deadline=submission_deadline,
         description=description,
         schedule=schedule,
         attachments=_attachments(detail),

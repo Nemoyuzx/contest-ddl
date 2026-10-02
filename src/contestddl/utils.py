@@ -24,6 +24,11 @@ MARKETING_TITLE_KEYWORDS = (
     "加分", "获奖", "题目", "题库", "仅剩", "速来", "速报",
 )
 LEADING_BRACKET = re.compile(r"^\s*[【\[](?P<label>[^】\]]{1,50})[】\]]\s*")
+SAIKR_NONCOMPETITION_STAGE = re.compile(
+    r"成果转化|成果推广|颁奖|授奖|奖项公示|名单公示|结果公示|结果公布|启动宣传|宣传推广|赛后"
+)
+SAIKR_REGISTRATION_STAGE = re.compile(r"报名|注册|征集")
+SAIKR_SUBMISSION_STAGE = re.compile(r"摘要|论文|投稿|截稿|作品提交|材料提交|报告.*提交|项目提交")
 
 
 def now_china() -> datetime:
@@ -112,6 +117,56 @@ def engineering_relevant(*values: str) -> bool:
     return any(keyword in haystack for keyword in ENGINEERING_KEYWORDS)
 
 
+def saikr_stage_kind(stage: dict) -> str:
+    """Classify a Saikr stage by its name, not incidental words in its content.
+
+    Parentheses commonly contain status notes such as "报名中" or "获奖名单已公布"
+    on an actual competition round. Keep the full stage for display, but do
+    not let those notes turn its dates into another kind of milestone.
+    """
+    name = clean_text(str(stage.get("name") or ""))
+    core_name = re.split(r"[（(]", name, maxsplit=1)[0] or name
+    if SAIKR_NONCOMPETITION_STAGE.search(core_name):
+        return "informational"
+    if SAIKR_REGISTRATION_STAGE.search(core_name):
+        return "registration"
+    if SAIKR_SUBMISSION_STAGE.search(core_name):
+        return "submission"
+    return "competition"
+
+
+def is_saikr_noncompetition_stage(stage: dict) -> bool:
+    return saikr_stage_kind(stage) == "informational"
+
+
+def saikr_competition_end_without_post_event(event) -> str | None:
+    """Repair a cached Saikr end date that came solely from a later ceremony.
+
+    Older JSON snapshots did not keep the original top-level API date. Only
+    change the cached field when it equals a known non-competition stage end
+    and a dated competition round provides a defensible replacement.
+    """
+    if event.source.name != "赛氪公开前端 API" or "saikr" not in event.tags or not event.competition_end:
+        return None
+    current_end = parse_datetime(event.competition_end)
+    if not current_end:
+        return None
+    stages = event.schedule if isinstance(event.schedule, list) else []
+    if not any(
+        isinstance(stage, dict) and is_saikr_noncompetition_stage(stage)
+        and parse_datetime(stage.get("end")) == current_end
+        for stage in stages
+    ):
+        return None
+    rounds = [
+        (stage.get("end"), parse_datetime(stage.get("end")))
+        for stage in stages
+        if isinstance(stage, dict) and saikr_stage_kind(stage) == "competition" and stage.get("end")
+    ]
+    rounds = [(value, date) for value, date in rounds if date]
+    return max(rounds, key=lambda entry: entry[1])[0] if rounds else None
+
+
 def compute_status(event, now: datetime | None = None) -> str:
     current = now or now_china()
     reg_start = parse_datetime(event.registration_start)
@@ -125,16 +180,26 @@ def compute_status(event, now: datetime | None = None) -> str:
     for stage in schedule:
         if not isinstance(stage, dict):
             continue
+        saikr_kind = saikr_stage_kind(stage) if "saikr" in event.tags else None
+        if saikr_kind == "informational":
+            continue
         start, end = parse_datetime(stage.get("start")), parse_datetime(stage.get("end"))
         if not start and not end:
             continue
-        label = f"{stage.get('name', '')} {stage.get('content', '')}"
-        if re.search(r"报名|注册|征集", label):
-            target = registration_stages
-        elif re.search(r"摘要|论文|投稿|截稿|作品提交|材料提交", label):
-            target = submission_stages
+        if saikr_kind:
+            target = {
+                "registration": registration_stages,
+                "submission": submission_stages,
+                "competition": competition_stages,
+            }[saikr_kind]
         else:
-            target = competition_stages
+            label = f"{stage.get('name', '')} {stage.get('content', '')}"
+            if re.search(r"报名|注册|征集", label):
+                target = registration_stages
+            elif re.search(r"摘要|论文|投稿|截稿|作品提交|材料提交", label):
+                target = submission_stages
+            else:
+                target = competition_stages
         target.append((start, end))
     if any(start and current >= start and (not end or current <= end) for start, end in competition_stages):
         return "ongoing"
@@ -189,6 +254,8 @@ def choose_primary_deadline(event, now: datetime | None = None) -> str | None:
     ]
     for stage in event.schedule if isinstance(getattr(event, "schedule", None), list) else []:
         if isinstance(stage, dict):
+            if "saikr" in event.tags and is_saikr_noncompetition_stage(stage):
+                continue
             values.extend((stage.get("start"), stage.get("end")))
     parsed = [(value, parse_datetime(value)) for value in values if value]
     parsed = [(value, date) for value, date in parsed if date]
