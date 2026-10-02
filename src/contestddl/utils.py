@@ -139,6 +139,29 @@ def is_saikr_noncompetition_stage(stage: dict) -> bool:
     return saikr_stage_kind(stage) == "informational"
 
 
+def saikr_competition_start_without_noncompetition(event) -> str | None:
+    """Repair a cached Saikr contest start that equals a publicity/signup stage."""
+    if event.source.name != "赛氪公开前端 API" or "saikr" not in event.tags or not event.competition_start:
+        return None
+    current_start = parse_datetime(event.competition_start)
+    if not current_start:
+        return None
+    stages = event.schedule if isinstance(event.schedule, list) else []
+    if not any(
+        isinstance(stage, dict) and saikr_stage_kind(stage) != "competition"
+        and parse_datetime(stage.get("start")) == current_start
+        for stage in stages
+    ):
+        return None
+    rounds = [
+        (stage.get("start"), parse_datetime(stage.get("start")))
+        for stage in stages
+        if isinstance(stage, dict) and saikr_stage_kind(stage) == "competition" and stage.get("start")
+    ]
+    rounds = [(value, date) for value, date in rounds if date]
+    return min(rounds, key=lambda entry: entry[1])[0] if rounds else None
+
+
 def saikr_competition_end_without_post_event(event) -> str | None:
     """Repair a cached Saikr end date that came solely from a later ceremony.
 

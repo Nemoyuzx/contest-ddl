@@ -211,6 +211,22 @@ def _event_from_api(row: dict, detail: dict, current: datetime) -> Event:
     registration_stages = [stage for stage, kind in stage_kinds if kind == "registration"]
     submission_stages = [stage for stage, kind in stage_kinds if kind == "submission"]
     competition_stages = [stage for stage, kind in stage_kinds if kind == "competition"]
+    noncompetition_stages = [stage for stage, kind in stage_kinds if kind != "competition"]
+    # The top-level API fields sometimes span publicity, registration or a
+    # ceremony rather than the contest itself. Override them only when the
+    # value exactly matches such a named stage and a dated contest round exists.
+    first_round = _extreme_date([stage["start"] for stage in competition_stages], latest=False)
+    last_round = _extreme_date([stage["end"] for stage in competition_stages], latest=True)
+    if first_round and competition_start and any(
+        parse_datetime(stage["start"]) == parse_datetime(competition_start)
+        for stage in noncompetition_stages if stage["start"]
+    ):
+        competition_start = None
+    if last_round and competition_end and any(
+        parse_datetime(stage["end"]) == parse_datetime(competition_end)
+        for stage in noncompetition_stages if stage["end"]
+    ):
+        competition_end = None
     registration_start = _extreme_date([registration_start, *(stage["start"] for stage in registration_stages)], latest=False)
     registration_deadline = _extreme_date([registration_deadline, *(stage["end"] for stage in registration_stages)], latest=True)
     competition_start = _extreme_date([competition_start, *(stage["start"] for stage in competition_stages)], latest=False)

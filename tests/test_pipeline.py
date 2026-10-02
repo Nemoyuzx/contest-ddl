@@ -134,19 +134,22 @@ def test_validation_repairs_old_saikr_snapshot_before_status_calculation():
     now = datetime(2026, 10, 2, 12, tzinfo=CHINA_TZ)
     item = make_event(
         event_type="competition", source_name="赛氪公开前端 API", tags=["saikr"],
-        competition_start="2026-08-01T00:00:00+08:00",
+        competition_start="2026-07-01T00:00:00+08:00",
         competition_end="2029-10-01T23:59:59+08:00",
         schedule=[
+            {"name": "启动宣传", "start": "2026-07-01T00:00:00+08:00", "end": "2026-07-31T23:59:59+08:00"},
+            {"name": "竞赛评选", "start": "2026-08-01T00:00:00+08:00", "end": "2026-08-31T23:59:59+08:00"},
             {"name": "决赛", "start": "2026-09-01T00:00:00+08:00", "end": "2026-09-30T23:59:59+08:00"},
             {"name": "成果转化", "start": "2026-10-01T00:00:00+08:00", "end": "2029-10-01T23:59:59+08:00"},
         ],
     )
     errors = []
     assert _validate(item, errors, now)
+    assert item.competition_start == "2026-08-01T00:00:00+08:00"
     assert item.competition_end == "2026-09-30T23:59:59+08:00"
     assert item.primary_deadline == item.competition_end
     assert item.status == "ended"
-    assert errors[0]["reason"] == "saikr_post_event_end_excluded"
+    assert {error["reason"] for error in errors} == {"saikr_noncompetition_start_excluded", "saikr_post_event_end_excluded"}
 
 
 def test_lifecycle_does_not_duplicate_same_event_after_id_migration():

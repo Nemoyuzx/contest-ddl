@@ -21,6 +21,7 @@ from contestddl.utils import (
     now_china,
     parse_datetime,
     saikr_competition_end_without_post_event,
+    saikr_competition_start_without_noncompetition,
 )
 
 SCHEMA_VERSION = "1.4"
@@ -154,6 +155,10 @@ def _validate(event: Event, errors: list[dict], now) -> bool:
     if not event.name or not event.official_url.startswith(("http://", "https://")):
         errors.append({"event": event.name or event.id, "reason": "missing_name_or_http_url"})
         return False
+    corrected_start = saikr_competition_start_without_noncompetition(event)
+    if corrected_start and corrected_start != event.competition_start:
+        errors.append({"event": event.name, "reason": "saikr_noncompetition_start_excluded", "selected": corrected_start, "rejected": event.competition_start})
+        event.competition_start = corrected_start
     corrected_end = saikr_competition_end_without_post_event(event)
     if corrected_end and corrected_end != event.competition_end:
         errors.append({"event": event.name, "reason": "saikr_post_event_end_excluded", "selected": corrected_end, "rejected": event.competition_end})
@@ -237,6 +242,11 @@ def _lifecycle(current: list[Event], previous: dict[str, Event], now, errors: li
         # copy when the same title/year/type is present under its new ID.
         if event_id in current_ids or _dedup_key(old) in current_keys or canonical_url(old.official_url) in current_urls:
             continue
+        corrected_start = saikr_competition_start_without_noncompetition(old)
+        if corrected_start and corrected_start != old.competition_start:
+            if errors is not None:
+                errors.append({"event": old.name, "reason": "saikr_noncompetition_start_excluded", "selected": corrected_start, "rejected": old.competition_start})
+            old.competition_start = corrected_start
         corrected_end = saikr_competition_end_without_post_event(old)
         if corrected_end and corrected_end != old.competition_end:
             if errors is not None:

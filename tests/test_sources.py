@@ -95,6 +95,7 @@ def test_saikr_preserves_post_event_stages_without_extending_competition():
         (
             "2026年数据要素大赛北京分赛", "59501", "2026/09/30 00:00:00",
             [
+                {"name": "启动宣传阶段（6月-7月）", "start_time": "2026.07.01", "end_time": "2026.07.31"},
                 {"name": "竞赛评选阶段", "content": "确定获奖名单", "start_time": "2026.08.01", "end_time": "2026.08.31"},
                 {"name": "全国总决赛阶段", "start_time": "2026.09.01", "end_time": "2026.09.30"},
                 {"name": "成果转化阶段（持续开展）", "start_time": "2026.10.01", "end_time": "2029.10.01"},
@@ -104,6 +105,7 @@ def test_saikr_preserves_post_event_stages_without_extending_competition():
         (
             "第五届琶洲算法大赛", "aicompetition-pz", "2026/09/15 00:00:00",
             [
+                {"name": "报名阶段", "start_time": "2026.05.01", "end_time": "2026.07.31"},
                 {"name": "比赛阶段", "start_time": "2026.08.01", "end_time": "2026.09.15"},
                 {"name": "颁奖典礼", "start_time": "2026.10.13", "end_time": "2026.10.15"},
             ],
@@ -114,11 +116,23 @@ def test_saikr_preserves_post_event_stages_without_extending_competition():
         row = {"contest_id": 1, "contest_name": title, "contest_url": f"vse/{slug}"}
         detail = {
             "contest_name": title, "contest_end_time": top_level_end,
+            "contest_start_time": "2026/07/01 00:00:00" if slug == "59501" else "2026/05/01 00:00:00",
             "contest_stage": {"list": stages},
         }
         item = saikr._event_from_api(row, detail, datetime(2026, 10, 2, 12, tzinfo=CHINA_TZ))
+        assert item.competition_start == "2026-08-01T00:00:00+08:00"
         assert item.competition_end == expected_end
         assert [stage["name"] for stage in item.schedule] == [stage["name"] for stage in stages]
+
+
+def test_saikr_rejects_top_level_ceremony_end_when_actual_round_is_dated():
+    row = {"contest_id": 4, "contest_name": "算法竞赛", "contest_url": "vse/ceremony"}
+    detail = {"contest_end_time": "2026/10/15 00:00:00", "contest_stage": {"list": [
+        {"name": "比赛阶段", "start_time": "2026.08.01", "end_time": "2026.09.15"},
+        {"name": "颁奖典礼", "start_time": "2026.10.13", "end_time": "2026.10.15"},
+    ]}}
+    item = saikr._event_from_api(row, detail, datetime(2026, 10, 2, 12, tzinfo=CHINA_TZ))
+    assert item.competition_end == "2026-09-15T23:59:59+08:00"
 
 
 def test_saikr_keeps_later_real_competition_round():
